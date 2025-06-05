@@ -255,7 +255,17 @@ html {
   font-size: 17px;
   text-align: left;
   width: 100%;
-  
+  display: flex;
+  font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-p2-1 {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  text-align: left;
+  width: 100%;
+  opacity: 0;
+  display: flex;
   font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -669,6 +679,10 @@ html {
     font-size: 15px;
   }
 
+   .about-p2-1 {
+    font-size: 15px;
+  }
+
   .about-main {
     align-items: center;
   }
@@ -853,6 +867,10 @@ html {
   }
 
   .about-p2 {
+    font-size: 15px;
+  }
+
+  .about-p2-1 {
     font-size: 15px;
   }
 

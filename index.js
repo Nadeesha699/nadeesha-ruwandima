@@ -25,3 +25,7 @@ document.getElementById("navigation-link-3").addEventListener("click", () => {
 document.getElementById("navigation-link-4").addEventListener("click", () => {
   document.getElementById("mobile-menu-panel").style.top = "-1000px";
 });
+
+document.getElementById("btn-readmore").addEventListener("click",()=>{
+    document.getElementById("about-p2-1").style.opacity = 1;
+})
