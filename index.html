@@ -5,41 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nadeesha-ruwandima | Home</title>
     <link href="./index.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./images/icons/image.png" />
+    <script src="index.js" type="module"></script>
   </head>
+
   <div class="main">
+    
+    <!--home -->
     <div class="home-main">
       <div class="navigation-main">
-        <div class="navigation-sub">
-          <img src="./images/icons/image.png" alt="icon" />
+        <a class="navigation-sub" href="/">
+          <img src="./images/icons/image.png" alt="icon"/>
           <label class="navigation-name">A.T.N. Ruwandima</label>
-        </div>
+        </a>
         <nav class="navigation-sub2">
-          <a href="#" class="navigation-link"> Home </a>
-          <a href="#" class="navigation-link"> About </a>
-          <a href="#" class="navigation-link"> Services </a>
-          <a href="#" class="navigation-link"> Portfolio </a>
-          <a href="#" class="navigation-link"> Contact </a>
+          <a href="/" class="navigation-link"> Home </a>
+          <a href="#about-main" class="navigation-link"> About </a>
+          <a href="#about-two-main" class="navigation-link"> Services </a>
+          <a href="#portfolio-main" class="navigation-link"> Portfolio </a>
+          <a href="#footer-main" class="navigation-link"> Contact </a>
         </nav>
-        <img src="./images/icons/menu-bar.png" alt="icon" class="mobile-menu" />
-        <!-- <div class="mobile-menu-panel">
+        <img
+          src="./images/icons/menu-bar.png"
+          alt="icon"
+          class="mobile-menu"
+          id="mobile-menu"
+        />
+        <div class="mobile-menu-panel" id="mobile-menu-panel">
           <img
             src="./images/icons/crossed.png"
             alt="icon"
             class="mobile-menu-close"
+            id="mobile-menu-close"
           />
-          <a href="#" class="navigation-link"> Home </a>
-          <a href="#" class="navigation-link"> About </a>
-          <a href="#" class="navigation-link"> Services </a>
-          <a href="#" class="navigation-link"> Portfolio </a>
-          <a href="#" class="navigation-link"> Contact </a>
-        </div> -->
+          <a href="/" class="navigation-link" id="navigation-link"> Home </a>
+          <a href="#about-main" class="navigation-link" id="navigation-link-1"> About </a>
+          <a href="#about-two-main" class="navigation-link" id="navigation-link-2"> Services </a>
+          <a href="#portfolio-main" class="navigation-link" id="navigation-link-3"> Portfolio </a>
+          <a href="#footer-main" class="navigation-link" id="navigation-link-4"> Contact </a>
+        </div>
       </div>
-
       <div class="home-sub1">
         <div class="home-sub2">
           <div>
             <label class="home-lbl2">HELLO MY NAME IS,</label>
-            <!-- <hr></hr> -->
+            <hr></hr>
           </div>
           <div>
             <h1 class="home-m1">A.T.N. Ruwandima</h1>
@@ -72,7 +82,8 @@
         <img src="./images/home_pic.png" alt="icon" class="home-img" />
       </div>
     </div>
-    <div class="about-main">
+    <!-- about-1 -->
+    <div class="about-main" id="about-main">
       <h1
         style="
           color: #3f8fff;
@@ -114,7 +125,8 @@
         </div>
       </div>
     </div>
-    <div class="lng-main">
+    <!-- Skills -->
+    <div class="lng-main" id="lng-main">
       <h1 class="lng-lbl1">Skills</h1>
       <div class="lng-sub1">
         <div>
@@ -161,7 +173,8 @@
         </div>
       </div>
     </div>
-    <div class="about-two-main">
+    <!-- about-2 -->
+    <div class="about-two-main" id="about-two-main">
       <h1 class="about-two-main-h">What I do</h1>
       <p class="about-main-p">
         From understanding your requirements, designing a blueprint and
@@ -216,7 +229,8 @@
         </div>
       </div>
     </div>
-    <div class="portfolio-main">
+    <!-- portfolio -->
+    <div class="portfolio-main" id="portfolio-main">
       <div class="portfolio-sub">
         <h1 style="color: white">Portfolio</h1>
         <a href="https://github.com/Nadeesha699">
@@ -255,7 +269,8 @@
         </a>
       </div>
     </div>
-    <div class="footer-main">
+    <!-- footer -->
+    <div class="footer-main" id="footer-main">
       <div class="footer-sub1">
         <div class="footer-sub2">
           <label class="footer-lbl1">

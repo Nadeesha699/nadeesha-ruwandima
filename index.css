@@ -14,7 +14,7 @@ html {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   padding: 2%;
-  border-radius: 50%;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -31,6 +31,7 @@ html {
   right: 0;
   bottom: 0;
   display: flex;
+  top: -1000px;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -547,7 +548,8 @@ html {
   justify-content: center;
   align-items: center;
   width: 28%;
-  gap: 2%;
+  gap: 10px;
+  text-decoration: none;
 }
 
 .navigation-sub img {
@@ -571,7 +573,7 @@ html {
 .navigation-name {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .navigation-link {
