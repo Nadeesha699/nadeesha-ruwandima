@@ -65,7 +65,7 @@ html {
 }
 
 .home-main {
-  background-image: url(./images/test.png);
+  background-image: url(/images/test.png);
   max-width: 100%;
   height: auto;
   display: block;
