@@ -26,6 +26,12 @@ document.getElementById("navigation-link-4").addEventListener("click", () => {
   document.getElementById("mobile-menu-panel").style.top = "-1000px";
 });
 
-document.getElementById("btn-readmore").addEventListener("click",()=>{
-    document.getElementById("about-p2-1").style.opacity = 1;
-})
+document.getElementById("btn-readmore").addEventListener("click", () => {
+  const element = document.getElementById("about-p2-1");
+  const currunetProp = window
+    .getComputedStyle(element)
+    .getPropertyValue("display");
+  currunetProp === "flex"
+    ? (document.getElementById("about-p2-1").style.display = "none")
+    : (document.getElementById("about-p2-1").style.display = "flex");
+});

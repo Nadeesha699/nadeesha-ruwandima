@@ -162,26 +162,24 @@ html {
   letter-spacing: 2px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 .home-lbl2 {
   color: #5d5d5d;
   letter-spacing: 2px;
   font-weight: bold;
-  font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   animation: r1 2s ease-in-out infinite;
-
 }
 
 @keyframes r1 {
-  0%{
+  0% {
     color: #5d5d5d;
   }
-  50%{
+  50% {
     color: white;
   }
-  100%{
+  100% {
     color: #5d5d5d;
   }
 }
@@ -238,14 +236,13 @@ html {
   line-height: 50px;
   letter-spacing: 2px;
   font-weight: bold;
-  
-  font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .about-p1 {
   color: #3f8fff;
   font-size: 25px;
-  font-family: cursive;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 40px;
   width: 100%;
 }
@@ -256,7 +253,7 @@ html {
   text-align: left;
   width: 100%;
   display: flex;
-  font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .about-p2-1 {
@@ -264,9 +261,8 @@ html {
   font-size: 17px;
   text-align: left;
   width: 100%;
-  opacity: 0;
-  display: flex;
-  font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .about-sub {
@@ -450,6 +446,11 @@ html {
   background-color: rgba(0, 0, 0, 0.615);
 }
 
+.lng-main {
+  overflow: hidden;
+  /* white-space: nowrap; */
+}
+
 .lng-lbl1 {
   font-size: 50px;
   letter-spacing: 2px;
@@ -462,11 +463,17 @@ html {
   flex-direction: row;
   width: 100%;
   gap: 5%;
-  overflow: scroll;
+  padding: 10px;
+  animation: scroll-left 10s linear infinite;
 }
 
-.lng-sub1::-webkit-scrollbar {
-  display: none;
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .lng-sub2 {
@@ -668,7 +675,7 @@ html {
   }
 
   .about-p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .about-p1 {
@@ -679,7 +686,7 @@ html {
     font-size: 15px;
   }
 
-   .about-p2-1 {
+  .about-p2-1 {
     font-size: 15px;
   }
 
@@ -839,7 +846,6 @@ html {
     height: 15px;
   }
 
-
   .home-lbl1 {
     font-size: 25px;
     order: 2;
@@ -859,7 +865,7 @@ html {
   }
 
   .about-p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .about-p1 {
