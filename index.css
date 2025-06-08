@@ -612,6 +612,40 @@ html {
   color: rgb(0, 0, 0);
 }
 
+.btn-cv-download {
+  background: radial-gradient(
+    circle at 100%,
+    #ffa200,
+    #a97c00 50%,
+    #634500 75%,
+    #5b3a00 75%
+  );
+  background-size: 200% auto;
+  background-position: 0% center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  animation: animatedTextGradient 2s linear infinite;
+  transition: all 1s ease-in-out;
+}
+
+.btn-cv-download:hover{
+  color: black;
+  background: white;
+  box-shadow: 0px 0px 10px rgb(169, 169, 169);
+}
+
+@keyframes animatedTextGradient {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
   .home-img {
