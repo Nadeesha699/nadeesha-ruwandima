@@ -80,7 +80,9 @@ html {
   width: 500px;
   height: 500px;
   box-shadow: 0px 0px 20px white;
-  /* animation: s2 5s ease-in-out infinite; */
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 1s ease;
 }
 
 @keyframes s2 {
@@ -132,7 +134,15 @@ html {
   align-items: flex-start;
   padding-left: 5%;
   height: 50%;
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 1s ease;
 }
+
+/* .home-sub2.show {
+  opacity: 1;
+  transform: translateX(0);
+} */
 
 .home-sub3 {
   display: flex;
@@ -235,6 +245,9 @@ html {
   line-height: 50px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
 }
 
 .about-p1 {
@@ -242,6 +255,9 @@ html {
   font-size: 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 1s ease;
 }
 
 .about-p2 {
@@ -251,6 +267,9 @@ html {
   width: 100%;
   display: flex;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 1s ease;
 }
 
 .about-p2-1 {
@@ -258,7 +277,9 @@ html {
   font-size: 17px;
   text-align: left;
   width: 100%;
-  display: none;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  max-height: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -280,7 +301,9 @@ html {
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 1s ease;
 }
 
 .btn-readmore:hover {
@@ -816,6 +839,17 @@ html {
   to {
     background-position: 200% center;
   }
+}
+
+.home-img.show,
+.home-sub2.show, .about-p1.show, .about-p2.show, .btn-readmore.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-p.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Extra small devices (phones, less than 576px) */
