@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("about-p2-1").style.maxHeight = 0;
     } else {
       document.getElementById("btn-readmore").innerText = "read less";
-      document.getElementById("about-p2-1").style.maxHeight = "500px"
+      document.getElementById("about-p2-1").style.maxHeight = "500px";
     }
   });
 });
@@ -71,3 +71,13 @@ observer.observe(document.getElementById("about-p"));
 observer.observe(document.getElementById("about-p1"));
 observer.observe(document.getElementById("about-p2"));
 observer.observe(document.getElementById("btn-readmore"));
+observer.observe(document.getElementById("about-lbl"));
+observer.observe(document.getElementById("lng-lbl1"));
+observer.observe(document.getElementById("about-two-main-h"));
+observer.observe(document.getElementById("about-main-p"));
+observer.observe(document.getElementById("about-two-sub1"));
+observer.observe(document.getElementById("portfolio-h1"));
+observer.observe(document.getElementById("portfolio-sub2"));
+observer.observe(document.getElementById("footer-sub2"));
+observer.observe(document.getElementById("footer-sub3"));
+observer.observe(document.getElementById("footer-link3"));
