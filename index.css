@@ -73,6 +73,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 10%;
+  width: auto;
 }
 
 .home-img {
@@ -81,7 +82,7 @@ html {
   height: 500px;
   box-shadow: 0px 0px 20px white;
   opacity: 0;
-  transform: translateX(60px);
+  transform: translateX(20px);
   transition: all 1s ease;
 }
 
@@ -256,7 +257,7 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
   opacity: 0;
-  transform: translateX(-60px);
+  transform: translateX(-20px);
   transition: all 1s ease;
 }
 
@@ -268,7 +269,7 @@ html {
   display: flex;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   opacity: 0;
-  transform: translateX(60px);
+  transform: translateX(20px);
   transition: all 1s ease;
 }
 
@@ -301,7 +302,7 @@ html {
   font-weight: bold;
   cursor: pointer;
   opacity: 0;
-  transform: translateX(60px);
+  transform: translateX(20px);
   transition: all 1s ease;
 }
 
@@ -324,7 +325,7 @@ html {
   font-size: 50px;
   font-weight: bold;
   opacity: 0;
-  transform: translateX(-60px);
+  transform: translateX(-20px);
   transition: all 1s ease;
 }
 
@@ -333,7 +334,7 @@ html {
   width: 50%;
   margin-bottom: 4%;
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateX(20px);
   transition: all 1s ease;
 }
 
@@ -397,7 +398,7 @@ html {
 
 .about-two-p {
   color: gray;
-  width: 70%;
+  width: 50%;
 }
 
 .about-lbl {
@@ -406,14 +407,10 @@ html {
   font-weight: bold;
   text-shadow: 0px 0px 10px black;
   opacity: 0;
-  transform: translateX(-60px);
+  transform: translateX(-20px);
   transition: all 1s ease;
 }
 
-.about-lbl.show {
-  opacity: 1;
-  transform: translateX(0);
-}
 
 .back-screen {
   width: 100%;
@@ -450,7 +447,7 @@ html {
   height: 100%;
   width: 50%;
   opacity: 0;
-  transform: translateX(-60px);
+  transform: translateX(-20px);
   transition: all 1s ease;
 }
 
@@ -461,7 +458,7 @@ html {
   height: 60%;
   width: 30%;
   opacity: 0;
-  transform: translateX(60px);
+  transform: translateX(20px);
   transition: all 1s ease;
 }
 
@@ -531,14 +528,10 @@ html {
   font-weight: bold;
   text-shadow: 0px 0px 10px black;
   opacity: 0;
-  transform: translateX(-60px);
+  transform: translateX(-20px);
   transition: all 1s ease;
 }
 
-.lng-lbl1.show {
-  opacity: 1;
-  transform: translateX(0);
-}
 
 .lng-sub1 {
   display: flex;
@@ -713,7 +706,7 @@ html {
   font-weight: bold !important;
   text-shadow: 0px 0px 10px black;
   opacity: 0;
-  transform: translateX(-60px);
+  transform: translateX(-20px);
   transition: all 1s ease;
 }
 
@@ -913,7 +906,7 @@ html {
 .about-two-main-h.show,
 .portfolio-h1.show,
 .footer-sub2.show,
-.footer-sub3.show {
+.footer-sub3.show,.about-lbl.show, .lng-lbl1.show {
   opacity: 1;
   transform: translateX(0);
 }
@@ -1006,6 +999,10 @@ html {
 
   .about-p2-1 {
     font-size: 15px;
+  }
+
+  .about-two-p{
+    width: 100%;
   }
 
   .about-main {
@@ -1237,6 +1234,10 @@ html {
     font-size: 15px;
   }
 
+   .about-two-p{
+    width: 100%;
+  }
+
   .about-main {
     align-items: center;
   }
@@ -1357,6 +1358,10 @@ html {
   .home-img {
     width: 250px;
     height: 250px;
+  }
+
+   .about-two-p{
+    width: 70%;
   }
 
   .navigation-sub2 {
