@@ -54,6 +54,22 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("about-p2-1").style.maxHeight = "500px";
     }
   });
+
+  document
+    .getElementById("portfolio-card-1")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-1").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-1").style.position = "absolute";
+    });
+
+     document
+    .getElementById("portfolio-card-1")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-1").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-1").style.position = "";
+    });
 });
 
 const observer = new IntersectionObserver((entries) => {

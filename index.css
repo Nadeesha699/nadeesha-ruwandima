@@ -713,8 +713,17 @@ html {
 .portfolio-card-3,
 .portfolio-card-4,
 .portfolio-card-5,
-.portfolio-card-6 {
+.portfolio-card-6,
+.portfolio-card-7,
+.portfolio-card-8,
+.portfolio-card-9,
+.portfolio-card-10,
+.portfolio-card-11,
+.portfolio-card-12,
+.portfolio-card-13,
+.portfolio-card-14 {
   /* border-radius: 10px; */
+  position: relative;
   display: flex;
   flex-direction: column;
   transition: all 0.5s ease-in-out;
@@ -731,8 +740,8 @@ html {
 }
 
 .portfolio-card-3 {
-  grid-column: span 2;
-  grid-row: span 2;
+  grid-column: span 1;
+  grid-row: span 1;
 }
 
 .portfolio-card-4 {
@@ -741,12 +750,52 @@ html {
 }
 
 .portfolio-card-5 {
-  grid-column: span 3;
+  grid-column: span 4;
   grid-row: span 1;
 }
 
 .portfolio-card-6 {
-  grid-column: span 3;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.portfolio-card-7 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.portfolio-card-8 {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.portfolio-card-9 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.portfolio-card-10 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.portfolio-card-11 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.portfolio-card-12 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.portfolio-card-13 {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.portfolio-card-14 {
+  grid-column: span 1;
   grid-row: span 1;
 }
 
@@ -755,9 +804,16 @@ html {
 .portfolio-card-3:hover,
 .portfolio-card-4:hover,
 .portfolio-card-5:hover,
-.portfolio-card-6:hover {
-  background-color: #3f8fff50;
-  box-shadow: 0px 0px 10px #3f8fff;
+.portfolio-card-6:hover,
+.portfolio-card-7:hover,
+.portfolio-card-8:hover,
+.portfolio-card-9:hover,
+.portfolio-card-10:hover,
+.portfolio-card-11:hover,
+.portfolio-card-12:hover,
+.portfolio-card-13:hover,
+.portfolio-card-14:hover {
+    
 }
 
 .portfolio-img3 {
@@ -767,22 +823,26 @@ html {
 
 .portfolio-div {
   display: flex;
-  flex-direction: row;
-  height: 50px;
-  justify-content: space-evenly;
+  flex-direction:column;
+  justify-content: center;
   align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
 }
 
 .portfolio-lbl {
-  color: white;
-  width: 90%;
+  color: white;text-align: center;
+  width: 100%;
 }
 
 .portfolio-a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  width: 100%;
 }
 
 .portfolio-icon {
