@@ -136,7 +136,7 @@ html {
   padding-left: 5%;
   height: 50%;
   opacity: 0;
-  transform: translateX(-60px);
+  transform: translateX(-20px);
   transition: all 1s ease;
 }
 
@@ -247,7 +247,7 @@ html {
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   opacity: 0;
-  transform: translateY(60px);
+  transform: translateY(20px);
   transition: all 1s ease;
 }
 
@@ -354,7 +354,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   opacity: 0;
-  transform: translateY(60px);
+  transform: translateY(20px);
   transition: all 1s ease;
 }
 
@@ -502,7 +502,7 @@ html {
   text-align: center;
   color: gray;
   opacity: 0;
-  transform: translateY(60px);
+  transform: translateY(20px);
   transition: all 1s ease;
 }
 
@@ -852,7 +852,7 @@ html {
   grid-auto-rows: 200px;
   grid-auto-flow: dense; /* allows better filling */
   opacity: 0;
-  transform: translateY(60px);
+  transform: translateY(20px);
   transition: all 1s ease;
 }
 
