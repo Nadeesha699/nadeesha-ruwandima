@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("mobile-menu-panel").style.top = 0;
     document.getElementById("home-img").style.opacity = 0;
     document.getElementById("home-sub2").style.opacity = 0;
-    document.getElementById("about-lbl").style.opacity = 0;
+    document.getElementById("about-main").style.opacity = 0;
   });
 
   document.getElementById("mobile-menu-close").addEventListener("click", () => {
     document.getElementById("mobile-menu-panel").style.top = "-10000px";
     document.getElementById("home-img").style.opacity = 1;
     document.getElementById("home-sub2").style.opacity = 1;
-    document.getElementById("about-lbl").style.opacity = 1;
+    document.getElementById("about-main").style.opacity = 1;
   });
 
   document.getElementById("navigation-link").addEventListener("click", () => {
