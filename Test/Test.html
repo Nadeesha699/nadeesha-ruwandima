@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wall Layout</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      grid-auto-rows: 50px;
+      gap: 10px;
+      background-color: red;
+      padding: 10px;
+      grid-auto-flow: dense; /* allows better filling */
+    }
+
+    .grid-item {
+      background-color: slateblue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item" style="grid-column: span 2; grid-row: span 2; background-color: slateblue;"></div>
+    <div class="grid-item" style="grid-column: span 1; grid-row: span 1; background-color: rgb(205, 151, 90);"></div>
+    <div class="grid-item" style="grid-column: span 1; grid-row: span 3; background-color: rgb(205, 90, 117);"></div>
+    <div class="grid-item" style="grid-column: span 2; grid-row: span 1; background-color: teal;"></div>
+    <div class="grid-item" style="grid-column: span 1; grid-row: span 2; background-color: tomato;"></div>
+    <div class="grid-item" style="grid-column: span 3; grid-row: span 1; background-color: darkcyan;"></div>
+    <div class="grid-item" style="grid-column: span 2; grid-row: span 2; background-color: slateblue;"></div>
+    <div class="grid-item" style="grid-column: span 1; grid-row: span 1; background-color: rgb(205, 151, 90);"></div>
+    <div class="grid-item" style="grid-column: span 1; grid-row: span 3; background-color: rgb(205, 90, 117);"></div>
+    <div class="grid-item" style="grid-column: span 2; grid-row: span 1; background-color: teal;"></div>
+    <div class="grid-item" style="grid-column: span 1; grid-row: span 2; background-color: tomato;"></div>
+    <div class="grid-item" style="grid-column: span 3; grid-row: span 1; background-color: darkcyan;"></div>
+    <div class="grid-item" style="grid-column: span 2; grid-row: span 2; background-color: slateblue;"></div>
+    <div class="grid-item" style="grid-column: span 1; grid-row: span 1; background-color: rgb(205, 151, 90);"></div>
+    <div class="grid-item" style="grid-column: span 1; grid-row: span 3; background-color: rgb(205, 90, 117);"></div>
+    <div class="grid-item" style="grid-column: span 2; grid-row: span 1; background-color: teal;"></div>
+    <div class="grid-item" style="grid-column: span 1; grid-row: span 2; background-color: tomato;"></div>
+    <div class="grid-item" style="grid-column: span 3; grid-row: span 1; background-color: darkcyan;"></div>
+  </div>
+
+</body>
+</html>

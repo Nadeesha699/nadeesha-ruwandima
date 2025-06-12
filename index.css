@@ -411,7 +411,6 @@ html {
   transition: all 1s ease;
 }
 
-
 .back-screen {
   width: 100%;
   height: 400px;
@@ -531,7 +530,6 @@ html {
   transform: translateX(-20px);
   transition: all 1s ease;
 }
-
 
 .lng-sub1 {
   display: flex;
@@ -710,27 +708,61 @@ html {
   transition: all 1s ease;
 }
 
-.portfolio-card {
-  border-radius: 10px;
+.portfolio-card-1,
+.portfolio-card-2,
+.portfolio-card-3,
+.portfolio-card-4,
+.portfolio-card-5,
+.portfolio-card-6 {
+  /* border-radius: 10px; */
   display: flex;
   flex-direction: column;
-  padding: 2%;
-  width: 90%;
-  height: 350px;
-  border-style: solid;
-  border-color: #3f8fff;
   transition: all 0.5s ease-in-out;
 }
 
-.portfolio-card:hover {
+.portfolio-card-1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.portfolio-card-2 {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.portfolio-card-3 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.portfolio-card-4 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.portfolio-card-5 {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.portfolio-card-6 {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.portfolio-card-1:hover,
+.portfolio-card-2:hover,
+.portfolio-card-3:hover,
+.portfolio-card-4:hover,
+.portfolio-card-5:hover,
+.portfolio-card-6:hover {
   background-color: #3f8fff50;
   box-shadow: 0px 0px 10px #3f8fff;
 }
 
 .portfolio-img3 {
   width: 100%;
-  height: 90%;
-  border-radius: 10px;
+  height: 100%;
 }
 
 .portfolio-div {
@@ -766,9 +798,13 @@ html {
 }
 
 .portfolio-sub2 {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 30px;
+  gap: 30px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense; /* allows better filling */
   opacity: 0;
   transform: translateY(60px);
   transition: all 1s ease;
@@ -906,7 +942,9 @@ html {
 .about-two-main-h.show,
 .portfolio-h1.show,
 .footer-sub2.show,
-.footer-sub3.show,.about-lbl.show, .lng-lbl1.show {
+.footer-sub3.show,
+.about-lbl.show,
+.lng-lbl1.show {
   opacity: 1;
   transform: translateX(0);
 }
@@ -1001,7 +1039,7 @@ html {
     font-size: 15px;
   }
 
-  .about-two-p{
+  .about-two-p {
     width: 100%;
   }
 
@@ -1234,7 +1272,7 @@ html {
     font-size: 15px;
   }
 
-   .about-two-p{
+  .about-two-p {
     width: 100%;
   }
 
@@ -1360,7 +1398,7 @@ html {
     height: 250px;
   }
 
-   .about-two-p{
+  .about-two-p {
     width: 70%;
   }
 
