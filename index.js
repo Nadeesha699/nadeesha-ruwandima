@@ -60,15 +60,223 @@ document.addEventListener("DOMContentLoaded", () => {
     .addEventListener("mouseenter", () => {
       document.getElementById("portfolio-div-1").style.background =
         "rgba(0, 0, 0, 0.77)";
-      document.getElementById("portfolio-div-1").style.position = "absolute";
+      document.getElementById("portfolio-div-1").style.opacity = 1;
     });
 
-     document
+  document
     .getElementById("portfolio-card-1")
     .addEventListener("mouseleave", () => {
       document.getElementById("portfolio-div-1").style.background =
         "rgba(0, 0, 0, 0)";
-      document.getElementById("portfolio-div-1").style.position = "";
+      document.getElementById("portfolio-div-1").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-2")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-2").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-2").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-2")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-2").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-2").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-3")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-3").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-3").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-3")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-3").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-3").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-4")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-4").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-4").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-4")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-4").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-4").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-5")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-5").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-5").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-5")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-5").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-5").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-6")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-6").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-6").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-6")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-6").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-6").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-7")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-7").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-7").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-7")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-7").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-7").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-8")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-8").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-8").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-8")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-8").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-8").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-9")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-9").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-9").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-9")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-9").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-9").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-10")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-10").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-10").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-10")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-10").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-10").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-11")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-11").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-11").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-11")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-11").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-11").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-12")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-12").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-12").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-12")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-12").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-12").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-13")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-13").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-13").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-13")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-13").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-13").style.opacity = 0;
+    });
+
+  document
+    .getElementById("portfolio-card-14")
+    .addEventListener("mouseenter", () => {
+      document.getElementById("portfolio-div-14").style.background =
+        "rgba(0, 0, 0, 0.77)";
+      document.getElementById("portfolio-div-14").style.opacity = 1;
+    });
+
+  document
+    .getElementById("portfolio-card-14")
+    .addEventListener("mouseleave", () => {
+      document.getElementById("portfolio-div-14").style.background =
+        "rgba(0, 0, 0, 0)";
+      document.getElementById("portfolio-div-14").style.opacity = 0;
     });
 });
 

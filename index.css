@@ -726,7 +726,7 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .portfolio-card-1 {
@@ -799,23 +799,6 @@ html {
   grid-row: span 1;
 }
 
-.portfolio-card-1:hover,
-.portfolio-card-2:hover,
-.portfolio-card-3:hover,
-.portfolio-card-4:hover,
-.portfolio-card-5:hover,
-.portfolio-card-6:hover,
-.portfolio-card-7:hover,
-.portfolio-card-8:hover,
-.portfolio-card-9:hover,
-.portfolio-card-10:hover,
-.portfolio-card-11:hover,
-.portfolio-card-12:hover,
-.portfolio-card-13:hover,
-.portfolio-card-14:hover {
-    
-}
-
 .portfolio-img3 {
   width: 100%;
   height: 100%;
@@ -823,6 +806,8 @@ html {
 
 .portfolio-div {
   display: flex;
+  opacity: 0;
+  position: absolute;
   flex-direction:column;
   justify-content: center;
   align-items: center;
@@ -831,6 +816,7 @@ html {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease-in-out;
 }
 
 .portfolio-lbl {
@@ -1160,10 +1146,10 @@ html {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(1, auto); */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
 
   .portfolio-card {
@@ -1389,8 +1375,8 @@ html {
   }
 
   .portfolio-sub2 {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    /* display: grid;
+    grid-template-columns: repeat(2, auto); */
   }
 
   .portfolio-card {
@@ -1471,8 +1457,8 @@ html {
   }
 
   .portfolio-sub2 {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    /* display: grid;
+    grid-template-columns: repeat(2, auto); */
   }
 
   .portfolio-card {
@@ -1502,10 +1488,6 @@ html {
   .mobile-menu {
     display: none;
   }
-
-  /* .portfolio-sub2 {
-    grid-template-columns: repeat(2, auto);
-  } */
 
   .footer-link1 {
     font-size: 60px;
