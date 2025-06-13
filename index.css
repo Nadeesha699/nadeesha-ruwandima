@@ -3,6 +3,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root {
+  --large-font-size-for-web: 50px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,7 +29,7 @@ html {
   cursor: pointer;
 }
 
-.btn-up-arrow:hover{
+.btn-up-arrow:hover {
   background-color: #a4d2ff;
 }
 
@@ -185,7 +189,7 @@ html {
 }
 
 .home-lbl1 {
-  font-size: 50px;
+  font-size: var(--large-font-size-for-web);
   color: #5d5d5d;
   font-weight: bold;
 }
@@ -903,8 +907,8 @@ html {
 }
 
 .navigation-sub img {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
 }
 
 .navigation-sub label {
