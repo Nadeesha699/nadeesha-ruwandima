@@ -306,6 +306,17 @@ document.addEventListener("DOMContentLoaded", () => {
         "rgba(0, 0, 0, 0)";
       document.getElementById("portfolio-div-14").style.opacity = 0;
     });
+
+  document.getElementById("home-main").addEventListener("mouseout", () => {
+    document.getElementById("btn-up-arrow").style.opacity = 1;
+  });
+  document.getElementById("home-main").addEventListener("mouseover", () => {
+    document.getElementById("btn-up-arrow").style.opacity = 0;
+  });
+
+  document.getElementById("btn-up-arrow").addEventListener("click", () => {
+    document.querySelector(".main").scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
 
 const observer = new IntersectionObserver((entries) => {
