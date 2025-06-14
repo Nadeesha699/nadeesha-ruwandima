@@ -1,6 +1,44 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  cursor: none;
+}
+
+.cursor-dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(156, 191, 255, 0.188);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.05s ease;
+  animation: changeBg 2s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes changeBg {
+  0% {
+    background-color: rgba(156, 191, 255, 0.268);
+  }
+  50% {
+    background-color: rgba(53, 124, 255, 0.281);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.266);
+  }
+}
+
+.cursor-dot-1 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.05s ease;
 }
 
 html {
@@ -26,7 +64,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .btn-up-arrow:hover {
@@ -36,7 +73,6 @@ html {
 .mobile-menu {
   width: 30px;
   height: 30px;
-  cursor: pointer;
   transition: all 0.5s ease-in-out;
   padding: 2%;
   border-radius: 10px;
@@ -67,7 +103,6 @@ html {
 .mobile-menu-close {
   width: 30px;
   height: 30px;
-  cursor: pointer;
   transition: all 0.5s ease-in-out;
   padding: 2%;
   border-radius: 50%;
@@ -318,7 +353,6 @@ html {
 
 .btn-readmore {
   color: royalblue;
-  cursor: pointer;
   opacity: 0;
   transform: translateX(20px);
   transition: all 1s ease;
@@ -869,7 +903,6 @@ html {
 .portfolio-img2 {
   width: 30px;
   height: 30px;
-  cursor: pointer;
   transition: all 0.5s ease-in-out;
   padding: 10px;
   border-radius: 50%;

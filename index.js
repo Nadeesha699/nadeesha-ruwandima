@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const dot = document.querySelector(".cursor-dot");
+
+  document.addEventListener("mousemove", (e) => {
+    document.getElementById("cursor-dot").style.visibility = "visible";
+    dot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  });
+
+  document.addEventListener("mouseleave", () => {
+    document.getElementById("cursor-dot").style.visibility = "hidden";
+  });
+
   document.getElementById("mobile-menu").addEventListener("click", () => {
     document.getElementById("mobile-menu-panel").style.top = 0;
     document.getElementById("home-img").style.opacity = 0;
