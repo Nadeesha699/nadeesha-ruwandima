@@ -7,6 +7,9 @@ html {
   scroll-behavior: smooth;
 }
 
+.div-1 {
+  margin-top: 5%;
+}
 .btn-up-arrow {
   position: fixed;
   opacity: 0;
@@ -1532,8 +1535,8 @@ html {
     font-size: 60px;
   }
 
-  .home-lbl3{
-font-size: 30px;
+  .home-lbl3 {
+    font-size: 30px;
   }
 }
 
