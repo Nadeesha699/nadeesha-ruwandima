@@ -96,7 +96,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 10%;
+  padding-bottom: 12%;
   width: auto;
 }
 
@@ -108,6 +108,7 @@ html {
   opacity: 0;
   transform: translateX(20px);
   transition: all 1s ease;
+  /* animation: s2 10s ease-in-out infinite; */
 }
 
 @keyframes s2 {
@@ -155,10 +156,11 @@ html {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: center;
   align-items: flex-start;
   padding-left: 5%;
-  height: 50%;
+  height: 100%;
   opacity: 0;
   transform: translateX(-20px);
   transition: all 1s ease;
@@ -168,7 +170,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  margin-top: 5%;
 }
 
 .home-sub4 {
@@ -219,7 +221,7 @@ html {
   color: white;
 }
 
-.arrow-icon{
+.arrow-icon {
   color: rgb(0, 140, 255);
 }
 
@@ -264,7 +266,6 @@ html {
   color: rgb(255, 255, 255);
   font-size: 25px;
   width: 100%;
-  line-height: 50px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   opacity: 0;
   transform: translateY(60px);
@@ -520,7 +521,6 @@ html {
 
 .lng-main {
   overflow: hidden;
-  /* white-space: nowrap; */
 }
 
 .lng-lbl1 {
@@ -703,7 +703,7 @@ html {
 .portfolio-h1 {
   color: rgb(255, 255, 255) !important;
   font-size: 50px;
-  font-weight: bold !important;
+  font-weight: bolder !important;
   text-shadow: 0px 0px 10px black;
   opacity: 0;
   transform: translateX(-20px);
@@ -1021,6 +1021,12 @@ html {
     width: 100%;
     padding-top: 10%;
   }
+  .about-lbl,
+  .lng-lbl1,
+  .about-two-main-h,
+  .portfolio-h1 {
+    font-size: 25px !important;
+  }
 
   .home-sub1 {
     padding-top: 10%;
@@ -1068,24 +1074,25 @@ html {
     font-size: 15px;
   }
 
-  .about-p {
-    font-size: 20px;
-  }
-
-  .about-p1 {
-    font-size: 20px;
-  }
-
-  .about-p2 {
+  .about-p,
+  .about-p1,
+  .about-p2,
+  .about-p2-1,
+  .about-main-p,
+  .about-two-p,
+  .about-two-label {
+    text-align: center;
     font-size: 15px;
+  }
+
+  .btn-readmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .about-sub-1 {
     width: 100%;
-  }
-
-  .about-p2-1 {
-    font-size: 15px;
   }
 
   .about-two-p {
@@ -1117,14 +1124,6 @@ html {
     align-items: center;
   }
 
-  .about-two-main-h {
-    font-size: 25px;
-  }
-
-  .about-two-label {
-    font-size: 15px;
-  }
-
   .about-two-img {
     width: 30px;
     height: 30px;
@@ -1134,10 +1133,6 @@ html {
     justify-content: center;
     align-items: center;
     padding-left: 0;
-  }
-
-  .lng-lbl1 {
-    font-size: 25px;
   }
 
   .lng-progress-bar {
@@ -1231,6 +1226,13 @@ html {
     width: 100%;
     flex-direction: row;
   }
+
+  .btn-up-arrow {
+    right: 20%;
+    left: 80%;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* Small devices (tablets, 576px and up) */
@@ -1239,6 +1241,33 @@ html {
     order: 1;
     width: 250px;
     height: 250px;
+  }
+  .about-lbl,
+  .lng-lbl1,
+  .about-two-main-h,
+  .portfolio-h1 {
+    font-size: 30px !important;
+  }
+
+  .skill-icon {
+    font-size: 50px;
+  }
+
+  .about-main-p,
+  .about-two-p,
+  .about-two-label {
+    font-size: 20px;
+  }
+
+  .about-main-p {
+    text-align: center;
+  }
+
+  .about-p,
+  .about-p1,
+  .about-p2,
+  .about-p2-1 {
+    font-size: 15px;
   }
 
   .home-sub2 {
@@ -1339,14 +1368,6 @@ html {
     align-items: center;
   }
 
-  .about-two-main-h {
-    font-size: 25px;
-  }
-
-  .about-two-label {
-    font-size: 15px;
-  }
-
   .about-two-img {
     width: 30px;
     height: 30px;
@@ -1358,18 +1379,9 @@ html {
     padding-left: 0;
   }
 
-  .lng-lbl1 {
-    font-size: 25px;
-  }
-
   .lng-progress-bar {
     width: 150px;
   }
-
-  /* .portfolio-sub2 { */
-  /* display: grid;
-    grid-template-columns: repeat(2, auto); */
-  /* } */
 
   .portfolio-card {
     padding: 2%;
@@ -1428,6 +1440,31 @@ html {
   .home-sub1 {
     padding-top: 5%;
   }
+
+  .skill-icon {
+    font-size: 60px;
+  }
+
+  .about-lbl,
+  .lng-lbl1,
+  .about-two-main-h,
+  .portfolio-h1 {
+    font-size: 35px !important;
+  }
+
+  .about-main-p,
+  .about-two-p,
+  .about-two-label {
+    font-size: 20px;
+  }
+
+  .about-p,
+  .about-p1,
+  .about-p2,
+  .about-p2-1 {
+    font-size: 15px;
+  }
+
   .home-m1 {
     font-size: 50px;
   }
