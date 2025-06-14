@@ -3,10 +3,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-:root {
-  --large-font-size-for-web: 50px;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -19,7 +15,8 @@ html {
   left: 90%;
   right: 10%;
   bottom: 10%;
-  background-color: rgb(189, 189, 189);
+  background-color: rgba(255, 255, 255, 0.523);
+  box-shadow: 0px 0px 10px black;
   border-radius: 50px;
   width: 50px;
   height: 50px;
@@ -34,8 +31,8 @@ html {
 }
 
 .mobile-menu {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   padding: 2%;
@@ -65,8 +62,8 @@ html {
 }
 
 .mobile-menu-close {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   padding: 2%;
@@ -189,14 +186,14 @@ html {
 }
 
 .home-lbl1 {
-  font-size: var(--large-font-size-for-web);
+  font-size: 50px;
   color: #5d5d5d;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .home-lbl2 {
   color: #5d5d5d;
-  font-weight: bold;
+  font-weight: bolder;
   animation: r1 2s ease-in-out infinite;
 }
 
@@ -218,6 +215,14 @@ html {
   font-size: 35px;
 }
 
+.home-lbl4 {
+  color: white;
+}
+
+.arrow-icon{
+  color: rgb(0, 140, 255);
+}
+
 .home-m1 {
   color: black;
   font-size: 70px;
@@ -228,7 +233,7 @@ html {
     #c7d2fe 75%,
     #9a8dfd 75%
   );
-  font-weight: 600;
+  font-weight: bolder;
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -260,7 +265,6 @@ html {
   font-size: 25px;
   width: 100%;
   line-height: 50px;
-  font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   opacity: 0;
   transform: translateY(60px);
@@ -278,7 +282,6 @@ html {
 
 .about-p2 {
   color: rgb(255, 255, 255);
-  font-size: 15px;
   text-align: left;
   width: 100%;
   display: flex;
@@ -289,7 +292,6 @@ html {
 
 .about-p2-1 {
   color: rgb(255, 255, 255);
-  font-size: 17px;
   text-align: left;
   width: 100%;
   overflow: hidden;
@@ -312,7 +314,6 @@ html {
 
 .btn-readmore {
   color: royalblue;
-  font-weight: bold;
   cursor: pointer;
   opacity: 0;
   transform: translateX(20px);
@@ -336,7 +337,7 @@ html {
 
 .about-two-main-h {
   font-size: 50px;
-  font-weight: bold;
+  font-weight: bolder;
   opacity: 0;
   transform: translateX(-20px);
   transition: all 1s ease;
@@ -400,7 +401,7 @@ html {
 .about-two-label {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .about-two-p {
@@ -411,17 +412,11 @@ html {
 .about-lbl {
   font-size: 50px;
   color: #3f8fff;
-  font-weight: bold;
+  font-weight: bolder;
   text-shadow: 0px 0px 10px black;
   opacity: 0;
   transform: translateX(-40px);
   transition: all 1s ease;
-}
-
-.back-screen {
-  width: 100%;
-  height: 400px;
-  background-color: transparent;
 }
 
 .footer-main {
@@ -531,7 +526,7 @@ html {
 .lng-lbl1 {
   font-size: 50px;
   color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: bolder;
   text-shadow: 0px 0px 10px black;
   opacity: 0;
   transform: translateX(-20px);
@@ -868,17 +863,18 @@ html {
 }
 
 .portfolio-img2 {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  padding: 20px;
+  padding: 10px;
   border-radius: 50%;
   color: white;
 }
 
 .portfolio-img2:hover {
-  background-color: rgba(82, 114, 255, 0.993);
+  color: black;
+  background-color: #a4d2ff;
 }
 
 .portfolio-sub h1 {
@@ -907,8 +903,8 @@ html {
 }
 
 .navigation-sub img {
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
 }
 
 .navigation-sub label {
@@ -925,6 +921,7 @@ html {
 }
 
 .navigation-name {
+  font-weight: bolder;
   color: rgb(255, 255, 255);
 }
 
@@ -932,7 +929,7 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: bolder;
   transition: all 0.2s ease-in-out;
 }
 
@@ -958,7 +955,7 @@ html {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 5px;
   display: inline-block;
   margin-top: 20px;
@@ -1450,11 +1447,6 @@ html {
   .navigation-main {
     gap: 50%;
   }
-
-  /* .portfolio-sub2 { */
-  /* display: grid;
-    grid-template-columns: repeat(2, auto); */
-  /* } */
 
   .portfolio-card {
     padding: 2%;
