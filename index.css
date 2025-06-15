@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
-  
 }
 
 body,
@@ -14,7 +13,6 @@ select,
 label {
   cursor: none !important;
 }
-
 
 .cursor-dot {
   position: absolute;
@@ -904,7 +902,7 @@ html {
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
   opacity: 0;
-  transform: translateY(60px);
+  transform: translateX(20px);
   transition: all 1s ease;
 }
 
@@ -1038,14 +1036,14 @@ html {
 .footer-sub3.show,
 .about-lbl.show,
 .lng-lbl1.show,
-.about-main-p.show {
+.about-main-p.show,
+.portfolio-sub2.show {
   opacity: 1;
   transform: translateX(0);
 }
 
 .about-p.show,
 .about-two-sub1.show,
-.portfolio-sub2.show,
 .footer-link3.show {
   opacity: 1;
   transform: translateY(0);
@@ -1283,12 +1281,10 @@ html {
   .footer-link1 {
     font-size: 30px;
   }
-
 }
 
 /* Small devices (tablets, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  
   .home-img {
     order: 1;
     width: 300px;
