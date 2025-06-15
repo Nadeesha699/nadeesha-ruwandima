@@ -10,44 +10,62 @@ button,
 input,
 textarea,
 select,
-label {
+label,
+span {
   cursor: none !important;
 }
+
+/* *, *::before, *::after {
+  cursor: none !important;
+} */
+
 
 .cursor-dot {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: rgba(156, 191, 255, 0.188);
+  background-color: #0091ff53;
   border-radius: 50%;
   pointer-events: none;
   transition: transform 0.05s ease;
-  animation: changeBg 2s ease-in-out infinite;
+  /* animation: changeBg 2s ease-in-out infinite; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@keyframes changeBg {
+/* @keyframes changeBg {
   0% {
-    background-color: rgba(156, 191, 255, 0.268);
+    background-color: #5237ff53;
   }
   50% {
-    background-color: rgba(53, 124, 255, 0.281);
+    background-color: #3787ff53;
   }
   100% {
-    background-color: rgba(255, 255, 255, 0.266);
-  }
-}
+    background-color: #37a5ff53;
+}} */
 
 .cursor-dot-1 {
   position: absolute;
   width: 5px;
   height: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   border-radius: 50%;
   pointer-events: none;
   transition: transform 0.05s ease;
+}
+
+.cursor-dot-2 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #0091ff84;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.05s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 html {
@@ -878,7 +896,7 @@ html {
 }
 
 .portfolio-a {
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -887,6 +905,7 @@ html {
 .portfolio-icon {
   color: white;
   font-size: 25px;
+  pointer-events: none; 
 }
 
 .portfolio-sub {
