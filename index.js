@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener("touchmove", () => {
     document.getElementById("cursor-dot").style.visibility = "hidden";
-    // dot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
   });
 
   document.addEventListener("touchend", () => {
@@ -26,6 +25,32 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("touchstart", () => {
     document.getElementById("cursor-dot").style.visibility = "hidden";
   });
+
+  document.getElementById("home-main").addEventListener("mouseenter",()=>{
+    document.title = "nadeesha-ruwandima | Home";
+  })
+
+  document.getElementById("about-main").addEventListener("mouseenter",()=>{
+    document.title = "nadeesha-ruwandima | About";
+  })
+
+  document.getElementById("lng-main").addEventListener("mouseenter",()=>{
+    document.title = "nadeesha-ruwandima | Skills";
+  })
+
+  document.getElementById("about-two-main").addEventListener("mouseenter",()=>{
+    document.title = "nadeesha-ruwandima | What I do";
+  })
+
+  document.getElementById("portfolio-main").addEventListener("mouseenter",()=>{
+    document.title = "nadeesha-ruwandima | Portfolio";
+  })
+
+  document.getElementById("footer-main").addEventListener("mouseenter",()=>{
+    document.title = "nadeesha-ruwandima | Contact";
+  })
+
+ 
 
   document.getElementById("mobile-menu").addEventListener("click", () => {
     document.getElementById("mobile-menu-panel").style.top = 0;
