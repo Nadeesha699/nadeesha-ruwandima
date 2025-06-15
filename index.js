@@ -369,6 +369,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("btn-up-arrow").style.opacity = 0;
   });
 
+  document.getElementById("home-main").addEventListener("touchstart", () => {
+    document.getElementById("btn-up-arrow").style.opacity = 1;
+  });
+  // document.getElementById("home-main").addEventListener("touchcancel", () => {
+  //   document.getElementById("btn-up-arrow").style.opacity = 0;
+  // });
+
   document.getElementById("btn-up-arrow").addEventListener("click", () => {
     document.querySelector(".main").scrollTo({ top: 0, behavior: "smooth" });
   });
