@@ -19,7 +19,6 @@ span {
   cursor: none !important;
 } */
 
-
 .cursor-dot {
   position: absolute;
   width: 30px;
@@ -807,14 +806,14 @@ html {
 .portfolio-card-3 {
   /* grid-column: span 1;
   grid-row: span 1; */
-   grid-column: span 2;
+  grid-column: span 2;
   grid-row: span 2;
 }
 
 .portfolio-card-4 {
   /* grid-column: span 1;
   grid-row: span 1; */
-   grid-column: span 2;
+  grid-column: span 2;
   grid-row: span 2;
 }
 
@@ -831,7 +830,7 @@ html {
 .portfolio-card-7 {
   /* grid-column: span 1;
   grid-row: span 1; */
-   grid-column: span 2;
+  grid-column: span 2;
   grid-row: span 2;
 }
 
@@ -843,7 +842,7 @@ html {
 .portfolio-card-9 {
   /* grid-column: span 1;
   grid-row: span 1; */
-   grid-column: span 2;
+  grid-column: span 2;
   grid-row: span 2;
 }
 
@@ -855,14 +854,14 @@ html {
 .portfolio-card-11 {
   /* grid-column: span 1;
   grid-row: span 1; */
-   grid-column: span 2;
+  grid-column: span 2;
   grid-row: span 2;
 }
 
 .portfolio-card-12 {
   /* grid-column: span 1;
   grid-row: span 1; */
-   grid-column: span 2;
+  grid-column: span 2;
   grid-row: span 2;
 }
 
@@ -874,7 +873,7 @@ html {
 .portfolio-card-14 {
   /* grid-column: span 1;
   grid-row: span 1; */
-   grid-column: span 2;
+  grid-column: span 2;
   grid-row: span 2;
 }
 
@@ -910,7 +909,7 @@ html {
 }
 
 .portfolio-a {
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -919,7 +918,7 @@ html {
 .portfolio-icon {
   color: white;
   font-size: 25px;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .portfolio-sub {
@@ -1556,8 +1555,8 @@ html {
     font-size: 50px;
   }
   .home-img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
   }
 
   .about-two-p {

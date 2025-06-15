@@ -26,31 +26,33 @@ document.addEventListener("DOMContentLoaded", () => {
   //   document.getElementById("cursor-dot").style.visibility = "hidden";
   // });
 
-  document.getElementById("home-main").addEventListener("mouseenter",()=>{
+  document.getElementById("home-main").addEventListener("mouseenter", () => {
     document.title = "nadeesha-ruwandima | Home";
-  })
+  });
 
-  document.getElementById("about-main").addEventListener("mouseenter",()=>{
+  document.getElementById("about-main").addEventListener("mouseenter", () => {
     document.title = "nadeesha-ruwandima | About";
-  })
+  });
 
-  document.getElementById("lng-main").addEventListener("mouseenter",()=>{
+  document.getElementById("lng-main").addEventListener("mouseenter", () => {
     document.title = "nadeesha-ruwandima | Skills";
-  })
+  });
 
-  document.getElementById("about-two-main").addEventListener("mouseenter",()=>{
-    document.title = "nadeesha-ruwandima | What I do";
-  })
+  document
+    .getElementById("about-two-main")
+    .addEventListener("mouseenter", () => {
+      document.title = "nadeesha-ruwandima | What I do";
+    });
 
-  document.getElementById("portfolio-main").addEventListener("mouseenter",()=>{
-    document.title = "nadeesha-ruwandima | Portfolio";
-  })
+  document
+    .getElementById("portfolio-main")
+    .addEventListener("mouseenter", () => {
+      document.title = "nadeesha-ruwandima | Portfolio";
+    });
 
-  document.getElementById("footer-main").addEventListener("mouseenter",()=>{
+  document.getElementById("footer-main").addEventListener("mouseenter", () => {
     document.title = "nadeesha-ruwandima | Contact";
-  })
-
- 
+  });
 
   document.getElementById("mobile-menu").addEventListener("click", () => {
     document.getElementById("mobile-menu-panel").style.top = 0;
@@ -398,7 +400,7 @@ observer.observe(document.getElementById("footer-sub2"));
 observer.observe(document.getElementById("footer-sub3"));
 observer.observe(document.getElementById("footer-link3"));
 
-if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+if ("ontouchstart" in window || navigator.maxTouchPoints > 0) {
   document.addEventListener("DOMContentLoaded", () => {
     const cursorDot = document.getElementById("cursor-dot");
     if (cursorDot) {
@@ -406,4 +408,3 @@ if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
     }
   });
 }
-
