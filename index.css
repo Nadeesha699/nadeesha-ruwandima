@@ -805,13 +805,17 @@ html {
 }
 
 .portfolio-card-3 {
-  grid-column: span 1;
-  grid-row: span 1;
+  /* grid-column: span 1;
+  grid-row: span 1; */
+   grid-column: span 2;
+  grid-row: span 2;
 }
 
 .portfolio-card-4 {
-  grid-column: span 1;
-  grid-row: span 1;
+  /* grid-column: span 1;
+  grid-row: span 1; */
+   grid-column: span 2;
+  grid-row: span 2;
 }
 
 .portfolio-card-5 {
@@ -825,8 +829,10 @@ html {
 }
 
 .portfolio-card-7 {
-  grid-column: span 1;
-  grid-row: span 1;
+  /* grid-column: span 1;
+  grid-row: span 1; */
+   grid-column: span 2;
+  grid-row: span 2;
 }
 
 .portfolio-card-8 {
@@ -835,8 +841,10 @@ html {
 }
 
 .portfolio-card-9 {
-  grid-column: span 1;
-  grid-row: span 1;
+  /* grid-column: span 1;
+  grid-row: span 1; */
+   grid-column: span 2;
+  grid-row: span 2;
 }
 
 .portfolio-card-10 {
@@ -845,13 +853,17 @@ html {
 }
 
 .portfolio-card-11 {
-  grid-column: span 1;
-  grid-row: span 1;
+  /* grid-column: span 1;
+  grid-row: span 1; */
+   grid-column: span 2;
+  grid-row: span 2;
 }
 
 .portfolio-card-12 {
-  grid-column: span 1;
-  grid-row: span 1;
+  /* grid-column: span 1;
+  grid-row: span 1; */
+   grid-column: span 2;
+  grid-row: span 2;
 }
 
 .portfolio-card-13 {
@@ -860,8 +872,10 @@ html {
 }
 
 .portfolio-card-14 {
-  grid-column: span 1;
-  grid-row: span 1;
+  /* grid-column: span 1;
+  grid-row: span 1; */
+   grid-column: span 2;
+  grid-row: span 2;
 }
 
 .portfolio-img3 {
