@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("cursor-dot").style.visibility = "hidden";
   });
 
-  document.addEventListener("touchmove", (e) => {
-    // document.getElementById("cursor-dot").style.visibility = "hidden";
-    dot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  document.addEventListener("touchmove", () => {
+    document.getElementById("cursor-dot").style.visibility = "hidden";
+    // dot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
   });
 
   document.addEventListener("touchend", () => {
