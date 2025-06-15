@@ -1268,10 +1268,26 @@ html {
   .footer-link1 {
     font-size: 30px;
   }
+
+  .cursor-dot {
+    visibility: hidden;
+  }
+
+  body {
+    cursor: auto;
+  }
 }
 
 /* Small devices (tablets, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .cursor-dot {
+    visibility: hidden;
+  }
+
+  body {
+    cursor: auto;
+  }
+
   .home-img {
     order: 1;
     width: 300px;
