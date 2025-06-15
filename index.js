@@ -10,6 +10,19 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("cursor-dot").style.visibility = "hidden";
   });
 
+  document.addEventListener("touchmove", () => {
+    document.getElementById("cursor-dot").style.visibility = "hidden";
+    // dot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  });
+
+  document.addEventListener("touchend", () => {
+    document.getElementById("cursor-dot").style.visibility = "hidden";
+  });
+
+  document.addEventListener("touchcancel", () => {
+    document.getElementById("cursor-dot").style.visibility = "hidden";
+  });
+
   document.getElementById("mobile-menu").addEventListener("click", () => {
     document.getElementById("mobile-menu-panel").style.top = 0;
     document.getElementById("home-img").style.opacity = 0;
