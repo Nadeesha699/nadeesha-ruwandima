@@ -2,8 +2,19 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow: hidden;
-  cursor: none;
+  
 }
+
+body,
+a,
+button,
+input,
+textarea,
+select,
+label {
+  cursor: none !important;
+}
+
 
 .cursor-dot {
   position: absolute;
@@ -1269,25 +1280,11 @@ html {
     font-size: 30px;
   }
 
-  .cursor-dot {
-    visibility: hidden;
-  }
-
-  body {
-    cursor: auto;
-  }
 }
 
 /* Small devices (tablets, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .cursor-dot {
-    visibility: hidden;
-  }
-
-  body {
-    cursor: auto;
-  }
-
+  
   .home-img {
     order: 1;
     width: 300px;

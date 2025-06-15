@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("cursor-dot").style.visibility = "hidden";
   });
 
-  document.addEventListener("touchmove", () => {
-    document.getElementById("cursor-dot").style.visibility = "hidden";
-    // dot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  document.addEventListener("touchmove", (e) => {
+    // document.getElementById("cursor-dot").style.visibility = "hidden";
+    dot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
   });
 
   document.addEventListener("touchend", () => {
@@ -20,6 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.addEventListener("touchcancel", () => {
+    document.getElementById("cursor-dot").style.visibility = "hidden";
+  });
+
+    document.addEventListener("touchstart", () => {
     document.getElementById("cursor-dot").style.visibility = "hidden";
   });
 
