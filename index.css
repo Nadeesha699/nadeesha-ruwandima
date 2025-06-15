@@ -873,6 +873,10 @@ html {
   font-size: 13px;
   text-align: center;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
 }
 
 .portfolio-a {
