@@ -10,21 +10,21 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("cursor-dot").style.visibility = "hidden";
   });
 
-  document.addEventListener("touchmove", () => {
-    document.getElementById("cursor-dot").style.visibility = "hidden";
-  });
+  // document.addEventListener("touchmove", () => {
+  //   document.getElementById("cursor-dot").style.visibility = "hidden";
+  // });
 
-  document.addEventListener("touchend", () => {
-    document.getElementById("cursor-dot").style.visibility = "hidden";
-  });
+  // document.addEventListener("touchend", () => {
+  //   document.getElementById("cursor-dot").style.visibility = "hidden";
+  // });
 
-  document.addEventListener("touchcancel", () => {
-    document.getElementById("cursor-dot").style.visibility = "hidden";
-  });
+  // document.addEventListener("touchcancel", () => {
+  //   document.getElementById("cursor-dot").style.visibility = "hidden";
+  // });
 
-    document.addEventListener("touchstart", () => {
-    document.getElementById("cursor-dot").style.visibility = "hidden";
-  });
+  //   document.addEventListener("touchstart", () => {
+  //   document.getElementById("cursor-dot").style.visibility = "hidden";
+  // });
 
   document.getElementById("home-main").addEventListener("mouseenter",()=>{
     document.title = "nadeesha-ruwandima | Home";
@@ -397,3 +397,13 @@ observer.observe(document.getElementById("portfolio-sub2"));
 observer.observe(document.getElementById("footer-sub2"));
 observer.observe(document.getElementById("footer-sub3"));
 observer.observe(document.getElementById("footer-link3"));
+
+if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const cursorDot = document.getElementById("cursor-dot");
+    if (cursorDot) {
+      cursorDot.style.display = "none";
+    }
+  });
+}
+
