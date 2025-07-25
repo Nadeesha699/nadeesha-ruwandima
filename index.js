@@ -378,9 +378,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("lng-main").addEventListener("touchmove", () => {
     document.getElementById("btn-up-arrow").style.opacity = 1;
-    setTimeout(() => {
-      document.getElementById("btn-up-arrow").style.opacity = 0;
-    }, 3000);
+    // setTimeout(() => {
+    //   document.getElementById("btn-up-arrow").style.opacity = 0;
+    // }, 3000);
   });
 
   document
