@@ -141,11 +141,11 @@ html {
 }
 
 .main {
-  /* background-image: url(https://wallpaperaccess.com/full/869923.gif);
+  background-image: url(https://wallpaperaccess.com/full/869923.gif);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; */
-  background-color: #3c3c3c;
+  background-repeat: no-repeat;
+  /* background-color: #3c3c3c; */
   position: fixed;
   top: 0;
   left: 0;
