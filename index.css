@@ -141,10 +141,11 @@ html {
 }
 
 .main {
-  background-image: url(https://wallpaperaccess.com/full/869923.gif);
+  /* background-image: url(https://wallpaperaccess.com/full/869923.gif);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color: #3c3c3c;
   position: fixed;
   top: 0;
   left: 0;
@@ -154,7 +155,7 @@ html {
 }
 
 .home-main {
-  background-image: url(https://nadeesha699.github.io/nadeesha-ruwandima/images/test.png);
+  /* background-image: url(https://nadeesha699.github.io/nadeesha-ruwandima/images/test.png); */
   max-width: 100%;
   height: auto;
   display: block;
@@ -259,12 +260,12 @@ html {
 }
 
 .home-lbl2 {
-  color: #5d5d5d;
+  color: white;
   font-weight: bolder;
-  animation: r1 2s ease-in-out infinite;
+  /* animation: r1 2s ease-in-out infinite; */
 }
 
-@keyframes r1 {
+/* @keyframes r1 {
   0% {
     color: #5d5d5d;
   }
@@ -274,7 +275,7 @@ html {
   100% {
     color: #5d5d5d;
   }
-}
+} */
 
 .home-lbl3 {
   color: #5d5d5d;
