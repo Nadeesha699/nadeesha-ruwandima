@@ -369,11 +369,15 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("btn-up-arrow").style.opacity = 0;
   });
 
+   document.getElementById("home-main").addEventListener("touchmove", () => {
+    document.getElementById("btn-up-arrow").style.opacity = 0;
+  });
+
   document.getElementById("about-main").addEventListener("touchmove", () => {
     document.getElementById("btn-up-arrow").style.opacity = 1;
-    setTimeout(() => {
-      document.getElementById("btn-up-arrow").style.opacity = 0;
-    }, 3000);
+    // setTimeout(() => {
+    //   document.getElementById("btn-up-arrow").style.opacity = 0;
+    // }, 3000);
   });
 
   document.getElementById("lng-main").addEventListener("touchmove", () => {
@@ -387,25 +391,25 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("about-two-main")
     .addEventListener("touchmove", () => {
       document.getElementById("btn-up-arrow").style.opacity = 1;
-      setTimeout(() => {
-        document.getElementById("btn-up-arrow").style.opacity = 0;
-      }, 3000);
+      // setTimeout(() => {
+      //   document.getElementById("btn-up-arrow").style.opacity = 0;
+      // }, 3000);
     });
 
   document
     .getElementById("portfolio-main")
     .addEventListener("touchmove", () => {
       document.getElementById("btn-up-arrow").style.opacity = 1;
-      setTimeout(() => {
-        document.getElementById("btn-up-arrow").style.opacity = 0;
-      }, 3000);
+      // setTimeout(() => {
+      //   document.getElementById("btn-up-arrow").style.opacity = 0;
+      // }, 3000);
     });
 
   document.getElementById("footer-main").addEventListener("touchmove", () => {
     document.getElementById("btn-up-arrow").style.opacity = 1;
-    setTimeout(() => {
-      document.getElementById("btn-up-arrow").style.opacity = 0;
-    }, 3000);
+    // setTimeout(() => {
+    //   document.getElementById("btn-up-arrow").style.opacity = 0;
+    // }, 3000);
   });
 
   document.getElementById("btn-up-arrow").addEventListener("click", () => {
