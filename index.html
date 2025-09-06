@@ -7,6 +7,8 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nadeesha-ruwandima | Home</title>
     <link href="./index.css" rel="stylesheet" />
+    <!-- Add Notiflix -->
+    <script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-aio-3.2.6.min.js"></script>
     <link
       href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css"
       rel="stylesheet"
@@ -144,7 +146,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
               ></i>
             </div>
             <a
-              class="rounded-full bg-blue-600 text-white font-bold w-1/6 text-center p-1 transition duration-300 ease-in-out hover:bg-gray-900 dark:bg-yellow-400 dark:text-gray-900 dark:hover:bg-white"
+              class="rounded-lg bg-blue-600 text-white font-bold w-1/5 text-center p-1 transition duration-300 ease-in-out hover:bg-gray-900 dark:bg-yellow-400 dark:text-gray-900 dark:hover:bg-white"
               href="./download/nadeesha-ruwandima.pdf"
               download="nadeesha-ruwandima-cv.pdf"
               >Download CV</a
@@ -198,12 +200,6 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
               desktop design, I’m committed to delivering results that exceed
               expectations and elevate your digital presence.
             </p>
-            <!-- <button id="btn-readmore" class="text-yellow-500 font-bold cursor-pointer">
-              read more
-            </button> -->
-            <!-- <p class="font-bold text-lg text-white dark:text-gray-900" id="about-p2-1">
-             
-            </p> -->
           </div>
         </div>
       </div>
@@ -763,7 +759,132 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
         </div>
       </div>
       <!-- footer -->
-      <div class="p-10 flex flex-col gap-10 bg-black/20" id="footer-main">
+      <div
+        class="p-10 flex flex-col gap-10 bg-white dark:bg-black"
+        id="footer-main"
+      >
+        <div class="flex flex-row gap-2">
+          <img src="./images/icons/image.png" alt="icon" class="w-24 h-24" />
+          <div class="flex flex-col gap-2">
+            <label class="font-bold text-4xl text-gray-900 dark:text-white"
+              >A.T.N. Ruwandima</label
+            >
+            <label class="text-gray-900 dark:text-white"
+              >Turning ideas into clean, modern code.</label
+            >
+          </div>
+        </div>
+        <div class="flex flex-row justify-between">
+          <div class="flex flex-col gap-2 w-1/4">
+            <label class="uppercase text-gray-900 font-bold dark:text-white"
+              >Contact us</label
+            >
+            <label class="text-4xl text-gray-900 font-bold dark:text-white"
+              >Let's Discuss your vision with <span>me</span></label
+            >
+            <div
+              class="flex flex-row rounded-full p-5 justify-between items-center bg-gray-900 gap-5 dark:bg-white"
+            >
+              <label class="text-white dark:text-gray-900"
+                >Schedule a email now</label
+              >
+              <span
+                class="iconify w-6 h-6 text-white dark:text-gray-900 hover:text-blue-600 dark:hover:text-yellow-400"
+                data-icon="ph:arrow-right-bold"
+              ></span>
+            </div>
+            <label class="uppercase text-gray-900 font-bold dark:text-white"
+              >or call me at</label
+            >
+            <div
+              class="flex flex-row rounded-full p-5 justify-between items-center border-2 border-dashed border-gray-900 gap-5 dark:border-white"
+            >
+              <label class="text-gray-900 dark:text-white"
+                >+94 72 282 7848</label
+              >
+              <span
+                onclick="showToast()"
+                class="iconify w-6 h-6 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-yellow-400"
+                data-icon="ph:copy"
+              ></span>
+            </div>
+          </div>
+          <div class="w-1/2 rounded-2xl shadow-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d...!2d80.6134!3d5.9377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x...!2sGandara!5e0!3m2!1sen!2slk!4v...!5m2!1sen!2slk"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+        <hr class="border-1 border-gray-900" />
+        <div class="flex flex-row justify-between">
+          <label class="text-gray-900 dark:text-white"
+            >© 2025 Nadeesha Ruwandima. All rights reserved.</label
+          >
+          <nav class="flex flex-row gap-5">
+            <a
+              href="#"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+            >
+              Home
+            </a>
+            <a
+              href="#about-main"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+            >
+              About
+            </a>
+            <a
+              href="#about-two-main"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+            >
+              Services
+            </a>
+            <a
+              href="#portfolio-main"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+            >
+              Portfolio
+            </a>
+            <a
+              href="#footer-main"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+            >
+              Contact
+            </a>
+          </nav>
+          <div class="flex flex-row gap-5">
+            <i
+              class="fa-brands fa-github text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-purple-400 dark:text-white"
+            ></i>
+            <i
+              class="fa-brands fa-whatsapp text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-green-400 dark:text-white"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-400 dark:text-white"
+            ></i>
+          </div>
+        </div>
+        <script>
+          Notiflix.Notify.init({
+            borderRadius: "100px",
+            success: {
+              background: "#111827",
+              textColor: "white",
+              notiflixIconColor: "white",
+            },
+          });
+          function showToast() {
+            navigator.clipboard.writeText("+94722827848");
+            Notiflix.Notify.success("Copied Successfully!");
+          }
+        </script>
         <!-- <div class="footer-sub1">
           <div class="footer-sub2" id="footer-sub2">
             <label class="footer-lbl1">
@@ -823,9 +944,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
           Copyright © Nadeesha Ruwandima
         </label>-->
       </div>
-      <div class="btn-up-arrow" id="btn-up-arrow">
+      <!-- <div class="btn-up-arrow" id="btn-up-arrow">
         <span class="iconify" data-icon="ph:arrow-up-bold"></span>
-      </div>
+      </div> -->
     </div>
     <div class="cursor-dot" id="cursor-dot">
       <div class="cursor-dot-2">
