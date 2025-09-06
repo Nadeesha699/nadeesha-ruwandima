@@ -155,7 +155,7 @@ html {
 }
 
 .home-main {
-  /* background-image: url(https://nadeesha699.github.io/nadeesha-ruwandima/images/test.png); */
+  background-image: url(https://nadeesha699.github.io/nadeesha-ruwandima/images/test.png);
   max-width: 100%;
   height: auto;
   display: block;
@@ -635,7 +635,7 @@ html {
   font-size: 80px;
 }
 
-/* .lng-progress-bar,
+.lng-progress-bar,
 .lng-progress-bar1,
 .lng-progress-bar2,
 .lng-progress-bar3,
@@ -650,7 +650,7 @@ html {
   appearance: none;
   height: 5px;
   width: 100px;
-} */
+}
 
 .lng-progress-bar::-webkit-progress-value {
   background-color: #10b981; /* Change fill color */

@@ -1,18 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const root = document.documentElement;
-
-  localStorage.setItem("theme", "dark");
-
-  document.getElementById("toggle-btn").addEventListener("click", () => {
-    if (localStorage.getItem("theme") === "dark") {
-      root.classList.remove("dark");
-      localStorage.setItem("theme", "white");
-    } else {
-      root.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    }
-  });
-
+  
   const dot = document.querySelector(".cursor-dot");
 
   document.addEventListener("mousemove", (e) => {
@@ -138,20 +125,19 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("about-main").style.pointerEvents = "auto";
   });
 
-  // document.getElementById("btn-readmore").addEventListener("click", () => {
-  //   const element = document.getElementById("about-p2-1");
-    // const currunetProp = window
-    //   .getComputedStyle(element)
-    //   .getPropertyValue("max-height");
-    // if (currunetProp === "500px") {
-    //   document.getElementById("btn-readmore").innerText = "read more";
-    //   document.getElementById("about-p2-1").style.maxHeight = 0;
-    // } else {
-    //   document.getElementById("btn-readmore").innerText = "read less";
-    //   document.getElementById("about-p2-1").style.maxHeight = "500px";
-    // }
-
-  // });
+  document.getElementById("btn-readmore").addEventListener("click", () => {
+    const element = document.getElementById("about-p2-1");
+    const currunetProp = window
+      .getComputedStyle(element)
+      .getPropertyValue("max-height");
+    if (currunetProp === "500px") {
+      document.getElementById("btn-readmore").innerText = "read more";
+      document.getElementById("about-p2-1").style.maxHeight = 0;
+    } else {
+      document.getElementById("btn-readmore").innerText = "read less";
+      document.getElementById("about-p2-1").style.maxHeight = "500px";
+    }
+  });
 
   document
     .getElementById("portfolio-card-1")
