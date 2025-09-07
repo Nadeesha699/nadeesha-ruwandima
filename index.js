@@ -3,7 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   localStorage.setItem("theme", "dark");
 
-  document.getElementById("toggle-btn").addEventListener("click", () => {
+  document.getElementById("toggle-btn-1").addEventListener("click", () => {
+    if (localStorage.getItem("theme") === "dark") {
+      root.classList.remove("dark");
+      localStorage.setItem("theme", "white");
+    } else {
+      root.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    }
+  });
+
+  document.getElementById("toggle-btn-2").addEventListener("click", () => {
     if (localStorage.getItem("theme") === "dark") {
       root.classList.remove("dark");
       localStorage.setItem("theme", "white");
@@ -67,6 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("footer-main").addEventListener("mouseenter", () => {
     document.title = "nadeesha-ruwandima | Contact";
   });
+
+
 
   document.getElementById("mobile-menu").addEventListener("click", () => {
     document.getElementById("mobile-menu-panel").style.top = 0;

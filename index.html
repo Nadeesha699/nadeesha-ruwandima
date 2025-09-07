@@ -23,7 +23,8 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <script src="index.js" type="module"></script>
+    <script src="index.js"></script>
+    <script src="yy.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
   </head>
@@ -33,14 +34,15 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
     >
       <!--home -->
       <div class="p-10 flex flex-col gap-10" id="home-main">
-        <div class="w-full flex flex-row justify-between">
+        <div class="w-full flex flex-row justify-between gap-5">
           <a class="flex flex-row gap-2" href="#">
             <img src="./images/icons/image.png" alt="icon" class="w-6 h-6" />
-            <label class="font-bold text-black dark:text-white"
+            <label
+              class="font-bold text-black text-ellipsis inline-block whitespace-nowrap overflow-hidden w-full dark:text-white"
               >A.T.N. Ruwandima</label
             >
           </a>
-          <nav class="flex flex-row gap-10">
+          <nav class="flex-row gap-10 hidden lg:flex">
             <a
               href="#"
               class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
@@ -73,73 +75,91 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
             </a>
             <i
               class="fa-solid fa-circle-half-stroke text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-              id="toggle-btn"
+              id="toggle-btn-1"
             ></i>
           </nav>
-          <!-- <img
-            src="./images/icons/menu-bar.png"
-            alt="icon"
-            class="mobile-menu"
-            id="mobile-menu"
-          /> -->
-          <!-- <div class="fixed -top-1000 bottom-0 left-0 right-0 w-full h-dvh bg-gray-900 flex flex-col" id="mobile-menu-panel">
-            <img
-              src="./images/icons/crossed.png"
-              alt="icon"
-              class="mobile-menu-close"
-              id="mobile-menu-close"
-            />
-            <a href="#" class="navigation-link" id="navigation-link"> Home </a>
+          <div class="flex-row gap-5 flex lg:hidden">
+            <i
+              class="fa-solid fa-circle-half-stroke text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+              id="toggle-btn-2"
+            ></i>
+            <i
+              class="fa-solid fa-bars text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+              id="btn-mobile-menu"
+            ></i>
+          </div>
+          <div
+            class="fixed -top-[2000px] bottom-0 left-0 right-0 w-full h-dvh bg-white flex flex-col justify-between items-center p-10 duration-500 ease-in-out dark:bg-gray-900"
+            id="mobile-menu-panel"
+          >
+            <i
+              class="fa-solid fa-xmark text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+              id="btn-mobile-menu-close"
+            ></i>
+            <a
+              href="#"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+              id="navigation-link"
+            >
+              Home
+            </a>
             <a
               href="#about-main"
-              class="navigation-link"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
               id="navigation-link-1"
             >
               About
             </a>
             <a
               href="#about-two-main"
-              class="navigation-link"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
               id="navigation-link-2"
             >
               Services
             </a>
             <a
               href="#portfolio-main"
-              class="navigation-link"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
               id="navigation-link-3"
             >
               Portfolio
             </a>
             <a
               href="#footer-main"
-              class="navigation-link"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
               id="navigation-link-4"
             >
               Contact
             </a>
-          </div> -->
+          </div>
         </div>
-        <div class="flex flex-row w-full">
-          <div class="flex flex-col gap-5 justify-center w-1/2" id="home-sub2">
-            <label class="text-gray-900 text-lg font-bold dark:text-white"
+        <div
+          class="flex flex-col w-full gap-10 justify-center items-center lg:justify-between lg:flex-row"
+        >
+          <div
+            class="flex flex-col gap-5 justify-center items-center w-full lg:w-1/2 order-1 lg:order-0 lg:items-start"
+            id="home-sub2"
+          >
+            <label
+              class="text-gray-900 tex-md lg:text-lg font-bold text-center lg:text-left dark:text-white"
               >HELLO MY NAME IS,</label
             >
-            <label class="text-gray-900 font-bold text-6xl dark:text-white"
+            <label
+              class="text-gray-900 font-bold lg:text-6xl text-4xl text-center lg:text-left dark:text-white"
               >A.T.N. Ruwandima</label
             >
-            <label class="text-gray-900 font-bold text-4xl dark:text-white"
+            <label
+              class="text-gray-900 font-bold lg:text-4xl text-2xl text-center lg:text-left dark:text-white"
               >Software Developer</label
             >
             <div class="flex flex-row gap-5">
               <a
-                href="mailto:nadeesharuwandima@gmail.com?subject=Hello%20there&body=This%20is%20a%20predefined%20email%20body"
+                href="mailto:nadeesharuwandima@gmail.com?subject=Collaboration%20with%20Nadeesha%20Ruwandima&body=Hello%20Nadeesha%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20I%20am%20interested%20in%20discussing%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D"
               >
                 <i
                   class="fa-solid fa-envelope text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-red-800 dark:text-white"
                 ></i>
               </a>
-
               <a
                 href="https://github.com/Nadeesha699"
                 target="_blank"
@@ -178,7 +198,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
               </a>
             </div>
             <a
-              class="rounded-lg bg-blue-600 text-white font-bold w-1/5 text-center p-1 transition duration-300 ease-in-out hover:bg-gray-900 dark:bg-yellow-400 dark:text-gray-900 dark:hover:bg-white"
+              class="rounded-lg bg-blue-600 text-white font-bold w-1/2 xl:w-1/5 text-center p-1 transition duration-300 ease-in-out text-ellipsis inline-block whitespace-nowrap overflow-hidden hover:bg-gray-900 dark:bg-yellow-400 dark:text-gray-900 dark:hover:bg-white"
               href="./download/nadeesha-ruwandima.pdf"
               download="nadeesha-ruwandima-cv.pdf"
               >Download CV</a
@@ -188,51 +208,50 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
             src="./images/home_pic.png"
             alt="icon"
             id="home-img"
-            class="w-1/2 rounded-full bg-gray-900 dark:bg-white"
+            class="w-1/2 h-full rounded-full bg-gray-900 order-0 lg:order-1 dark:bg-white"
           />
         </div>
       </div>
       <!-- about-1 -->
       <div class="p-10 flex flex-col gap-10" id="about-main">
         <h1
-          class="font-bold text-4xl text-gray-900 dark:text-white"
+          class="font-bold text-4xl text-gray-900 text-center lg:text-left dark:text-white"
           id="about-lbl"
         >
           About me
         </h1>
-        <p class="font-bold text-lg text-gray-900 dark:text-white" id="about-p">
+        <p
+          class="font-bold text-gray-900 text-center lg:text-justify dark:text-white"
+          id="about-p"
+        >
           Hello, I’m Nadessha Ruwandima, a passionate web developer based in
           Australlia with over 6 months of experience in website and product
           design. With a solid foundation in both front-end and back-end
           development, I specialize in creating professional and visually
           appealing websites that align with the latest industry trends.
         </p>
-        <div class="flex flex-row w-full">
-          <div class="w-1/2">
-            <p
-              class="font-bold text-lg text-gray-900 dark:text-white"
-              id="about-p1"
-            >
-              I Design professional and beautiful web & mobile, desktop app
-            </p>
-          </div>
-          <div class="w-1/2 flex flex-col">
-            <p
-              class="font-bold text-lg text-gray-900 dark:text-white"
-              id="about-p2"
-            >
-              Over the years, I’ve had the privilege of working with a diverse
-              range of businesses, allowing me to fine-tune my understanding of
-              client needs across different niches. My expertise spans various
-              design domains—landing pages, email templates, app UI/UX, and
-              mobile platforms—enabling me to offer unique insights and
-              solutions for each project. My approach prioritizes collaboration;
-              I provide multiple options and work closely with you to bring your
-              vision to life without compromise. Whether it’s web, mobile, or
-              desktop design, I’m committed to delivering results that exceed
-              expectations and elevate your digital presence.
-            </p>
-          </div>
+        <div class="flex flex-col w-full gap-10 lg:flex-row">
+          <p
+            class="font-bold w-full lg:w-1/2 font-bold text-lg text-blue-600 text-center lg:text-justify dark:text-yellow-400"
+            id="about-p1"
+          >
+            I Design professional and beautiful web & mobile, desktop app
+          </p>
+          <p
+            class="font-bold w-full lg:w-1/2 text-gray-900 text-center lg:text-justify dark:text-white"
+            id="about-p2"
+          >
+            Over the years, I’ve had the privilege of working with a diverse
+            range of businesses, allowing me to fine-tune my understanding of
+            client needs across different niches. My expertise spans various
+            design domains—landing pages, email templates, app UI/UX, and mobile
+            platforms—enabling me to offer unique insights and solutions for
+            each project. My approach prioritizes collaboration; I provide
+            multiple options and work closely with you to bring your vision to
+            life without compromise. Whether it’s web, mobile, or desktop
+            design, I’m committed to delivering results that exceed expectations
+            and elevate your digital presence.
+          </p>
         </div>
       </div>
       <!-- Skills -->
@@ -243,81 +262,148 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
         >
           Skills
         </h1>
-        <div class="lng-sub1 flex flex-row w-full gap-10">
-          <div class="flex flex-col items-center gap-5">
-            <span class="iconify w-12 h-12" data-icon="logos:java"></span>
-            <progress
-              value="80"
-              max="100"
-              class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar"
-            ></progress>
-          </div>
-          <div class="flex flex-col items-center gap-5">
-            <span class="iconify w-12 h-12" data-icon="logos:react"></span>
-            <progress
-              value="75"
-              max="100"
-              class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar1"
-            ></progress>
-          </div>
-          <div class="flex flex-col items-center gap-5">
-            <span class="iconify w-12 h-12" data-icon="logos:javascript"></span>
-            <progress
-              value="80"
-              max="100"
-              class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar2"
-            ></progress>
-          </div>
-          <div class="flex flex-col items-center gap-5">
-            <span class="iconify w-12 h-12" data-icon="logos:vue"></span>
-            <progress
-              value="70"
-              max="100"
-              class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar3"
-            ></progress>
-          </div>
-          <div class="flex flex-col items-center gap-5">
-            <span
-              class="iconify w-12 h-12"
-              data-icon="logos:angular-icon"
-            ></span>
-            <progress
-              value="70"
-              max="100"
-              class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar4"
-            ></progress>
-          </div>
-          <div class="flex flex-col items-center gap-5">
-            <span class="iconify w-12 h-12" data-icon="logos:python"></span>
-            <progress
-              value="80"
-              max="100"
-              class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar6"
-            ></progress>
-          </div>
-          <div class="flex flex-col items-center gap-5">
-            <span class="iconify w-12 h-12" data-icon="logos:laravel"></span>
-            <progress
-              value="75"
-              max="100"
-              class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar7"
-            ></progress>
-          </div>
-          <div class="flex flex-col items-center gap-5">
-            <span class="iconify w-12 h-12" data-icon="logos:php"></span>
-            <progress
-              value="80"
-              max="100"
-              class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar8"
-            ></progress>
-          </div>
-          <div class="flex flex-col items-center gap-5">
-            <span class="iconify w-12 h-12" data-icon="logos:mysql"></span>
-            <progress
-              value="90"
-              max="100"
-              class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar9"
-            ></progress>
+        <div class="overflow-hidden w-full">
+          <div class="flex animate-scroll-left gap-5 whitespace-nowrap">
+            <div class="flex flex-row gap-5">
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span class="iconify w-12 h-12" data-icon="logos:java"></span>
+                <progress
+                  value="80"
+                  max="100"
+                  class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span class="iconify w-12 h-12" data-icon="logos:react"></span>
+                <progress
+                  value="75"
+                  max="100"
+                  class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar1"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span
+                  class="iconify w-12 h-12"
+                  data-icon="logos:javascript"
+                ></span>
+                <progress
+                  value="80"
+                  max="100"
+                  class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar2"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span class="iconify w-12 h-12" data-icon="logos:vue"></span>
+                <progress
+                  value="70"
+                  max="100"
+                  class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar3"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span
+                  class="iconify w-12 h-12"
+                  data-icon="logos:angular-icon"
+                ></span>
+                <progress
+                  value="70"
+                  max="100"
+                  class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar4"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span class="iconify w-12 h-12" data-icon="logos:python"></span>
+                <progress
+                  value="80"
+                  max="100"
+                  class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar6"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span
+                  class="iconify w-12 h-12"
+                  data-icon="logos:laravel"
+                ></span>
+                <progress
+                  value="75"
+                  max="100"
+                  class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar7"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span class="iconify w-12 h-12" data-icon="logos:php"></span>
+                <progress
+                  value="80"
+                  max="100"
+                  class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar8"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span class="iconify w-12 h-12" data-icon="logos:mysql"></span>
+                <progress
+                  value="90"
+                  max="100"
+                  class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar9"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span
+                  class="iconify w-12 h-12"
+                  data-icon="logos:typescript-icon"
+                ></span>
+                <progress
+                  value="70"
+                  max="100"
+                  class="rounded-full h-1 w-24 lng-progress-bar10"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span class="iconify w-12 h-12" data-icon="logos:nodejs"></span>
+                <progress
+                  value="70"
+                  max="100"
+                  class="rounded-full h-1 w-24 lng-progress-bar11"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span class="iconify w-12 h-12" data-icon="logos:html-5"></span>
+                <progress
+                  value="90"
+                  max="100"
+                  class="rounded-full h-1 w-24 lng-progress-bar12"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span class="iconify w-12 h-12" data-icon="logos:css-3"></span>
+                <progress
+                  value="85"
+                  max="100"
+                  class="rounded-full h-1 w-24 lng-progress-bar13"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span
+                  class="iconify w-12 h-12"
+                  data-icon="logos:tailwindcss-icon"
+                ></span>
+                <progress
+                  value="80"
+                  max="100"
+                  class="rounded-full h-1 w-24 lng-progress-bar14"
+                ></progress>
+              </div>
+              <div class="flex flex-col items-center gap-5 flex-shrink-0">
+                <span
+                  class="iconify w-12 h-12"
+                  data-icon="logos:git-icon"
+                ></span>
+                <progress
+                  value="75"
+                  max="100"
+                  class="rounded-full h-1 w-24 lng-progress-bar15"
+                ></progress>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -327,64 +413,78 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
         id="about-two-main"
       >
         <h1
-          class="font-bold text-4xl text-gray-900 dark:text-white"
+          class="font-bold text-4xl text-gray-900 text-center lg:text-left dark:text-white"
           id="about-two-main-h"
         >
           What I do
         </h1>
         <p
-          class="font-bold text-lg text-gray-900 dark:text-white w-1/2"
+          class="font-bold text-gray-900 w-full text-center lg:text-justify xl:w-1/2 dark:text-white"
           id="about-main-p"
         >
           From understanding your requirements, designing a blueprint and
           delivering the final product, I do everything that falls in between
           these lines.
         </p>
-        <div class="flex flex-row w-full gap-10" id="about-two-sub1">
-          <div class="flex flex-col gap-5">
+        <div
+          class="flex flex-col w-full gap-10 justify-center items-center lg:flex-row lg:items-start"
+          id="about-two-sub1"
+        >
+          <div
+            class="flex flex-col gap-5 justify-center items-center w-full border-2 p-10 rounded-lg border-gray-900 sm:w-1/2 lg:p-0 lg:w-full lg:items-start lg:border-0 dark:border-white"
+          >
             <span class="iconify w-12 h-12" data-icon="logos:figma"></span>
-            <!-- <div class="div-1"> -->
-            <label class="font-bold text-lg text-gray-900 dark:text-white"
+            <label
+              class="font-bold text-lg text-blue-600 text-center lg:text-left dark:text-yellow-400"
               >UI/UX Design</label
             >
-            <p class="font-bold text-lg text-gray-900 dark:text-white">
+            <p
+              class="font-bold text-gray-900 text-center lg:text-justify dark:text-white"
+            >
               An effective UI/UX is what captures attention and spreads a clear
               message. I make sure the design is innovative and neat with all of
               this.
             </p>
-            <!-- </div> -->
           </div>
-          <div class="flex flex-col gap-5">
+          <div
+            class="flex flex-col gap-5 justify-center items-center w-full border-2 p-10 rounded-lg border-gray-900 sm:w-1/2 lg:p-0 lg:w-full lg:items-start lg:border-0 dark:border-white"
+          >
             <span class="iconify w-12 h-12" data-icon="logos:html-5"></span>
-            <!-- <div class="div-1"> -->
-            <label class="font-bold text-lg text-gray-900 dark:text-white"
+            <label
+              class="font-bold text-lg text-blue-600 text-center lg:text-left dark:text-yellow-400"
               >Web Development</label
             >
-            <p class="font-bold text-lg text-gray-900 dark:text-white">
+            <p
+              class="font-bold text-gray-900 text-center lg:text-justify dark:text-white"
+            >
               If you are looking for a developer who’ll take over the research
               and development of your website, I am a well-established
               professional to help you with this
             </p>
-            <!-- </div> -->
           </div>
-          <div class="flex flex-col gap-5">
+          <div
+            class="flex flex-col gap-5 justify-center items-center w-full border-2 p-10 rounded-lg border-gray-900 sm:w-1/2 lg:p-0 lg:w-full lg:items-start lg:border-0 dark:border-white"
+          >
             <span class="iconify w-12 h-12" data-icon="logos:flutter"></span>
-            <!-- <div class="div-1"> -->
-            <label class="font-bold text-lg text-gray-900 dark:text-white"
+            <label
+              class="font-bold text-lg text-blue-600 text-center lg:text-left dark:text-yellow-400"
               >App Development</label
             >
-            <p class="font-bold text-lg text-gray-900 dark:text-white">
+            <p
+              class="font-bold text-gray-900 text-center lg:text-justify dark:text-white"
+            >
               If you are looking for a user-friendly app that will attract more
               mobile users, I can help you design and build a platform with the
               latest and trendiest look and feel.
             </p>
-            <!-- </div> -->
           </div>
         </div>
       </div>
       <!-- portfolio -->
       <div class="p-10 flex flex-col gap-10" id="portfolio-main">
-        <div class="flex flex-row justify-between w-full">
+        <div
+          class="flex flex-col gap-5 justify-center items-center w-full lg:flex-row lg:justify-between"
+        >
           <h1
             class="font-bold text-4xl text-gray-900 dark:text-white"
             id="portfolio-h1"
@@ -396,11 +496,10 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span
+            <i
+              class="fa-solid fa-arrow-right text-2xl lg:text-4xl text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-yellow-400"
               id="portfolio-link"
-              class="iconify w-12 h-12 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-yellow-400"
-              data-icon="ph:arrow-right-bold"
-            ></span>
+            ></i>
           </a>
         </div>
         <div
@@ -426,7 +525,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/react-native-ready-social-media-app"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -452,7 +551,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadees  ha699/vue-healing-heart-web-frontend"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -478,7 +577,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/react-chat-box-web-frontend"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -505,7 +604,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/vue-healing-heart-web-frontend"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -531,7 +630,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/react-chat-box-web-frontend"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -557,7 +656,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/react-native-ready-social-media-app"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -583,7 +682,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/android-think-you-mobile-game"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -609,7 +708,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/vue-healing-heart-web-frontend"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -635,7 +734,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/android-think-you-mobile-game"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -665,7 +764,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/react-native-vehicle-service-center-mobile-app"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -695,7 +794,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/android-think-you-mobile-game"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -725,7 +824,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/react-native-vehicle-service-center-mobile-app"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -755,7 +854,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/vue-healing-heart-web-frontend"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -785,7 +884,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 href="https://github.com/Nadeesha699/react-native-ready-social-media-app"
               >
                 <span
-                  class="iconify hover:text-purple-400 text-white w-6 h-6 dark:text-gray-900"
+                  class="iconify hover:text-purple-800 text-white w-6 h-6 dark:text-gray-900"
                   data-icon="mdi:github"
                 ></span>
               </a>
@@ -798,23 +897,29 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
         class="p-10 flex flex-col gap-10 bg-white dark:bg-gray-950"
         id="footer-main"
       >
-        <div class="flex flex-row gap-2">
+        <div
+          class="flex flex-col lg:flex-row gap-2 w-full justify-center items-center lg:justify-start"
+        >
           <img src="./images/icons/image.png" alt="icon" class="w-24 h-24" />
           <div class="flex flex-col gap-2">
-            <label class="font-bold text-4xl text-gray-900 dark:text-white"
+            <label
+              class="font-bold text-2xl lg:text-4xl text-gray-900 text-center lg:text-left dark:text-white"
               >A.T.N. Ruwandima</label
             >
-            <label class="text-gray-900 dark:text-white"
+            <label
+              class="text-gray-900 text-center lg:text-left dark:text-white"
               >Turning ideas into clean, modern code.</label
             >
           </div>
         </div>
-        <div class="flex flex-row justify-between">
-          <div class="flex flex-col gap-2 w-1/4">
-            <label class="uppercase text-gray-900 font-bold dark:text-white"
+        <div class="flex flex-col gap-10 lg:flex-row justify-between">
+          <div class="flex flex-col gap-2 w-full lg:w-1/4">
+            <label
+              class="uppercase text-gray-900 text-center lg:text-left font-bold dark:text-white"
               >Contact us</label
             >
-            <label class="text-4xl text-gray-900 font-bold dark:text-white"
+            <label
+              class="lg:text-4xl text-2xl text-gray-900 font-bold text-center lg:text-left dark:text-white"
               >Let's Discuss your vision with <span>me</span></label
             >
             <div
@@ -823,12 +928,17 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
               <label class="text-white dark:text-gray-900"
                 >Schedule a email now</label
               >
-              <span
-                class="iconify w-6 h-6 text-white dark:text-gray-900 hover:text-blue-600 dark:hover:text-yellow-400"
-                data-icon="ph:arrow-right-bold"
-              ></span>
+              <a
+                href="mailto:nadeesharuwandima@gmail.com?subject=Collaboration%20with%20Nadeesha%20Ruwandima&body=Hello%20Nadeesha%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20I%20am%20interested%20in%20discussing%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D"
+              >
+                <span
+                  class="iconify w-6 h-6 text-white dark:text-gray-900 hover:text-blue-600 dark:hover:text-yellow-400"
+                  data-icon="ph:arrow-right-bold"
+                ></span>
+              </a>
             </div>
-            <label class="uppercase text-gray-900 font-bold dark:text-white"
+            <label
+              class="uppercase text-gray-900 font-bold text-center lg:text-left dark:text-white"
               >or call me at</label
             >
             <div
@@ -844,8 +954,11 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
               ></span>
             </div>
           </div>
-          <div class="w-1/2 rounded-2xl overflow-hidden flex flex-col gap-5">
-            <label class="text-gray-900 font-bold dark:text-white text-4xl"
+          <div
+            class="w-full lg:w-1/2 rounded-2xl overflow-hidden flex flex-col gap-5"
+          >
+            <label
+              class="text-gray-900 font-bold lg:text-4xl text-2xl text-center lg:text-left dark:text-white"
               >Find Me Here 📍</label
             >
             <iframe
@@ -861,38 +974,40 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
           </div>
         </div>
         <hr class="border-1 border-gray-900" />
-        <div class="flex flex-row justify-between">
-          <label class="text-gray-900 dark:text-white"
+        <div
+          class="flex flex-col gap-5 justify-center items-center lg:justify-between lg:flex-row"
+        >
+          <label class="text-gray-900 dark:text-white text-center"
             >© 2025 Nadeesha Ruwandima. All rights reserved.</label
           >
-          <nav class="flex flex-row gap-5">
+          <nav class="flex flex-row gap-0 lg:gap-5">
             <a
               href="#"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+              class="font-bold text-gray-900 transition border-r-2 border-gray-900 p-1 lg:border-0 dark:border-white duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
             >
               Home
             </a>
             <a
               href="#about-main"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+              class="font-bold text-gray-900 transition border-r-2 border-gray-900 p-1 lg:border-0 dark:border-white duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
             >
               About
             </a>
             <a
               href="#about-two-main"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+              class="font-bold text-gray-900 transition border-r-2 border-gray-900 p-1 lg:border-0 dark:border-white duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
             >
               Services
             </a>
             <a
               href="#portfolio-main"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+              class="font-bold text-gray-900 transition border-r-2 border-gray-900 p-1 lg:border-0 dark:border-white duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
             >
               Portfolio
             </a>
             <a
               href="#footer-main"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+              class="font-bold text-gray-900 transition p-1 duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
             >
               Contact
             </a>
@@ -950,64 +1065,6 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
             Notiflix.Notify.success("Copied Successfully!");
           }
         </script>
-        <!-- <div class="footer-sub1">
-          <div class="footer-sub2" id="footer-sub2">
-            <label class="footer-lbl1">
-              Based in Sri Lanka, working worldwide
-            </label>
-            <a href="https://github.com/Nadeesha699" class="footer-link1">
-              Get in touch
-            </a>
-          </div>
-          <div class="footer-sub3" id="footer-sub3">
-            <div class="footer-sub4">
-              <label class="footer-lbl2">Social</label>
-              <div style="display: flex; flex-direction: column">
-                <a
-                  href="https://www.facebook.com/profile.php?id=100039332113797&mibextid=ZbWKwL"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="footer-link2"
-                >
-                  Facebook
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/nadeesha-ruwandima-b5a356259"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="footer-link2"
-                >
-                  LinkedIn
-                </a>
-                <a
-                  href="https://wa.me/+94711764232"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="footer-link2"
-                >
-                  whatsapp
-                </a>
-              </div>
-            </div>
-            <div class="footer-sub4">
-              <label class="footer-lbl2">Service</label>
-              <div style="display: flex; flex-direction: column">
-                <a href="#about-two-main" class="footer-link2">
-                  UI/UX Design
-                </a>
-                <a href="#about-two-main" class="footer-link2">
-                  Web Development
-                </a>
-                <a href="#about-two-main" class="footer-link2">
-                  Mobile Development
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <label class="footer-link3" id="footer-link3">
-          Copyright © Nadeesha Ruwandima
-        </label>-->
       </div>
       <!-- <div class="btn-up-arrow" id="btn-up-arrow">
         <span class="iconify" data-icon="ph:arrow-up-bold"></span>

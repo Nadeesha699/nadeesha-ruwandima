@@ -4,7 +4,7 @@ body {
   overflow: hidden;
 }
 
-body,
+/* body,
 a,
 button,
 input,
@@ -13,13 +13,13 @@ select,
 label,
 span {
   cursor: none !important;
-}
+} */
 
 /* *, *::before, *::after {
   cursor: none !important;
 } */
 
-.cursor-dot {
+/* .cursor-dot {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -27,24 +27,14 @@ span {
   border-radius: 50%;
   pointer-events: none;
   transition: transform 0.05s ease;
-  /* animation: changeBg 2s ease-in-out infinite; */
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; 
+}*/
 
-/* @keyframes changeBg {
-  0% {
-    background-color: #5237ff53;
-  }
-  50% {
-    background-color: #3787ff53;
-  }
-  100% {
-    background-color: #37a5ff53;
-}} */
 
-.cursor-dot-1 {
+
+/* .cursor-dot-1 {
   position: absolute;
   width: 5px;
   height: 5px;
@@ -65,7 +55,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -604,7 +594,7 @@ html {
   width: 100%;
   gap: 5%;
   padding: 10px;
-  animation: scroll-left 10s linear infinite;
+  animation: scroll-left 5s linear infinite;
 }
 
 @keyframes scroll-left {
@@ -612,7 +602,7 @@ html {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-20%);
   }
 }
 
@@ -673,6 +663,7 @@ html {
   background-color: #4fd3ff;
   border-radius: 5px;
 }
+
 .lng-progress-bar2::-webkit-progress-value {
   background-color: #d9ff00; /* Change fill color */
   border-radius: 5px;
@@ -683,6 +674,7 @@ html {
   background-color: #d9ff00;
   border-radius: 5px;
 }
+
 .lng-progress-bar3::-webkit-progress-value {
   background-color: #40d05a; /* Change fill color */
   border-radius: 5px;
@@ -693,6 +685,7 @@ html {
   background-color: #40d05a;
   border-radius: 5px;
 }
+
 .lng-progress-bar4::-webkit-progress-value {
   background-color: #ff00cc; /* Change fill color */
   border-radius: 5px;
@@ -703,6 +696,7 @@ html {
   background-color: #ff00cc;
   border-radius: 5px;
 }
+
 .lng-progress-bar5::-webkit-progress-value {
   background-color: #ffc800; /* Change fill color */
   border-radius: 5px;
@@ -713,6 +707,7 @@ html {
   background-color: #ffc800;
   border-radius: 5px;
 }
+
 .lng-progress-bar6::-webkit-progress-value {
   background-color: #3e7ebe; /* Change fill color */
   border-radius: 5px;
@@ -723,6 +718,7 @@ html {
   background-color: #3e7ebe;
   border-radius: 5px;
 }
+
 .lng-progress-bar7::-webkit-progress-value {
   background-color: #ff0033; /* Change fill color */
   border-radius: 5px;
@@ -733,6 +729,7 @@ html {
   background-color: #ff0033;
   border-radius: 5px;
 }
+
 .lng-progress-bar8::-webkit-progress-value {
   background-color: #6fbeff; /* Change fill color */
   border-radius: 5px;
@@ -743,6 +740,7 @@ html {
   background-color: #6fbeff;
   border-radius: 5px;
 }
+
 .lng-progress-bar9::-webkit-progress-value {
   background-color: #285482; /* Change fill color */
   border-radius: 5px;
@@ -753,6 +751,73 @@ html {
   background-color: #285482;
   border-radius: 5px;
 }
+
+.lng-progress-bar10::-webkit-progress-value {
+  background-color: #3178C6; /* Change fill color */
+  border-radius: 5px;
+}
+
+/* Firefox (Gecko) */
+.lng-progress-bar10::-moz-progress-bar {
+  background-color: #3178C6;
+  border-radius: 5px;
+}
+
+.lng-progress-bar11::-webkit-progress-value {
+  background-color: #83CD29; /* Change fill color */
+  border-radius: 5px;
+}
+
+/* Firefox (Gecko) */
+.lng-progress-bar11::-moz-progress-bar {
+  background-color: #83CD29;
+  border-radius: 5px;
+}
+
+.lng-progress-bar12::-webkit-progress-value {
+  background-color: #E34F26; /* Change fill color */
+  border-radius: 5px;
+}
+
+/* Firefox (Gecko) */
+.lng-progress-bar12::-moz-progress-bar {
+  background-color: #E34F26;
+  border-radius: 5px;
+}
+
+.lng-progress-bar13::-webkit-progress-value {
+  background-color: #1572B6; /* Change fill color */
+  border-radius: 5px;
+}
+
+/* Firefox (Gecko) */
+.lng-progress-bar13::-moz-progress-bar {
+  background-color: #1572B6;
+  border-radius: 5px;
+}
+
+.lng-progress-bar14::-webkit-progress-value {
+  background-color: #38B2AC; /* Change fill color */
+  border-radius: 5px;
+}
+
+/* Firefox (Gecko) */
+.lng-progress-bar14::-moz-progress-bar {
+  background-color: #38B2AC;
+  border-radius: 5px;
+}
+
+.lng-progress-bar15::-webkit-progress-value {
+  background-color: #F05032; /* Change fill color */
+  border-radius: 5px;
+}
+
+/* Firefox (Gecko) */
+.lng-progress-bar15::-moz-progress-bar {
+  background-color: #F05032;
+  border-radius: 5px;
+}
+
 
 .portfolio-main {
   width: 80%;
