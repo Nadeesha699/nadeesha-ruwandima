@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //   document.getElementById("btn-up-arrow").style.opacity = 1;
   // });
 
-  // document.getElementById("btn-up-arrow").addEventListener("click", () => {
-  //   document.querySelector(".main").scrollTo({ top: 0, behavior: "smooth" });
-  // });
+  document.getElementById("btn-up-arrow").addEventListener("click", () => {
+    document.querySelector(".main").scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
