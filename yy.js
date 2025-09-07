@@ -77,35 +77,35 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("btn-up-arrow").style.opacity = 0;
   });
 
-  document.getElementById("home-main").addEventListener("touchmove", () => {
+  document.getElementById("home-main").addEventListener("touchstart", () => {
     document.getElementById("btn-up-arrow").style.opacity = 0;
   });
 
-  document.getElementById("about-main").addEventListener("touchmove", () => {
+  document.getElementById("home-main").addEventListener("touchend", () => {
     document.getElementById("btn-up-arrow").style.opacity = 1;
   });
 
-  document.getElementById("lng-main").addEventListener("touchmove", () => {
-    document.getElementById("btn-up-arrow").style.opacity = 1;
-  });
+  // document.getElementById("lng-main").addEventListener("touchmove", () => {
+  //   document.getElementById("btn-up-arrow").style.opacity = 1;
+  // });
 
-  document
-    .getElementById("about-two-main")
-    .addEventListener("touchmove", () => {
-      document.getElementById("btn-up-arrow").style.opacity = 1;
-    });
+  // document
+  //   .getElementById("about-two-main")
+  //   .addEventListener("touchmove", () => {
+  //     document.getElementById("btn-up-arrow").style.opacity = 1;
+  //   });
 
-  document
-    .getElementById("portfolio-main")
-    .addEventListener("touchmove", () => {
-      document.getElementById("btn-up-arrow").style.opacity = 1;
-    });
+  // document
+  //   .getElementById("portfolio-main")
+  //   .addEventListener("touchmove", () => {
+  //     document.getElementById("btn-up-arrow").style.opacity = 1;
+  //   });
 
-  document.getElementById("footer-main").addEventListener("touchmove", () => {
-    document.getElementById("btn-up-arrow").style.opacity = 1;
-  });
+  // document.getElementById("footer-main").addEventListener("touchmove", () => {
+  //   document.getElementById("btn-up-arrow").style.opacity = 1;
+  // });
 
-  document.getElementById("btn-up-arrow").addEventListener("click", () => {
-    document.querySelector(".main").scrollTo({ top: 0, behavior: "smooth" });
-  });
+  // document.getElementById("btn-up-arrow").addEventListener("click", () => {
+  //   document.querySelector(".main").scrollTo({ top: 0, behavior: "smooth" });
+  // });
 });
