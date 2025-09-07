@@ -5,7 +5,7 @@ tailwind.config = {
       keyframes: {
         "scroll-left": {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-50%)" }, // half because content is duplicated
+          "100%": { transform: "translateX(-100%)" }, // half because content is duplicated
         },
       },
       animation: {

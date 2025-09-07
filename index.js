@@ -4,21 +4,22 @@ document.addEventListener("DOMContentLoaded", () => {
   localStorage.setItem("theme", "dark");
 
   document.getElementById("toggle-btn-1").addEventListener("click", () => {
-    if (localStorage.getItem("theme") === "dark") {
-      root.classList.remove("dark");
-      localStorage.setItem("theme", "white");
-    } else {
+    
+    if (localStorage.getItem("theme") == "dark") {
       root.classList.add("dark");
+      localStorage.setItem("theme", "light");
+    } else {
+      root.classList.remove("dark");
       localStorage.setItem("theme", "dark");
     }
   });
 
   document.getElementById("toggle-btn-2").addEventListener("click", () => {
-    if (localStorage.getItem("theme") === "dark") {
-      root.classList.remove("dark");
-      localStorage.setItem("theme", "white");
-    } else {
+    if (localStorage.getItem("theme") == "dark") {
       root.classList.add("dark");
+      localStorage.setItem("theme", "light");
+    } else {
+      root.classList.remove("dark");
       localStorage.setItem("theme", "dark");
     }
   });
