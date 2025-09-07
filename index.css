@@ -130,8 +130,8 @@ html {
   background-color: rgba(0, 0, 0, 0.511);
 }
 
-/* .main {
-  background-image: url(https://wallpaperaccess.com/full/869923.gif);
+.main {
+  /* background-image: url(https://wallpaperaccess.com/full/869923.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -139,9 +139,9 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0; */
   overflow: auto;
-} */
+}
 
 .home-main {
   /* background-image: url(https://nadeesha699.github.io/nadeesha-ruwandima/images/test.png); */
