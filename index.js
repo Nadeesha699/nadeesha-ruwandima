@@ -155,6 +155,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "footer-div-2",
     "footer-div-3",
     "footer-div-4",
+    "downlaod-img",
+    "downlaod-div"
   ].forEach((id) => {
     observer.observe(document.getElementById(id));
   });

@@ -270,7 +270,9 @@ html {
 #portfolio-div.show,
 #footer-div-1.show,
 #footer-div-2.show,
-#footer-div-3.show {
+#footer-div-3.show,
+#downlaod-img.show,
+#downlaod-div.show {
   opacity: 1;
   transform: translateX(0);
 }
