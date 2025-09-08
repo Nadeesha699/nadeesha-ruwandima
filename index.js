@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   const root = document.documentElement;
-
   localStorage.setItem("theme", "dark");
 
   document.getElementById("toggle-btn-1").addEventListener("click", () => {
