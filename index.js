@@ -101,31 +101,31 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("home-main").addEventListener("mouseenter", () => {
-    document.title = "nadeesha-ruwandima | Home";
+    document.title = "Nadeesha Ruwandima | Home";
   });
 
   document.getElementById("about-main").addEventListener("mouseenter", () => {
-    document.title = "nadeesha-ruwandima | About";
+    document.title = "Nadeesha Ruwandima | About";
   });
 
   document.getElementById("lng-main").addEventListener("mouseenter", () => {
-    document.title = "nadeesha-ruwandima | Skills";
+    document.title = "Nadeesha Ruwandima | Skills";
   });
 
   document
     .getElementById("about-two-main")
     .addEventListener("mouseenter", () => {
-      document.title = "nadeesha-ruwandima | What I do";
+      document.title = "Nadeesha Ruwandima | What I do";
     });
 
   document
     .getElementById("portfolio-main")
     .addEventListener("mouseenter", () => {
-      document.title = "nadeesha-ruwandima | Portfolio";
+      document.title = "Nadeesha Ruwandima | Portfolio";
     });
 
   document.getElementById("footer-main").addEventListener("mouseenter", () => {
-    document.title = "nadeesha-ruwandima | Contact";
+    document.title = "Nadeesha Ruwandima | Contact";
   });
 
   const observer = new IntersectionObserver((entries) => {
