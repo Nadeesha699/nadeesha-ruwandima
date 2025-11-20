@@ -129,237 +129,41 @@ document.addEventListener("DOMContentLoaded", () => {
     document.title = "Nadeesha Ruwandima | Contact";
   });
 
-  document.getElementById("btn-all").addEventListener("click", () => {
-    document.getElementById("btn-mobile").classList.add("transparent");
-    document.getElementById("btn-mobile").classList.remove("bg-blue-600");
-    document
-      .getElementById("btn-mobile")
-      .classList.remove("dark:bg-yellow-400");
-    document.getElementById("btn-mobile").classList.add("text-blue-600");
-    document.getElementById("btn-mobile").classList.remove("text-white");
-    document.getElementById("btn-mobile").classList.remove("dark:text-black");
+ const buttons = document.querySelectorAll("button[id^='btn-']");
+const cards = document.querySelectorAll(".portfolio-card");
 
-    document.getElementById("btn-web").classList.remove("bg-blue-600");
-    document.getElementById("btn-web").classList.remove("dark:bg-yellow-400");
-    document.getElementById("btn-web").classList.add("transparent");
-    document.getElementById("btn-web").classList.remove("text-white");
-    document.getElementById("btn-web").classList.remove("dark:text-black");
-    document.getElementById("btn-web").classList.add("text-blue-600");
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const category = button.id.replace("btn-", ""); // e.g., "all", "web", "mobile", "game"
 
-    document.getElementById("btn-game").classList.remove("bg-blue-600");
-    document.getElementById("btn-game").classList.remove("dark:bg-yellow-400");
-    document.getElementById("btn-game").classList.add("transparent");
-    document.getElementById("btn-game").classList.remove("text-white");
-    document.getElementById("btn-game").classList.remove("dark:text-black");
-    document.getElementById("btn-game").classList.add("text-blue-600");
+    // Update button styles
+    buttons.forEach(btn => {
+      if (btn === button) {
+        btn.classList.add("bg-blue-600", "dark:bg-yellow-400", "text-white", "dark:text-black");
+        btn.classList.remove("transparent", "text-blue-600");
+        if (btn.id === "btn-all") {
+          btn.classList.remove("border", "border-2", "border-blue-600", "dark:border-yellow-400");
+        }
+      } else {
+        btn.classList.remove("bg-blue-600", "dark:bg-yellow-400", "text-white", "dark:text-black");
+        btn.classList.add("transparent", "text-blue-600");
+        if (btn.id === "btn-all") {
+          btn.classList.add("border", "border-2", "border-blue-600", "dark:border-yellow-400","dark:text-yellow-400");
+        }
+      }
+    });
 
-    document.getElementById("btn-all").classList.add("bg-blue-600");
-    document.getElementById("btn-all").classList.add("dark:bg-yellow-400");
-    document.getElementById("btn-all").classList.remove("transparent");
-    document.getElementById("btn-all").classList.add("text-white");
-    document.getElementById("btn-all").classList.add("dark:text-black");
-    document.getElementById("btn-all").classList.remove("text-blue-600");
-    document.getElementById("btn-all").classList.remove("dark:text-yellow-400");
-    document.getElementById("btn-all").classList.remove("border");
-    document.getElementById("btn-all").classList.remove("border-2");
-    document.getElementById("btn-all").classList.remove("border-blue-600");
-    document
-      .getElementById("btn-all")
-      .classList.remove("dark:border-yellow-400");
-
-    document.getElementById("portfolio-card-1").style.display = "block";
-    document.getElementById("portfolio-card-2").style.display = "block";
-    document.getElementById("portfolio-card-3").style.display = "block";
-    document.getElementById("portfolio-card-4").style.display = "block";
-    document.getElementById("portfolio-card-5").style.display = "block";
-    document.getElementById("portfolio-card-6").style.display = "block";
-    document.getElementById("portfolio-card-7").style.display = "block";
-    document.getElementById("portfolio-card-8").style.display = "block";
-    document.getElementById("portfolio-card-9").style.display = "block";
-    document.getElementById("portfolio-card-10").style.display = "block";
-    document.getElementById("portfolio-card-11").style.display = "block";
-    document.getElementById("portfolio-card-12").style.display = "block";
-    document.getElementById("portfolio-card-13").style.display = "block";
-    document.getElementById("portfolio-card-14").style.display = "block";
-    document.getElementById("portfolio-card-15").style.display = "block";
-    document.getElementById("portfolio-card-16").style.display = "block";
-    document.getElementById("portfolio-card-17").style.display = "block";
-    document.getElementById("portfolio-card-18").style.display = "block";
-    document.getElementById("portfolio-card-19").style.display = "block";
-    document.getElementById("portfolio-card-20").style.display = "block";
+    // Show/hide cards based on category
+    cards.forEach(card => {
+      if (category === "all" || card.dataset.category === category) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
   });
+});
 
-  document.getElementById("btn-game").addEventListener("click", () => {
-    document.getElementById("btn-mobile").classList.add("transparent");
-    document.getElementById("btn-mobile").classList.remove("bg-blue-600");
-    document
-      .getElementById("btn-mobile")
-      .classList.remove("dark:bg-yellow-400");
-    document.getElementById("btn-mobile").classList.add("text-blue-600");
-    document.getElementById("btn-mobile").classList.remove("text-white");
-    document.getElementById("btn-mobile").classList.remove("dark:text-black");
-
-    document.getElementById("btn-web").classList.remove("bg-blue-600");
-    document.getElementById("btn-web").classList.remove("dark:bg-yellow-400");
-    document.getElementById("btn-web").classList.add("transparent");
-    document.getElementById("btn-web").classList.remove("text-white");
-    document.getElementById("btn-web").classList.remove("dark:text-black");
-    document.getElementById("btn-web").classList.add("text-blue-600");
-
-    document.getElementById("btn-game").classList.add("bg-blue-600");
-    document.getElementById("btn-game").classList.add("dark:bg-yellow-400");
-    document.getElementById("btn-game").classList.remove("transparent");
-    document.getElementById("btn-game").classList.add("text-white");
-    document.getElementById("btn-game").classList.add("dark:text-black");
-    document.getElementById("btn-game").classList.remove("text-blue-600");
-
-    document.getElementById("btn-all").classList.remove("bg-blue-600");
-    document.getElementById("btn-all").classList.remove("dark:bg-yellow-400");
-    document.getElementById("btn-all").classList.add("transparent");
-    document.getElementById("btn-all").classList.remove("text-white");
-    document.getElementById("btn-all").classList.remove("dark:text-black");
-    document.getElementById("btn-all").classList.add("text-blue-600");
-    document.getElementById("btn-all").classList.add("dark:text-yellow-400");
-    document.getElementById("btn-all").classList.add("border");
-    document.getElementById("btn-all").classList.add("border-2");
-    document.getElementById("btn-all").classList.add("border-blue-600");
-    document.getElementById("btn-all").classList.add("dark:border-yellow-400");
-
-    document.getElementById("portfolio-card-1").style.display = "none";
-    document.getElementById("portfolio-card-2").style.display = "none";
-    document.getElementById("portfolio-card-3").style.display = "none";
-    document.getElementById("portfolio-card-4").style.display = "none";
-    document.getElementById("portfolio-card-5").style.display = "none";
-    document.getElementById("portfolio-card-6").style.display = "none";
-    document.getElementById("portfolio-card-7").style.display = "block";
-    document.getElementById("portfolio-card-8").style.display = "none";
-    document.getElementById("portfolio-card-9").style.display = "block";
-    document.getElementById("portfolio-card-10").style.display = "none";
-    document.getElementById("portfolio-card-11").style.display = "block";
-    document.getElementById("portfolio-card-12").style.display = "none";
-    document.getElementById("portfolio-card-13").style.display = "none";
-    document.getElementById("portfolio-card-14").style.display = "none";
-    document.getElementById("portfolio-card-15").style.display = "none";
-    document.getElementById("portfolio-card-16").style.display = "none";
-    document.getElementById("portfolio-card-17").style.display = "none";
-    document.getElementById("portfolio-card-18").style.display = "none";
-    document.getElementById("portfolio-card-19").style.display = "none";
-    document.getElementById("portfolio-card-20").style.display = "none";
-  });
-
-  document.getElementById("btn-web").addEventListener("click", () => {
-    document.getElementById("btn-mobile").classList.remove("bg-blue-600");
-    document
-      .getElementById("btn-mobile")
-      .classList.remove("dark:bg-yellow-400");
-    document.getElementById("btn-mobile").classList.add("transparent");
-    document.getElementById("btn-mobile").classList.remove("text-white");
-    document.getElementById("btn-mobile").classList.remove("dark:text-black");
-    document.getElementById("btn-mobile").classList.add("text-blue-600");
-
-    document.getElementById("btn-web").classList.remove("transparent");
-    document.getElementById("btn-web").classList.add("bg-blue-600");
-    document.getElementById("btn-web").classList.add("dark:bg-yellow-400");
-    document.getElementById("btn-web").classList.remove("text-blue-600");
-    document.getElementById("btn-web").classList.add("text-white");
-    document.getElementById("btn-web").classList.add("dark:text-black");
-
-    document.getElementById("btn-game").classList.remove("bg-blue-600");
-    document.getElementById("btn-game").classList.remove("dark:bg-yellow-400");
-    document.getElementById("btn-game").classList.add("transparent");
-    document.getElementById("btn-game").classList.remove("text-white");
-    document.getElementById("btn-game").classList.remove("dark:text-black");
-    document.getElementById("btn-game").classList.add("text-blue-600");
-
-    document.getElementById("btn-all").classList.remove("bg-blue-600");
-    document.getElementById("btn-all").classList.remove("dark:bg-yellow-400");
-    document.getElementById("btn-all").classList.add("transparent");
-    document.getElementById("btn-all").classList.remove("text-white");
-    document.getElementById("btn-all").classList.remove("dark:text-black");
-    document.getElementById("btn-all").classList.add("text-blue-600");
-    document.getElementById("btn-all").classList.add("dark:text-yellow-400");
-    document.getElementById("btn-all").classList.add("border");
-    document.getElementById("btn-all").classList.add("border-2");
-    document.getElementById("btn-all").classList.add("border-blue-600");
-    document.getElementById("btn-all").classList.add("dark:border-yellow-400");
-
-    document.getElementById("portfolio-card-1").style.display = "none";
-    document.getElementById("portfolio-card-2").style.display = "block";
-    document.getElementById("portfolio-card-3").style.display = "block";
-    document.getElementById("portfolio-card-4").style.display = "none";
-    document.getElementById("portfolio-card-5").style.display = "block";
-    document.getElementById("portfolio-card-6").style.display = "block";
-    document.getElementById("portfolio-card-7").style.display = "none";
-    document.getElementById("portfolio-card-8").style.display = "block";
-    document.getElementById("portfolio-card-9").style.display = "none";
-    document.getElementById("portfolio-card-10").style.display = "block";
-    document.getElementById("portfolio-card-11").style.display = "none";
-    document.getElementById("portfolio-card-12").style.display = "block";
-    document.getElementById("portfolio-card-13").style.display = "block";
-    document.getElementById("portfolio-card-14").style.display = "none";
-    document.getElementById("portfolio-card-15").style.display = "block";
-    document.getElementById("portfolio-card-16").style.display = "block";
-    document.getElementById("portfolio-card-17").style.display = "block";
-    document.getElementById("portfolio-card-18").style.display = "block";
-    document.getElementById("portfolio-card-19").style.display = "none";
-    document.getElementById("portfolio-card-20").style.display = "block";
-  });
-
-  document.getElementById("btn-mobile").addEventListener("click", () => {
-    document.getElementById("btn-mobile").classList.remove("transparent");
-    document.getElementById("btn-mobile").classList.add("bg-blue-600");
-    document.getElementById("btn-mobile").classList.add("dark:bg-yellow-400");
-    document.getElementById("btn-mobile").classList.remove("text-blue-600");
-    document.getElementById("btn-mobile").classList.add("text-white");
-    document.getElementById("btn-mobile").classList.add("dark:text-black");
-
-    document.getElementById("btn-web").classList.remove("bg-blue-600");
-    document.getElementById("btn-web").classList.remove("dark:bg-yellow-400");
-    document.getElementById("btn-web").classList.add("transparent");
-    document.getElementById("btn-web").classList.remove("text-white");
-    document.getElementById("btn-web").classList.remove("dark:text-black");
-    document.getElementById("btn-web").classList.add("text-blue-600");
-
-    document.getElementById("btn-game").classList.remove("bg-blue-600");
-    document.getElementById("btn-game").classList.remove("dark:bg-yellow-400");
-    document.getElementById("btn-game").classList.add("transparent");
-    document.getElementById("btn-game").classList.remove("text-white");
-    document.getElementById("btn-game").classList.remove("dark:text-black");
-    document.getElementById("btn-game").classList.add("text-blue-600");
-
-    document.getElementById("btn-all").classList.remove("bg-blue-600");
-    document.getElementById("btn-all").classList.remove("dark:bg-yellow-400");
-    document.getElementById("btn-all").classList.add("transparent");
-    document.getElementById("btn-all").classList.remove("text-white");
-    document.getElementById("btn-all").classList.remove("dark:text-black");
-    document.getElementById("btn-all").classList.add("text-blue-600");
-    document.getElementById("btn-all").classList.add("dark:text-yellow-400");
-    document.getElementById("btn-all").classList.add("border");
-    document.getElementById("btn-all").classList.add("border-2");
-    document.getElementById("btn-all").classList.add("border-blue-600");
-    document.getElementById("btn-all").classList.add("dark:border-yellow-400");
-
-    document.getElementById("portfolio-card-1").style.display = "block";
-    document.getElementById("portfolio-card-2").style.display = "none";
-    document.getElementById("portfolio-card-3").style.display = "none";
-    document.getElementById("portfolio-card-4").style.display = "none";
-    document.getElementById("portfolio-card-5").style.display = "none";
-    document.getElementById("portfolio-card-6").style.display = "none";
-    document.getElementById("portfolio-card-7").style.display = "none";
-    document.getElementById("portfolio-card-8").style.display = "none";
-    document.getElementById("portfolio-card-9").style.display = "none";
-    document.getElementById("portfolio-card-10").style.display = "none";
-    document.getElementById("portfolio-card-11").style.display = "none";
-    document.getElementById("portfolio-card-12").style.display = "none";
-    document.getElementById("portfolio-card-13").style.display = "none";
-    document.getElementById("portfolio-card-14").style.display = "block";
-    document.getElementById("portfolio-card-15").style.display = "none";
-    document.getElementById("portfolio-card-16").style.display = "none";
-    document.getElementById("portfolio-card-17").style.display = "none";
-    document.getElementById("portfolio-card-18").style.display = "none";
-    document.getElementById("portfolio-card-19").style.display = "block";
-    document.getElementById("portfolio-card-20").style.display = "none";
-  });
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
