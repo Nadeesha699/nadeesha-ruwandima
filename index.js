@@ -134,7 +134,7 @@ const cards = document.querySelectorAll(".portfolio-card");
 
 buttons.forEach(button => {
   button.addEventListener("click", () => {
-    const category = button.id.replace("btn-", ""); // e.g., "all", "web", "mobile", "game"
+    const category = button.id.replace("btn-", ""); 
 
     // Update button styles
     buttons.forEach(btn => {
