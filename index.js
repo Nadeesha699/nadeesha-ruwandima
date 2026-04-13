@@ -161,48 +161,4 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(document.getElementById(id));
   });
 
-  const buttons = document.querySelectorAll("button[id^='btn-']");
-  const cards = document.querySelectorAll(".portfolio-card");
-
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const category = button.id.replace("btn-", "");
-
-      buttons.forEach((btn) => {
-        if (btn === button) {
-          btn.classList.add(
-            "bg-blue-600",
-            "dark:bg-yellow-400",
-            "text-white",
-            "dark:text-black"
-          );
-          btn.classList.remove("transparent", "text-blue-600");
-        } else {
-          btn.classList.remove(
-            "bg-blue-600",
-            "dark:bg-yellow-400",
-            "text-white",
-            "dark:text-black"
-          );
-          btn.classList.add(
-            "transparent",
-            "text-blue-600",
-            "dark:text-yellow-400",
-            "border",
-            "border-2",
-            "border-blue-600",
-            "dark:border-yellow-400"
-          );
-        }
-      });
-
-      cards.forEach((card) => {
-        if (category === "all" || card.dataset.category === category) {
-          card.style.display = "block";
-        } else {
-          card.style.display = "none";
-        }
-      });
-    });
-  });
 });
