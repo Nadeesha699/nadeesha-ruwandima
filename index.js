@@ -13,73 +13,43 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.getElementById("toggle-btn-2").addEventListener("click", () => {
-    if (localStorage.getItem("theme") === "dark") {
-      root.classList.add("dark");
-      localStorage.removeItem("theme");
-      localStorage.setItem("con", "1");
-    } else {
-      root.classList.remove("dark");
-      localStorage.setItem("theme", "dark");
-      localStorage.removeItem("con");
+  const openBtn = document.getElementById("btn-mobile-menu");
+  const closeBtn = document.getElementById("btn-mobile-menu-close");
+  const closeBtn1 = document.getElementById("btn-mobile-menu-close-1");
+  const closeBtn2 = document.getElementById("btn-mobile-menu-close-2");
+  const closeBtn3 = document.getElementById("btn-mobile-menu-close-3");
+  const closeBtn4 = document.getElementById("btn-mobile-menu-close-4");
+  const closeBtn5 = document.getElementById("btn-mobile-menu-close-5");
+  const panel = document.getElementById("mobile-menu-panel");
+  const content = document.getElementById("mobile-menu-content");
+
+  function openMenu() {
+    panel.classList.remove("hidden");
+    setTimeout(() => {
+      content.classList.remove("translate-x-full");
+    }, 10);
+  }
+
+  function closeMenu() {
+    content.classList.add("translate-x-full");
+    setTimeout(() => {
+      panel.classList.add("hidden");
+    }, 300);
+  }
+
+  openBtn.addEventListener("click", openMenu);
+  closeBtn.addEventListener("click", closeMenu);
+  closeBtn1.addEventListener("click", closeMenu);
+  closeBtn2.addEventListener("click", closeMenu);
+  closeBtn3.addEventListener("click", closeMenu);
+  closeBtn4.addEventListener("click", closeMenu);
+  closeBtn5.addEventListener("click", closeMenu);
+
+  // close when clicking outside
+  panel.addEventListener("click", (e) => {
+    if (e.target === panel.firstElementChild) {
+      closeMenu();
     }
-  });
-
-  document.getElementById("btn-mobile-menu").addEventListener("click", () => {
-    document.getElementById("mobile-menu-panel").style.top = 0;
-    document.getElementById("home-main").style.opacity = 0;
-    document.getElementById("home-main").style.pointerEvents = "none";
-    document.getElementById("about-main").style.opacity = 0;
-    document.getElementById("about-main").style.pointerEvents = "none";
-  });
-  document
-    .getElementById("btn-mobile-menu-close")
-    .addEventListener("click", () => {
-      document.getElementById("mobile-menu-panel").style.top = "-2000px";
-      document.getElementById("home-main").style.opacity = 1;
-      document.getElementById("home-main").style.pointerEvents = "auto";
-      document.getElementById("about-main").style.opacity = 1;
-      document.getElementById("about-main").style.pointerEvents = "auto";
-    });
-
-  document.getElementById("navigation-link").addEventListener("click", () => {
-    document.getElementById("mobile-menu-panel").style.top = "-2000px";
-    document.getElementById("home-main").style.opacity = 1;
-    document.getElementById("home-main").style.pointerEvents = "auto";
-    document.getElementById("about-main").style.opacity = 1;
-    document.getElementById("about-main").style.pointerEvents = "auto";
-  });
-
-  document.getElementById("navigation-link-1").addEventListener("click", () => {
-    document.getElementById("mobile-menu-panel").style.top = "-2000px";
-    document.getElementById("home-main").style.opacity = 1;
-    document.getElementById("home-main").style.pointerEvents = "auto";
-    document.getElementById("about-main").style.opacity = 1;
-    document.getElementById("about-main").style.pointerEvents = "auto";
-  });
-
-  document.getElementById("navigation-link-2").addEventListener("click", () => {
-    document.getElementById("mobile-menu-panel").style.top = "-2000px";
-    document.getElementById("home-main").style.opacity = 1;
-    document.getElementById("home-main").style.pointerEvents = "auto";
-    document.getElementById("about-main").style.opacity = 1;
-    document.getElementById("about-main").style.pointerEvents = "auto";
-  });
-
-  document.getElementById("navigation-link-3").addEventListener("click", () => {
-    document.getElementById("mobile-menu-panel").style.top = "-2000px";
-    document.getElementById("home-main").style.opacity = 1;
-    document.getElementById("home-main").style.pointerEvents = "auto";
-    document.getElementById("about-main").style.opacity = 1;
-    document.getElementById("about-main").style.pointerEvents = "auto";
-  });
-
-  document.getElementById("navigation-link-4").addEventListener("click", () => {
-    document.getElementById("mobile-menu-panel").style.top = "-2000px";
-    document.getElementById("home-main").style.opacity = 1;
-    document.getElementById("home-main").style.pointerEvents = "auto";
-    document.getElementById("about-main").style.opacity = 1;
-    document.getElementById("about-main").style.pointerEvents = "auto";
   });
 
   document.getElementById("home-main").addEventListener("mouseout", () => {
@@ -160,5 +130,4 @@ document.addEventListener("DOMContentLoaded", () => {
   ].forEach((id) => {
     observer.observe(document.getElementById(id));
   });
-
 });

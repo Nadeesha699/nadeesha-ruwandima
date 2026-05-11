@@ -45,7 +45,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
   </head>
   <body>
     <div
-      class="fixed top-0 left-0 right-0 bottom-0 overflow-auto bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-900 main"
+      class="fixed top-0 left-0 right-0 bottom-0 overflow-auto bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-950 main"
     >
       <!-- Blue blur spot 1 -->
       <div
@@ -55,155 +55,161 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
       <div
         class="fixed bottom-20 right-20 w-64 h-64 bg-blue-600/80 rounded-full filter blur-3xl animate-pulse"
       ></div>
-      <!--home -->
-      <div class="p-10 flex flex-col gap-10" id="home-main">
-        <div class="w-full flex flex-row justify-between gap-5">
-          <a class="flex flex-row gap-2" href="index.html">
-            <img src="./images/icons/icon.png" alt="icon" class="w-6 h-6" />
-            <label
-              class="font-bold text-black text-ellipsis inline-block whitespace-nowrap overflow-hidden w-full dark:text-white"
-              >A.T.N. Ruwandima</label
-            >
-          </a>
-          <nav class="flex-row gap-10 hidden lg:flex">
-            <a
-              href="index.html"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              Home
-            </a>
-            <a
-              href="#about-main"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              About
-            </a>
-
-            <a
-              href="#about-two-main"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              Services
-            </a>
-            <a
-              href="#portfolio-main"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              Portfolio
-            </a>
-            <a
-              href="#footer-main"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              Contact
-            </a>
-            <a href="#download-section">
-              <i
-                class="fa-solid fa-gamepad text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-                id="game-btn"
-              ></i>
-            </a>
-            <i
-              class="fa-solid fa-circle-half-stroke text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-              id="toggle-btn-1"
-            ></i>
-          </nav>
-          <div class="flex-row gap-5 flex lg:hidden">
-            <a href="#download-section">
-              <i
-                class="fa-solid fa-gamepad text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-                id="game-btn"
-              ></i>
-            </a>
-            <i
-              class="fa-solid fa-circle-half-stroke text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-              id="toggle-btn-2"
-            ></i>
-            <i
-              class="fa-solid fa-bars text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-              id="btn-mobile-menu"
-            ></i>
-          </div>
-        </div>
-        <div
-          class="flex flex-col w-full gap-10 justify-center items-center lg:justify-between lg:flex-row"
-        >
+      <!-- HOME SECTION (MODERN VERSION) -->
+      <section
+        id="home-main"
+        class="relative px-6 lg:px-20 py-14 overflow-hidden"
+      >
+        <!-- Background Glow -->
+        <div class="absolute inset-0 -z-10">
           <div
-            class="flex flex-col gap-5 justify-center items-center w-full opacity-0 translate-x-[-10px] duration-700 ease-in-out lg:w-1/2 order-1 lg:order-0 lg:items-start"
-            id="home-div"
-          >
-            <label
-              class="text-gray-900 tex-md lg:text-lg font-bold text-center lg:text-left dark:text-white"
-              >HELLO MY NAME IS,</label
+            class="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] bg-blue-500/20 blur-3xl rounded-full"
+          ></div>
+          <div
+            class="absolute bottom-[-120px] right-[-120px] w-[350px] h-[350px] bg-purple-500/20 blur-3xl rounded-full"
+          ></div>
+        </div>
+
+        <!-- NAV -->
+        <header
+          class="flex items-center justify-between backdrop-blur-md bg-white/5 dark:bg-black/10 px-5 py-3 rounded-2xl border border-gray-200/20 dark:border-white/10"
+        >
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-3">
+            <img src="./images/icons/icon.png" class="w-8 h-8" />
+            <span class="font-bold text-gray-900 dark:text-white">
+              A.T.N. Ruwandima
+            </span>
+          </a>
+
+          <!-- Desktop Nav -->
+          <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+            <a href="#home-main" class="hover:text-blue-500 transition">Home</a>
+            <a href="#about-main" class="hover:text-blue-500 transition"
+              >About</a
             >
-            <label
-              class="text-gray-900 font-bold lg:text-6xl text-4xl text-center lg:text-left dark:text-white"
-              >A.T.N. Ruwandima</label
+            <a href="#about-two-main" class="hover:text-blue-500 transition"
+              >Services</a
             >
-            <label
-              class="text-gray-900 font-bold lg:text-4xl text-2xl text-center lg:text-left dark:text-white"
-              >Software Developer</label
+            <a href="#portfolio-main" class="hover:text-blue-500 transition"
+              >Portfolio</a
             >
-            <div class="flex flex-row gap-5">
+            <a href="#footer-main" class="hover:text-blue-500 transition"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Icons -->
+          <div class="flex items-center gap-4">
+            <a href="#download-section">
+              <i
+                class="fa-solid fa-gamepad text-xl hover:text-blue-500 transition"
+              ></i>
+            </a>
+            <i
+              id="toggle-btn-1"
+              class="fa-solid fa-circle-half-stroke text-xl cursor-pointer hover:text-blue-500 transition"
+            ></i>
+            <i class="fa-solid fa-bars lg:hidden text-xl cursor-pointer" id="btn-mobile-menu"></i>
+          </div>
+        </header>
+
+        <!-- HERO -->
+        <div class="grid lg:grid-cols-2 items-center gap-16 mt-16">
+          <!-- TEXT -->
+          <div class="flex flex-col gap-6 text-center lg:text-left">
+            <span class="text-sm tracking-[4px] text-gray-500">
+              HELLO, I'M
+            </span>
+
+            <h1
+              class="text-4xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight"
+            >
+              A.T.N. Ruwandima
+            </h1>
+
+            <h2 class="text-xl lg:text-3xl font-semibold text-blue-500">
+              Software Developer
+            </h2>
+
+            <p class="text-gray-600 dark:text-gray-300 max-w-md">
+              I design and build modern, scalable, and high-performance web
+              applications with clean UI and strong backend logic.
+            </p>
+
+            <!-- BUTTONS -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-4"
+            >
               <a
-                href="mailto:nadeesharuwandima@gmail.com?subject=Collaboration%20with%20Nadeesha%20Ruwandima&body=Hello%20Nadeesha%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20I%20am%20interested%20in%20discussing%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D"
+                href="./download/nadeesha-ruwandima.pdf"
+                download
+                class="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold shadow-lg hover:scale-105 transition"
               >
-                <i
-                  class="fa-solid fa-envelope text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-red-800 dark:hover:text-red-800 dark:text-white"
-                ></i>
+                <i class="fa-solid fa-download mr-2"></i> Download CV
               </a>
+
+              <a
+                href="#portfolio-main"
+                class="px-6 py-3 rounded-xl border border-gray-300 dark:border-white/20 hover:bg-gray-100 dark:hover:bg-white/10 transition font-semibold"
+              >
+                View Work
+              </a>
+            </div>
+
+            <!-- SOCIAL -->
+            <div class="flex gap-4 justify-center lg:justify-start mt-4">
               <a
                 href="https://github.com/Nadeesha699"
                 target="_blank"
-                rel="noopener noreferrer"
+                class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:scale-110 hover:bg-purple-600 transition"
               >
-                <i
-                  class="fa-brands fa-github text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-purple-800 dark:hover:text-purple-800 dark:text-white"
-                ></i>
+                <i class="fa-brands fa-github"></i>
               </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=100039332113797&mibextid=ZbWKwL"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i
-                  class="fa-brands fa-facebook text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-800 dark:hover:text-blue-800 dark:text-white"
-                ></i>
-              </a>
+
               <a
                 href="https://wa.me/+94711764232"
                 target="_blank"
-                rel="noopener noreferrer"
+                class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:scale-110 hover:bg-green-500 transition"
               >
-                <i
-                  class="fa-brands fa-whatsapp text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-green-800 dark:hover:text-green-800 dark:text-white"
-                ></i>
+                <i class="fa-brands fa-whatsapp"></i>
               </a>
+
               <a
-                href="https://www.linkedin.com/in/nadeesha-ruwandima-b5a356259"
+                href="https://www.linkedin.com"
                 target="_blank"
-                rel="noopener noreferrer"
+                class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:scale-110 hover:bg-blue-500 transition"
               >
-                <i
-                  class="fa-brands fa-linkedin text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-600 dark:text-white"
-                ></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:scale-110 hover:bg-blue-700 transition"
+              >
+                <i class="fa-brands fa-facebook"></i>
               </a>
             </div>
-            <a
-              class="rounded-lg bg-blue-600 text-white font-bold w-fit text-center flex flex-row gap-2 items-center p-2 transition duration-300 ease-in-out text-ellipsis whitespace-nowrap overflow-hidden hover:bg-gray-900 dark:bg-yellow-400 dark:text-gray-900 dark:hover:bg-white"
-              href="./download/nadeesha-ruwandima.pdf"
-              download="nadeesha-ruwandima-cv.pdf"
-              ><i class="fa-solid fa-download text-lg"></i> Download CV</a
-            >
           </div>
-          <img
-            src="./images/home_pic.png"
-            alt="icon"
-            id="home-img"
-            class="w-1/2 h-full rounded-full bg-gray-950 order-0 opacity-0 translate-x-[10px] duration-700 ease-in-out lg:order-1 dark:bg-white"
-          />
+
+          <!-- IMAGE -->
+          <div class="flex justify-center lg:justify-end relative">
+            <div class="relative">
+              <!-- glow behind image -->
+              <div
+                class="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full"
+              ></div>
+
+              <img
+                src="./images/home_pic.png"
+                class="relative w-72 lg:w-[420px] rounded-3xl border border-white/10 shadow-2xl hover:scale-105 transition duration-500"
+                alt="profile"
+              />
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
       <!-- Modern About Section -->
       <section
         id="about-main"
@@ -347,7 +353,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
       <!-- Modern Skills Section -->
       <section
         id="lng-main"
-        class="relative overflow-hidden py-20 px-6 lg:px-20 bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-950"
+        class="relative overflow-hidden py-20 px-6 lg:px-20"
       >
         <!-- Background Glow -->
         <div
@@ -520,152 +526,107 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
           </div>
         </div>
       </section>
-      <!-- Modern Download Section -->
+      <!-- Modern App Download Section (Alternative Style) -->
       <section
         id="download-section"
-        class="relative overflow-hidden mx-6 lg:mx-20 my-20 rounded-[40px] bg-gradient-to-br from-gray-950 via-black to-gray-900 dark:from-white dark:via-gray-100 dark:to-white shadow-2xl"
+        class="relative py-24 px-6 lg:px-20 bg-white dark:bg-black overflow-hidden"
       >
-        <!-- Background Glow -->
+        <!-- Decorative Shapes -->
         <div
-          class="absolute top-0 left-0 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"
+          class="absolute top-10 left-10 w-72 h-72 bg-blue-500/10 blur-3xl rounded-full"
+        ></div>
+        <div
+          class="absolute bottom-10 right-10 w-72 h-72 bg-purple-500/10 blur-3xl rounded-full"
         ></div>
 
         <div
-          class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"
-        ></div>
-
-        <div
-          class="relative z-10 px-8 py-16 lg:px-16 flex flex-col lg:flex-row items-center gap-16"
+          class="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center"
         >
-          <!-- App Mockup -->
-          <div
-            class="w-full lg:w-1/2 flex justify-center opacity-0 translate-x-[-10px] duration-700 ease-in-out"
-            id="downlaod-img"
-          >
+          <!-- LEFT: Phone Mockup -->
+          <div class="flex justify-center">
             <div class="relative">
+              <!-- Glow -->
               <div
-                class="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full"
+                class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 blur-3xl opacity-20 rounded-full"
               ></div>
 
               <img
                 src="./images/app-mockup.png"
-                alt="Think You App"
-                class="relative w-full max-w-sm lg:max-w-md drop-shadow-[0_20px_60px_rgba(59,130,246,0.4)] hover:scale-105 transition duration-500"
+                class="relative w-[280px] md:w-[340px] lg:w-[420px] hover:scale-105 transition duration-500 drop-shadow-2xl"
               />
             </div>
           </div>
 
-          <!-- Content -->
-          <div
-            class="w-full lg:w-1/2 flex flex-col gap-8 justify-center items-center lg:items-start text-center lg:text-left opacity-0 translate-x-[10px] duration-700 ease-in-out"
-            id="downlaod-div"
-          >
-            <!-- App Header -->
-            <div class="flex flex-col sm:flex-row items-center gap-5">
-              <div
-                class="w-20 h-20 rounded-3xl overflow-hidden bg-white/10 backdrop-blur-lg border border-white/10 shadow-xl"
+          <!-- RIGHT: Content -->
+          <div class="flex flex-col gap-8 text-center lg:text-left">
+            <!-- Badge -->
+            <div>
+              <span
+                class="px-4 py-2 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 text-sm font-semibold"
               >
-                <img
-                  src="./images/app-logo.png"
-                  alt="App Logo"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-
-              <div>
-                <h2
-                  class="text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
-                >
-                  Think You
-                </h2>
-
-                <p
-                  class="mt-2 text-gray-300 dark:text-gray-700 font-medium tracking-wide"
-                >
-                  Memory & Mind Puzzle Game
-                </p>
-              </div>
+                🚀 Featured Mobile App
+              </span>
             </div>
 
-            <!-- Description -->
-            <p
-              class="text-lg leading-relaxed text-gray-300 dark:text-gray-700 max-w-2xl"
+            <!-- Title -->
+            <h2
+              class="text-4xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight"
             >
-              Think You is a fun and challenging brain puzzle game designed to
-              improve your memory, concentration and thinking speed. Flip cards,
-              remember patterns and complete increasingly difficult levels while
-              training your mind in an entertaining way.
+              Think You
+            </h2>
+
+            <p class="text-xl text-gray-600 dark:text-gray-400">
+              A smart memory puzzle game designed to boost your brain power,
+              focus, and reaction speed.
             </p>
 
-            <!-- Features -->
-            <div class="grid grid-cols-2 gap-4 w-full max-w-xl">
-              <div
-                class="rounded-2xl bg-white/5 dark:bg-black/5 border border-white/10 p-4 backdrop-blur-lg"
+            <!-- Feature Pills -->
+            <div class="flex flex-wrap gap-3 justify-center lg:justify-start">
+              <span
+                class="px-4 py-2 rounded-full bg-gray-100 dark:bg-white/10 text-gray-800 dark:text-white text-sm"
               >
-                <span class="text-2xl">🧠</span>
-                <h4 class="font-bold text-white dark:text-gray-900 mt-2">
-                  Brain Training
-                </h4>
-              </div>
+                🧠 Memory Training
+              </span>
 
-              <div
-                class="rounded-2xl bg-white/5 dark:bg-black/5 border border-white/10 p-4 backdrop-blur-lg"
+              <span
+                class="px-4 py-2 rounded-full bg-gray-100 dark:bg-white/10 text-gray-800 dark:text-white text-sm"
               >
-                <span class="text-2xl">⚡</span>
-                <h4 class="font-bold text-white dark:text-gray-900 mt-2">
-                  Fast Gameplay
-                </h4>
-              </div>
+                ⚡ Fast Gameplay
+              </span>
 
-              <div
-                class="rounded-2xl bg-white/5 dark:bg-black/5 border border-white/10 p-4 backdrop-blur-lg"
+              <span
+                class="px-4 py-2 rounded-full bg-gray-100 dark:bg-white/10 text-gray-800 dark:text-white text-sm"
               >
-                <span class="text-2xl">🎯</span>
-                <h4 class="font-bold text-white dark:text-gray-900 mt-2">
-                  Focus Challenge
-                </h4>
-              </div>
+                🎯 Focus Boost
+              </span>
 
-              <div
-                class="rounded-2xl bg-white/5 dark:bg-black/5 border border-white/10 p-4 backdrop-blur-lg"
+              <span
+                class="px-4 py-2 rounded-full bg-gray-100 dark:bg-white/10 text-gray-800 dark:text-white text-sm"
               >
-                <span class="text-2xl">📱</span>
-                <h4 class="font-bold text-white dark:text-gray-900 mt-2">
-                  Android Game
-                </h4>
-              </div>
+                📱 Android App
+              </span>
             </div>
 
-            <!-- Download Button -->
-            <a href="./download/thinkyou.apk" download="thinkyou.apk">
-              <button
-                class="group mt-4 inline-flex items-center gap-4 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-white hover:to-white hover:text-gray-900 text-white px-8 py-5 text-lg font-bold shadow-2xl transition duration-300 hover:scale-105 dark:hover:bg-gray-900 dark:hover:text-white"
-              >
-                <i class="fa-brands fa-android text-2xl"></i>
-
-                <span>Download for Android</span>
-
-                <i
-                  class="fa-solid fa-download text-lg group-hover:translate-y-1 transition duration-300"
-                ></i>
-              </button>
+            <!-- CTA Button -->
+            <a
+              href="./download/thinkyou.apk"
+              download="thinkyou.apk"
+              class="mt-6 inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-lg shadow-xl hover:scale-105 transition"
+            >
+              📥 Download APK
             </a>
+
+            <p class="text-sm text-gray-400">
+              Available only for Android devices
+            </p>
           </div>
         </div>
       </section>
       <!-- Modern Services Section -->
       <section
         id="about-two-main"
-        class="relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-950 dark:via-black dark:to-gray-900 py-20 px-6 lg:px-20"
+        class="relative overflow-hidden py-20 px-6 lg:px-20"
       >
-        <!-- Background Effects -->
-        <div
-          class="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"
-        ></div>
-        <div
-          class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"
-        ></div>
-
         <div class="relative z-10 flex flex-col gap-16">
           <!-- Heading -->
           <div class="max-w-3xl">
@@ -925,16 +886,8 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
       <!-- Modern Portfolio Section -->
       <section
         id="portfolio-main"
-        class="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-black dark:via-gray-950 dark:to-black py-20 px-6 lg:px-20"
+        class="relative overflow-hidden py-20 px-6 lg:px-20"
       >
-        <!-- Background Glow -->
-        <div
-          class="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"
-        ></div>
-        <div
-          class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"
-        ></div>
-
         <div class="relative z-10 flex flex-col gap-16">
           <!-- Heading -->
           <div
@@ -1447,17 +1400,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
       </section>
       <!-- Modern Footer -->
       <footer
-        class="relative overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white"
+        class="relative overflow-hidden bg-white dark:bg-black text-white"
         id="footer-main"
       >
-        <!-- Background Blur Effects -->
-        <div
-          class="absolute top-0 left-0 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"
-        ></div>
-        <div
-          class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"
-        ></div>
-
         <div class="relative z-10 px-6 lg:px-20 py-16 flex flex-col gap-16">
           <!-- Top Branding -->
           <div
@@ -1508,11 +1453,13 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
               <!-- Email Card -->
               <div
-                class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 flex items-center justify-between hover:border-blue-500/40 transition duration-300"
+                class="bg-black/10 border-black/10 dark:bg-white/5 backdrop-blur-xl border dark:border-white/10 rounded-3xl p-6 flex items-center justify-between dark:hover:border-blue-500/40 hover:border-blue-500/40 transition duration-300"
               >
                 <div>
                   <p class="text-gray-400 text-sm">Schedule an email</p>
-                  <p class="font-semibold text-lg">
+                  <p
+                    class="font-semibold text-lg text-gray-900 dark:text-white"
+                  >
                     nadeesharuwandima@gmail.com
                   </p>
                 </div>
@@ -1530,11 +1477,15 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
               <!-- Phone Card -->
               <div
-                class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 flex items-center justify-between hover:border-purple-500/40 transition duration-300"
+                class="bg-black/10 border-black/10 dark:bg-white/5 backdrop-blur-xl border dark:border-white/10 rounded-3xl p-6 flex items-center justify-between dark:hover:border-purple-500/40 hover:border-purple-500/40 transition duration-300"
               >
                 <div>
                   <p class="text-gray-400 text-sm">Call me anytime</p>
-                  <p class="font-semibold text-lg">+94 72 282 7848</p>
+                  <p
+                    class="font-semibold text-lg text-gray-900 dark:text-white"
+                  >
+                    +94 72 282 7848
+                  </p>
                 </div>
 
                 <button
@@ -1550,33 +1501,41 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 <a
                   href="https://github.com/Nadeesha699"
                   target="_blank"
-                  class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-purple-600 transition duration-300"
+                  class="w-14 h-14 rounded-2xl bg-black/10 border-black/10 dark:bg-white/5 border dark:border-white/10 flex items-center justify-center hover:bg-purple-600 transition duration-300"
                 >
-                  <i class="fa-brands fa-github text-2xl"></i>
+                  <i
+                    class="fa-brands fa-github text-2xl text-gray-900 dark:text-white"
+                  ></i>
                 </a>
 
                 <a
                   href="https://wa.me/+94711764232"
                   target="_blank"
-                  class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-green-500 transition duration-300"
+                  class="w-14 h-14 rounded-2xl bg-black/10 border-black/10 dark:bg-white/5 border dark:border-white/10 flex items-center justify-center hover:bg-green-500 transition duration-300"
                 >
-                  <i class="fa-brands fa-whatsapp text-2xl"></i>
+                  <i
+                    class="fa-brands fa-whatsapp text-2xl text-gray-900 dark:text-white"
+                  ></i>
                 </a>
 
                 <a
                   href="https://www.linkedin.com/in/nadeesha-ruwandima-b5a356259"
                   target="_blank"
-                  class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-500 transition duration-300"
+                  class="w-14 h-14 rounded-2xl bg-black/10 border-black/10 dark:bg-white/5 border dark:border-white/10 flex items-center justify-center hover:bg-blue-500 transition duration-300"
                 >
-                  <i class="fa-brands fa-linkedin text-2xl"></i>
+                  <i
+                    class="fa-brands fa-linkedin text-2xl text-gray-900 dark:text-white"
+                  ></i>
                 </a>
 
                 <a
                   href="https://www.facebook.com/profile.php?id=100039332113797&mibextid=ZbWKwL"
                   target="_blank"
-                  class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-700 transition duration-300"
+                  class="w-14 h-14 rounded-2xl bg-black/10 border-black/10 dark:bg-white/5 border dark:border-white/10 flex items-center justify-center hover:bg-blue-700 transition duration-300"
                 >
-                  <i class="fa-brands fa-facebook text-2xl"></i>
+                  <i
+                    class="fa-brands fa-facebook text-2xl text-gray-900 dark:text-white"
+                  ></i>
                 </a>
               </div>
             </div>
@@ -1678,50 +1637,39 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
         data-icon="ph:arrow-up-bold"
       ></span>
     </div>
-    <!-- mobile menu -->
-    <div
-      class="fixed -top-[2000px] bottom-0 left-0 right-0 w-full h-dvh bg-white flex flex-col justify-between items-center p-10 duration-500 ease-in-out dark:bg-gray-900"
-      id="mobile-menu-panel"
-    >
-      <i
-        class="fa-solid fa-xmark text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-        id="btn-mobile-menu-close"
-      ></i>
-      <a
-        href="#"
-        class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-        id="navigation-link"
+    <!-- MOBILE MENU (MODERN SLIDE DRAWER) -->
+    <div id="mobile-menu-panel" class="fixed inset-0 z-50 hidden">
+      <!-- BACKDROP -->
+      <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+
+      <!-- PANEL -->
+      <div
+        class="absolute right-0 top-0 h-full w-72 bg-white dark:bg-gray-900 shadow-2xl p-8 flex flex-col gap-8 transform translate-x-full transition-transform duration-300"
+        id="mobile-menu-content"
       >
-        Home
-      </a>
-      <a
-        href="#about-main"
-        class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-        id="navigation-link-1"
-      >
-        About
-      </a>
-      <a
-        href="#about-two-main"
-        class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-        id="navigation-link-2"
-      >
-        Services
-      </a>
-      <a
-        href="#portfolio-main"
-        class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-        id="navigation-link-3"
-      >
-        Portfolio
-      </a>
-      <a
-        href="#footer-main"
-        class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-        id="navigation-link-4"
-      >
-        Contact
-      </a>
+        <!-- CLOSE BUTTON -->
+        <div class="flex justify-end">
+          <i
+            class="fa-solid fa-xmark text-2xl cursor-pointer hover:text-red-500"
+            id="btn-mobile-menu-close"
+          ></i>
+        </div>
+
+        <!-- LINKS -->
+        <nav class="flex flex-col gap-6 text-lg font-semibold">
+          <a href="#home-main" class="hover:text-blue-500 transition" id="btn-mobile-menu-close-1">Home</a>
+          <a href="#about-main" class="hover:text-blue-500 transition" id="btn-mobile-menu-close-2">About</a>
+          <a href="#about-two-main" class="hover:text-blue-500 transition" id="btn-mobile-menu-close-3"
+            >Services</a
+          >
+          <a href="#portfolio-main" class="hover:text-blue-500 transition" id="btn-mobile-menu-close-4"
+            >Portfolio</a
+          >
+          <a href="#footer-main" class="hover:text-blue-500 transition" id="btn-mobile-menu-close-5"
+            >Contact</a
+          >
+        </nav>
+      </div>
     </div>
     <script src="index.js" defer></script>
   </body>
