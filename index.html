@@ -45,7 +45,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
   </head>
   <body>
     <div
-      class="fixed top-0 left-0 right-0 bottom-0 overflow-auto bg-zinc-300 dark:bg-gray-900 main"
+      class="fixed top-0 left-0 right-0 bottom-0 overflow-auto bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-900 main"
     >
       <!-- Blue blur spot 1 -->
       <div
@@ -55,158 +55,160 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
       <div
         class="fixed bottom-20 right-20 w-64 h-64 bg-blue-600/80 rounded-full filter blur-3xl animate-pulse"
       ></div>
-      <!-- Modern Hero Section -->
-      <section
-        id="home-main"
-        class="relative min-h-screen flex flex-col justify-between overflow-hidden px-6 lg:px-20 py-10 bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-950"
-      >
-        <!-- Glow Background -->
-        <div
-          class="absolute top-0 left-0 w-72 h-72 bg-blue-500/20 blur-3xl rounded-full"
-        ></div>
-        <div
-          class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/20 blur-3xl rounded-full"
-        ></div>
-
-        <!-- NAV -->
-        <div class="relative z-10 flex justify-between items-center">
-          <!-- Logo -->
-          <a href="index.html" class="flex items-center gap-3">
-            <img src="./images/icons/icon.png" class="w-8 h-8" />
-            <span class="font-bold text-gray-900 dark:text-white">
-              A.T.N. Ruwandima
-            </span>
-          </a>
-
-          <!-- Desktop Nav -->
-          <nav class="hidden lg:flex items-center gap-8">
-            <a href="#home-main" class="nav-link">Home</a>
-            <a href="#about-main" class="nav-link">About</a>
-            <a href="#about-two-main" class="nav-link">Services</a>
-            <a href="#portfolio-main" class="nav-link">Portfolio</a>
-            <a href="#footer-main" class="nav-link">Contact</a>
-
-            <a
-              href="#download-section"
-              class="text-xl hover:text-blue-500 dark:hover:text-yellow-400"
+      <!--home -->
+      <div class="p-10 flex flex-col gap-10" id="home-main">
+        <div class="w-full flex flex-row justify-between gap-5">
+          <a class="flex flex-row gap-2" href="index.html">
+            <img src="./images/icons/icon.png" alt="icon" class="w-6 h-6" />
+            <label
+              class="font-bold text-black text-ellipsis inline-block whitespace-nowrap overflow-hidden w-full dark:text-white"
+              >A.T.N. Ruwandima</label
             >
-              🎮
+          </a>
+          <nav class="flex-row gap-10 hidden lg:flex">
+            <a
+              href="index.html"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+            >
+              Home
+            </a>
+            <a
+              href="#about-main"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+            >
+              About
             </a>
 
-            <button
+            <a
+              href="#about-two-main"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+            >
+              Services
+            </a>
+            <a
+              href="#portfolio-main"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+            >
+              Portfolio
+            </a>
+            <a
+              href="#footer-main"
+              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+            >
+              Contact
+            </a>
+            <a href="#download-section">
+              <i
+                class="fa-solid fa-gamepad text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+                id="game-btn"
+              ></i>
+            </a>
+            <i
+              class="fa-solid fa-circle-half-stroke text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
               id="toggle-btn-1"
-              class="text-xl hover:text-blue-500 dark:hover:text-yellow-400"
-            >
-              🌓
-            </button>
+            ></i>
           </nav>
-
-          <!-- Mobile -->
-          <div class="flex lg:hidden items-center gap-5 text-2xl">
-            <a href="#download-section">🎮</a>
-            <button id="toggle-btn-2">🌓</button>
-            <button id="btn-mobile-menu">☰</button>
+          <div class="flex-row gap-5 flex lg:hidden">
+            <a href="#download-section">
+              <i
+                class="fa-solid fa-gamepad text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+                id="game-btn"
+              ></i>
+            </a>
+            <i
+              class="fa-solid fa-circle-half-stroke text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+              id="toggle-btn-2"
+            ></i>
+            <i
+              class="fa-solid fa-bars text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
+              id="btn-mobile-menu"
+            ></i>
           </div>
         </div>
-
-        <!-- HERO -->
         <div
-          class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-14 mt-16"
+          class="flex flex-col w-full gap-10 justify-center items-center lg:justify-between lg:flex-row"
         >
-          <!-- TEXT -->
           <div
+            class="flex flex-col gap-5 justify-center items-center w-full opacity-0 translate-x-[-10px] duration-700 ease-in-out lg:w-1/2 order-1 lg:order-0 lg:items-start"
             id="home-div"
-            class="w-full lg:w-1/2 flex flex-col gap-6 text-center lg:text-left"
           >
-            <span
-              class="text-sm tracking-[5px] uppercase text-blue-500 font-semibold"
+            <label
+              class="text-gray-900 tex-md lg:text-lg font-bold text-center lg:text-left dark:text-white"
+              >HELLO MY NAME IS,</label
             >
-              Hello, I'm
-            </span>
-
-            <h1
-              class="text-5xl lg:text-7xl font-extrabold text-gray-900 dark:text-white leading-tight"
+            <label
+              class="text-gray-900 font-bold lg:text-6xl text-4xl text-center lg:text-left dark:text-white"
+              >A.T.N. Ruwandima</label
             >
-              A.T.N. <br />
-              <span
-                class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
-              >
-                Ruwandima
-              </span>
-            </h1>
-
-            <h2
-              class="text-2xl lg:text-4xl font-bold text-gray-700 dark:text-gray-300"
+            <label
+              class="text-gray-900 font-bold lg:text-4xl text-2xl text-center lg:text-left dark:text-white"
+              >Software Developer</label
             >
-              Software Developer
-            </h2>
-
-            <p class="text-gray-600 dark:text-gray-400 max-w-xl">
-              I build modern web apps, mobile apps, and intelligent systems with
-              clean UI, strong architecture, and scalable performance.
-            </p>
-
-            <!-- CTA -->
-            <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <div class="flex flex-row gap-5">
               <a
-                href="./download/nadeesha-ruwandima.pdf"
-                download
-                class="px-6 py-3 rounded-2xl bg-blue-600 text-white font-semibold hover:scale-105 transition shadow-lg dark:bg-yellow-400 dark:text-black"
+                href="mailto:nadeesharuwandima@gmail.com?subject=Collaboration%20with%20Nadeesha%20Ruwandima&body=Hello%20Nadeesha%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20I%20am%20interested%20in%20discussing%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D"
               >
-                ⬇ Download CV
+                <i
+                  class="fa-solid fa-envelope text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-red-800 dark:hover:text-red-800 dark:text-white"
+                ></i>
               </a>
-
               <a
-                href="#portfolio-main"
-                class="px-6 py-3 rounded-2xl border border-gray-300 dark:border-white/20 text-gray-900 dark:text-white hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition"
+                href="https://github.com/Nadeesha699"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                View Work
+                <i
+                  class="fa-brands fa-github text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-purple-800 dark:hover:text-purple-800 dark:text-white"
+                ></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100039332113797&mibextid=ZbWKwL"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  class="fa-brands fa-facebook text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-800 dark:hover:text-blue-800 dark:text-white"
+                ></i>
+              </a>
+              <a
+                href="https://wa.me/+94711764232"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  class="fa-brands fa-whatsapp text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-green-800 dark:hover:text-green-800 dark:text-white"
+                ></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nadeesha-ruwandima-b5a356259"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  class="fa-brands fa-linkedin text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-600 dark:text-white"
+                ></i>
               </a>
             </div>
-
-            <!-- Social -->
-            <div
-              class="flex gap-5 text-2xl justify-center lg:justify-start mt-2"
+            <a
+              class="rounded-lg bg-blue-600 text-white font-bold w-fit text-center flex flex-row gap-2 items-center p-2 transition duration-300 ease-in-out text-ellipsis whitespace-nowrap overflow-hidden hover:bg-gray-900 dark:bg-yellow-400 dark:text-gray-900 dark:hover:bg-white"
+              href="./download/nadeesha-ruwandima.pdf"
+              download="nadeesha-ruwandima-cv.pdf"
+              ><i class="fa-solid fa-download text-lg"></i> Download CV</a
             >
-              <a href="mailto:nadeesharuwandima@gmail.com">📧</a>
-              <a href="https://github.com/Nadeesha699" target="_blank">🐙</a>
-              <a href="https://facebook.com" target="_blank">📘</a>
-              <a href="https://wa.me/+94711764232" target="_blank">💬</a>
-              <a href="https://linkedin.com" target="_blank">💼</a>
-            </div>
           </div>
-
-          <!-- IMAGE -->
-          <div class="w-full lg:w-1/2 flex justify-center">
-            <div class="relative">
-              <div
-                class="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full"
-              ></div>
-
-              <img
-                src="./images/home_pic.png"
-                class="relative w-[320px] lg:w-[420px] rounded-full border-4 border-white/10 shadow-2xl hover:scale-105 transition duration-500"
-              />
-            </div>
-          </div>
+          <img
+            src="./images/home_pic.png"
+            alt="icon"
+            id="home-img"
+            class="w-1/2 h-full rounded-full bg-gray-950 order-0 opacity-0 translate-x-[10px] duration-700 ease-in-out lg:order-1 dark:bg-white"
+          />
         </div>
-      </section>
-
-      <!-- Nav link style helper -->
-      <style></style>
+      </div>
       <!-- Modern About Section -->
       <section
         id="about-main"
-        class="relative py-20 px-6 lg:px-20 bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-950 overflow-hidden"
+        class="relative py-20 px-6 lg:px-20 overflow-hidden"
       >
-        <!-- Glow Background -->
-        <div
-          class="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-3xl rounded-full"
-        ></div>
-        <div
-          class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/10 blur-3xl rounded-full"
-        ></div>
-
         <div class="relative z-10 flex flex-col gap-14">
           <!-- Heading -->
           <div class="text-center lg:text-left">
