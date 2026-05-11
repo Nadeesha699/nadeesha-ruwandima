@@ -55,1166 +55,1484 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
       <div
         class="fixed bottom-20 right-20 w-64 h-64 bg-blue-600/80 rounded-full filter blur-3xl animate-pulse"
       ></div>
-      <!--home -->
-      <div class="p-10 flex flex-col gap-10" id="home-main">
-        <div class="w-full flex flex-row justify-between gap-5">
-          <a class="flex flex-row gap-2" href="index.html">
-            <img src="./images/icons/icon.png" alt="icon" class="w-6 h-6" />
-            <label
-              class="font-bold text-black text-ellipsis inline-block whitespace-nowrap overflow-hidden w-full dark:text-white"
-              >A.T.N. Ruwandima</label
-            >
-          </a>
-          <nav class="flex-row gap-10 hidden lg:flex">
-            <a
-              href="index.html"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              Home
-            </a>
-            <a
-              href="#about-main"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              About
-            </a>
+<!-- Modern Hero Section -->
+<section
+  id="home-main"
+  class="relative min-h-screen flex flex-col justify-between overflow-hidden px-6 lg:px-20 py-10 bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-950"
+>
 
-            <a
-              href="#about-two-main"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              Services
-            </a>
-            <a
-              href="#portfolio-main"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              Portfolio
-            </a>
-            <a
-              href="#footer-main"
-              class="font-bold text-gray-900 transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              Contact
-            </a>
-            <a href="#download-section">
-              <i
-                class="fa-solid fa-gamepad text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-                id="game-btn"
-              ></i>
-            </a>
-            <i
-              class="fa-solid fa-circle-half-stroke text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-              id="toggle-btn-1"
-            ></i>
-          </nav>
-          <div class="flex-row gap-5 flex lg:hidden">
-            <a href="#download-section">
-              <i
-                class="fa-solid fa-gamepad text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-                id="game-btn"
-              ></i>
-            </a>
-            <i
-              class="fa-solid fa-circle-half-stroke text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-              id="toggle-btn-2"
-            ></i>
-            <i
-              class="fa-solid fa-bars text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-              id="btn-mobile-menu"
-            ></i>
-          </div>
-        </div>
-        <div
-          class="flex flex-col w-full gap-10 justify-center items-center lg:justify-between lg:flex-row"
+  <!-- Glow Background -->
+  <div class="absolute top-0 left-0 w-72 h-72 bg-blue-500/20 blur-3xl rounded-full"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/20 blur-3xl rounded-full"></div>
+
+  <!-- NAV -->
+  <div class="relative z-10 flex justify-between items-center">
+
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="./images/icons/icon.png" class="w-8 h-8" />
+      <span class="font-bold text-gray-900 dark:text-white">
+        A.T.N. Ruwandima
+      </span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden lg:flex items-center gap-8">
+      <a href="#home-main" class="nav-link">Home</a>
+      <a href="#about-main" class="nav-link">About</a>
+      <a href="#about-two-main" class="nav-link">Services</a>
+      <a href="#portfolio-main" class="nav-link">Portfolio</a>
+      <a href="#footer-main" class="nav-link">Contact</a>
+
+      <a href="#download-section" class="text-xl hover:text-blue-500 dark:hover:text-yellow-400">
+        🎮
+      </a>
+
+      <button id="toggle-btn-1" class="text-xl hover:text-blue-500 dark:hover:text-yellow-400">
+        🌓
+      </button>
+    </nav>
+
+    <!-- Mobile -->
+    <div class="flex lg:hidden items-center gap-5 text-2xl">
+      <a href="#download-section">🎮</a>
+      <button id="toggle-btn-2">🌓</button>
+      <button id="btn-mobile-menu">☰</button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-14 mt-16">
+
+    <!-- TEXT -->
+    <div
+      id="home-div"
+      class="w-full lg:w-1/2 flex flex-col gap-6 text-center lg:text-left"
+    >
+
+      <span class="text-sm tracking-[5px] uppercase text-blue-500 font-semibold">
+        Hello, I'm
+      </span>
+
+      <h1 class="text-5xl lg:text-7xl font-extrabold text-gray-900 dark:text-white leading-tight">
+        A.T.N. <br />
+        <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+          Ruwandima
+        </span>
+      </h1>
+
+      <h2 class="text-2xl lg:text-4xl font-bold text-gray-700 dark:text-gray-300">
+        Software Developer
+      </h2>
+
+      <p class="text-gray-600 dark:text-gray-400 max-w-xl">
+        I build modern web apps, mobile apps, and intelligent systems with clean UI,
+        strong architecture, and scalable performance.
+      </p>
+
+      <!-- CTA -->
+      <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+
+        <a
+          href="./download/nadeesha-ruwandima.pdf"
+          download
+          class="px-6 py-3 rounded-2xl bg-blue-600 text-white font-semibold hover:scale-105 transition shadow-lg dark:bg-yellow-400 dark:text-black"
         >
-          <div
-            class="flex flex-col gap-5 justify-center items-center w-full opacity-0 translate-x-[-10px] duration-700 ease-in-out lg:w-1/2 order-1 lg:order-0 lg:items-start"
-            id="home-div"
-          >
-            <label
-              class="text-gray-900 tex-md lg:text-lg font-bold text-center lg:text-left dark:text-white"
-              >HELLO MY NAME IS,</label
-            >
-            <label
-              class="text-gray-900 font-bold lg:text-6xl text-4xl text-center lg:text-left dark:text-white"
-              >A.T.N. Ruwandima</label
-            >
-            <label
-              class="text-gray-900 font-bold lg:text-4xl text-2xl text-center lg:text-left dark:text-white"
-              >Software Developer</label
-            >
-            <div class="flex flex-row gap-5">
-              <a
-                href="mailto:nadeesharuwandima@gmail.com?subject=Collaboration%20with%20Nadeesha%20Ruwandima&body=Hello%20Nadeesha%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20I%20am%20interested%20in%20discussing%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D"
-              >
-                <i
-                  class="fa-solid fa-envelope text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-red-800 dark:hover:text-red-800 dark:text-white"
-                ></i>
-              </a>
-              <a
-                href="https://github.com/Nadeesha699"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i
-                  class="fa-brands fa-github text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-purple-800 dark:hover:text-purple-800 dark:text-white"
-                ></i>
-              </a>
-              <a
-                href="https://www.facebook.com/profile.php?id=100039332113797&mibextid=ZbWKwL"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i
-                  class="fa-brands fa-facebook text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-800 dark:hover:text-blue-800 dark:text-white"
-                ></i>
-              </a>
-              <a
-                href="https://wa.me/+94711764232"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i
-                  class="fa-brands fa-whatsapp text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-green-800 dark:hover:text-green-800 dark:text-white"
-                ></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/nadeesha-ruwandima-b5a356259"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i
-                  class="fa-brands fa-linkedin text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-600 dark:text-white"
-                ></i>
-              </a>
-            </div>
-            <a
-              class="rounded-lg bg-blue-600 text-white font-bold w-fit text-center flex flex-row gap-2 items-center p-2 transition duration-300 ease-in-out text-ellipsis whitespace-nowrap overflow-hidden hover:bg-gray-900 dark:bg-yellow-400 dark:text-gray-900 dark:hover:bg-white"
-              href="./download/nadeesha-ruwandima.pdf"
-              download="nadeesha-ruwandima-cv.pdf"
-              ><i class="fa-solid fa-download text-lg"></i> Download CV</a
-            >
-          </div>
-          <img
-            src="./images/home_pic.png"
-            alt="icon"
-            id="home-img"
-            class="w-1/2 h-full rounded-full bg-gray-900 order-0 opacity-0 translate-x-[10px] duration-700 ease-in-out lg:order-1 dark:bg-white"
-          />
-        </div>
+          ⬇ Download CV
+        </a>
+
+        <a
+          href="#portfolio-main"
+          class="px-6 py-3 rounded-2xl border border-gray-300 dark:border-white/20 text-gray-900 dark:text-white hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition"
+        >
+          View Work
+        </a>
       </div>
-      <!-- about-1 -->
-      <div class="p-10 flex flex-col gap-10" id="about-main">
-        <h1
-          class="font-bold text-4xl text-gray-900 text-center opacity-0 translate-x-[10px] duration-700 ease-in-out lg:text-left dark:text-white"
-          id="about-h1"
-        >
-          About me
-        </h1>
-        <p
-          class="text-gray-900 text-center opacity-0 translate-x-[-10px] duration-700 ease-in-out lg:text-justify dark:text-white"
-          id="about-p"
-        >
-          Hello, I’m Nadessha Ruwandima, a passionate web developer based in
-          Australlia with over 6 months of experience in website and product
-          design. With a solid foundation in both front-end and back-end
-          development, I specialize in creating professional and visually
-          appealing websites that align with the latest industry trends.
-        </p>
-        <div
-          id="about-div"
-          class="flex flex-col w-full gap-10 opacity-0 translate-y-[10px] duration-700 ease-in-out lg:flex-row"
-        >
-          <p
-            class="font-bold w-full lg:w-1/2 text-lg text-blue-600 text-center lg:text-justify dark:text-yellow-400"
-          >
-            I Design professional and beautiful web & mobile, desktop app
-          </p>
-          <p
-            class="w-full lg:w-1/2 text-gray-900 text-center lg:text-justify dark:text-white"
-          >
-            Over the years, I’ve had the privilege of working with a diverse
-            range of businesses, allowing me to fine-tune my understanding of
-            client needs across different niches. My expertise spans various
-            design domains landing pages, email templates, app UI/UX, and mobile
-            platforms enabling me to offer unique insights and solutions for
-            each project. My approach prioritizes collaboration; I provide
-            multiple options and work closely with you to bring your vision to
-            life without compromise. Whether it’s web, mobile, or desktop
-            design, I’m committed to delivering results that exceed expectations
-            and elevate your digital presence.
-          </p>
-        </div>
+
+      <!-- Social -->
+      <div class="flex gap-5 text-2xl justify-center lg:justify-start mt-2">
+        <a href="mailto:nadeesharuwandima@gmail.com">📧</a>
+        <a href="https://github.com/Nadeesha699" target="_blank">🐙</a>
+        <a href="https://facebook.com" target="_blank">📘</a>
+        <a href="https://wa.me/+94711764232" target="_blank">💬</a>
+        <a href="https://linkedin.com" target="_blank">💼</a>
       </div>
-      <!-- Skills -->
-      <div class="p-10 flex flex-col gap-10" id="lng-main">
-        <h1
-          class="font-bold text-4xl text-center lg:text-left text-gray-900 opacity-0 translate-x-[10px] duration-700 ease-in-out dark:text-white"
-          id="lng-h1"
-        >
-          Skills
-        </h1>
-        <div class="flex space-x-8 overflow-hidden">
-          <div class="flex space-x-8 animate-loop-scroll">
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:java"></span>
-              <progress
-                value="80"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:react"></span>
-              <progress
-                value="75"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar1"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span
-                class="iconify w-12 h-12"
-                data-icon="logos:javascript"
-              ></span>
-              <progress
-                value="80"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar2"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:vue"></span>
-              <progress
-                value="70"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar3"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span
-                class="iconify w-12 h-12"
-                data-icon="logos:angular-icon"
-              ></span>
-              <progress
-                value="70"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar4"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:python"></span>
-              <progress
-                value="80"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar6"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:laravel"></span>
-              <progress
-                value="75"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar7"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:php"></span>
-              <progress
-                value="80"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar8"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:mysql"></span>
-              <progress
-                value="90"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar9"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span
-                class="iconify w-12 h-12"
-                data-icon="logos:typescript-icon"
-              ></span>
-              <progress
-                value="70"
-                max="100"
-                class="rounded-full h-1 w-24 lng-progress-bar10"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:nodejs"></span>
-              <progress
-                value="70"
-                max="100"
-                class="rounded-full h-1 w-24 lng-progress-bar11"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:html-5"></span>
-              <progress
-                value="90"
-                max="100"
-                class="rounded-full h-1 w-24 lng-progress-bar12"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:css-3"></span>
-              <progress
-                value="85"
-                max="100"
-                class="rounded-full h-1 w-24 lng-progress-bar13"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span
-                class="iconify w-12 h-12"
-                data-icon="logos:tailwindcss-icon"
-              ></span>
-              <progress
-                value="80"
-                max="100"
-                class="rounded-full h-1 w-24 lng-progress-bar14"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:git-icon"></span>
-              <progress
-                value="75"
-                max="100"
-                class="rounded-full h-1 w-24 lng-progress-bar15"
-              ></progress>
-            </div>
-          </div>
-          <div class="flex space-x-8 animate-loop-scroll" aria-hidden="true">
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:java"></span>
-              <progress
-                value="80"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:react"></span>
-              <progress
-                value="75"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar1"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span
-                class="iconify w-12 h-12"
-                data-icon="logos:javascript"
-              ></span>
-              <progress
-                value="80"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar2"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:vue"></span>
-              <progress
-                value="70"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar3"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span
-                class="iconify w-12 h-12"
-                data-icon="logos:angular-icon"
-              ></span>
-              <progress
-                value="70"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar4"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:python"></span>
-              <progress
-                value="80"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar6"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:laravel"></span>
-              <progress
-                value="75"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar7"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:php"></span>
-              <progress
-                value="80"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar8"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:mysql"></span>
-              <progress
-                value="90"
-                max="100"
-                class="rounded-full h-1 overflow-hidden appearance-none w-24 lng-progress-bar9"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span
-                class="iconify w-12 h-12"
-                data-icon="logos:typescript-icon"
-              ></span>
-              <progress
-                value="70"
-                max="100"
-                class="rounded-full h-1 w-24 lng-progress-bar10"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:nodejs"></span>
-              <progress
-                value="70"
-                max="100"
-                class="rounded-full h-1 w-24 lng-progress-bar11"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:html-5"></span>
-              <progress
-                value="90"
-                max="100"
-                class="rounded-full h-1 w-24 lng-progress-bar12"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:css-3"></span>
-              <progress
-                value="85"
-                max="100"
-                class="rounded-full h-1 w-24 lng-progress-bar13"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span
-                class="iconify w-12 h-12"
-                data-icon="logos:tailwindcss-icon"
-              ></span>
-              <progress
-                value="80"
-                max="100"
-                class="rounded-full h-1 w-24 lng-progress-bar14"
-              ></progress>
-            </div>
-            <div class="flex flex-col items-center gap-5 flex-shrink-0">
-              <span class="iconify w-12 h-12" data-icon="logos:git-icon"></span>
-              <progress
-                value="75"
-                max="100"
-                class="rounded-full h-1 w-24 lng-progress-bar15"
-              ></progress>
-            </div>
-          </div>
-        </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="w-full lg:w-1/2 flex justify-center">
+      <div class="relative">
+        <div class="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full"></div>
+
+        <img
+          src="./images/home_pic.png"
+          class="relative w-[320px] lg:w-[420px] rounded-full border-4 border-white/10 shadow-2xl hover:scale-105 transition duration-500"
+        />
       </div>
-      <!--App Download Section-->
-      <div
-        id="download-section"
-        class="m-10 p-10 flex flex-col justify-center items-center lg:justify-start lg:flex-row gap-10 bg-gray-900 rounded-2xl dark:bg-white"
+    </div>
+
+  </div>
+</section>
+
+<!-- Nav link style helper -->
+<style>
+  
+</style>
+ <!-- Modern About Section -->
+<section
+  id="about-main"
+  class="relative py-20 px-6 lg:px-20 bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-950 overflow-hidden"
+>
+  <!-- Glow Background -->
+  <div class="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-3xl rounded-full"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/10 blur-3xl rounded-full"></div>
+
+  <div class="relative z-10 flex flex-col gap-14">
+
+    <!-- Heading -->
+    <div class="text-center lg:text-left">
+      <span class="text-sm uppercase tracking-[4px] text-blue-500 font-semibold">
+        About Me
+      </span>
+
+      <h1
+        id="about-h1"
+        class="mt-3 text-4xl lg:text-6xl font-extrabold text-gray-900 dark:text-white"
       >
+        Who I Am
+      </h1>
+    </div>
+
+    <!-- Content Grid -->
+    <div id="about-div" class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left Card -->
+      <div
+        class="p-8 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg"
+      >
+        <p class="text-xl font-bold text-blue-600 dark:text-yellow-400 leading-relaxed">
+          I design professional and beautiful web, mobile & desktop applications
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="px-4 py-2 text-xs rounded-full bg-blue-100 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400">
+            UI/UX Design
+          </span>
+          <span class="px-4 py-2 text-xs rounded-full bg-purple-100 text-purple-600 dark:bg-purple-500/10 dark:text-purple-400">
+            Web Development
+          </span>
+          <span class="px-4 py-2 text-xs rounded-full bg-green-100 text-green-600 dark:bg-green-500/10 dark:text-green-400">
+            Mobile Apps
+          </span>
+          <span class="px-4 py-2 text-xs rounded-full bg-pink-100 text-pink-600 dark:bg-pink-500/10 dark:text-pink-400">
+            Backend Systems
+          </span>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="flex flex-col gap-6 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+
+        <p>
+          Hello, I’m <span class="font-semibold text-gray-900 dark:text-white">Nadessha Ruwandima</span>,
+          a passionate web developer based in Australia with experience in building modern,
+          scalable digital products.
+        </p>
+
+        <p>
+          I specialize in both front-end and back-end development, focusing on creating
+          clean, responsive, and user-friendly interfaces that follow modern design trends.
+        </p>
+
+        <p>
+          Over time, I’ve worked across different domains including landing pages,
+          dashboards, mobile apps, and business systems — always aiming to deliver
+          high-quality solutions that match real client needs.
+        </p>
+
+        <p>
+          My approach is collaborative and detail-oriented. I focus on understanding the
+          vision first, then turning it into a polished digital experience.
+        </p>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+
+          <div class="p-4 rounded-2xl bg-white/60 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-center">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">6+</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Months Exp</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white/60 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-center">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">20+</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Projects</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white/60 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-center">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">10+</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Technologies</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-white/60 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-center">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">100%</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Dedication</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Modern Skills Section -->
+<section
+  id="lng-main"
+  class="relative overflow-hidden py-20 px-6 lg:px-20 bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-950"
+>
+  <!-- Background Glow -->
+  <div class="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-3xl rounded-full"></div>
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/10 blur-3xl rounded-full"></div>
+
+  <div class="relative z-10 flex flex-col gap-12">
+    
+    <!-- Heading -->
+    <h1
+      id="lng-h1"
+      class="text-4xl lg:text-6xl font-extrabold text-center lg:text-left text-gray-900 dark:text-white"
+    >
+      Skills & Technologies
+    </h1>
+
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+
+      <!-- Skill Card -->
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:java"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">Java</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:react"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">React</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:javascript"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">JavaScript</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:vue"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">Vue</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:angular-icon"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">Angular</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:python"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">Python</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:laravel"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">Laravel</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:php"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">PHP</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:mysql"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">MySQL</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:typescript-icon"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">TypeScript</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:nodejs"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">Node.js</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:html-5"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">HTML</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:css-3"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">CSS</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:tailwindcss-icon"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">Tailwind</span>
+      </div>
+
+      <div class="group p-6 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 flex flex-col items-center gap-4 hover:scale-105 transition duration-300 shadow-lg">
+        <span class="iconify w-12 h-12" data-icon="logos:git-icon"></span>
+        <span class="text-sm font-semibold text-gray-700 dark:text-white">Git</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- Modern Download Section -->
+<section
+  id="download-section"
+  class="relative overflow-hidden mx-6 lg:mx-20 my-20 rounded-[40px] bg-gradient-to-br from-gray-950 via-black to-gray-900 dark:from-white dark:via-gray-100 dark:to-white shadow-2xl"
+>
+  <!-- Background Glow -->
+  <div
+    class="absolute top-0 left-0 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"
+  ></div>
+
+  <div
+    class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"
+  ></div>
+
+  <div
+    class="relative z-10 px-8 py-16 lg:px-16 flex flex-col lg:flex-row items-center gap-16"
+  >
+    <!-- App Mockup -->
+    <div
+      class="w-full lg:w-1/2 flex justify-center opacity-0 translate-x-[-10px] duration-700 ease-in-out"
+      id="downlaod-img"
+    >
+      <div class="relative">
+        <div
+          class="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full"
+        ></div>
+
         <img
           src="./images/app-mockup.png"
-          alt="image"
-          class="w-full sm:w-1/2 lg:w-1/3 order-1 lg:order-0 opacity-0 translate-x-[-10px] duration-700 ease-in-out"
-          id="downlaod-img"
+          alt="Think You App"
+          class="relative w-full max-w-sm lg:max-w-md drop-shadow-[0_20px_60px_rgba(59,130,246,0.4)] hover:scale-105 transition duration-500"
         />
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div
+      class="w-full lg:w-1/2 flex flex-col gap-8 justify-center items-center lg:items-start text-center lg:text-left opacity-0 translate-x-[10px] duration-700 ease-in-out"
+      id="downlaod-div"
+    >
+      <!-- App Header -->
+      <div class="flex flex-col sm:flex-row items-center gap-5">
         <div
-          class="flex flex-col gap-10 justify-center items-center lg:justify-start lg:items-start order-0 lg:order-1 opacity-0 translate-x-[10px] duration-700 ease-in-out"
-          id="downlaod-div"
+          class="w-20 h-20 rounded-3xl overflow-hidden bg-white/10 backdrop-blur-lg border border-white/10 shadow-xl"
         >
-          <div class="flex flex-col lg:flex-row gap-5 items-center">
-            <img src="./images/app-logo.png" class="w-12 h-12 rounded-lg" />
-            <div
-              class="flex flex-col gap-2 items-center justify-center lg:justify-start lg:items-start"
-            >
-              <label
-                class="text-4xl font-bold text-blue-600 dark:text-yellow-400"
-                >Think You</label
-              >
-              <span class="text-white font-bold text-sm dark:text-gray-900">
-                Memory & Mind Puzzle Game
-              </span>
-            </div>
-          </div>
-          <p class="text-white dark:text-gray-900 text-center lg:text-justify">
-            Think You is a fun and challenging mind game designed to sharpen
-            your memory and focus. Flip cards, remember their patterns, and
-            match them correctly before time runs out! Each level gets harder,
-            pushing your brain to think faster and smarter.
+          <img
+            src="./images/app-logo.png"
+            alt="App Logo"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div>
+          <h2
+            class="text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+          >
+            Think You
+          </h2>
+
+          <p
+            class="mt-2 text-gray-300 dark:text-gray-700 font-medium tracking-wide"
+          >
+            Memory & Mind Puzzle Game
           </p>
-          <a href="./download/thinkyou.apk" download="thinkyou.apk">
-            <div
-              class="flex flex-row gap-3 items-center rounded-lg bg-blue-600 hover:bg-white hover:text-gray-900 cursor-pointer p-3 w-fit text-white font-bold duration-300 ease-in-out dark:hover:bg-gray-900 dark:hover:text-white dark:bg-yellow-400 dark:text-gray-900"
-            >
-              <i class="fa-brands fa-android text-lg"></i>
-              <i class="fa-solid fa-download text-lg"></i>
-              <label class="font-bold">Download for Android</label>
-            </div>
-          </a>
         </div>
       </div>
-      <!-- about-2 -->
-      <div
-        class="p-10 bg-white dark:bg-gray-950 flex flex-col gap-10"
+
+      <!-- Description -->
+      <p
+        class="text-lg leading-relaxed text-gray-300 dark:text-gray-700 max-w-2xl"
+      >
+        Think You is a fun and challenging brain puzzle game designed to improve
+        your memory, concentration and thinking speed. Flip cards, remember
+        patterns and complete increasingly difficult levels while training your
+        mind in an entertaining way.
+      </p>
+
+      <!-- Features -->
+      <div class="grid grid-cols-2 gap-4 w-full max-w-xl">
+        <div
+          class="rounded-2xl bg-white/5 dark:bg-black/5 border border-white/10 p-4 backdrop-blur-lg"
+        >
+          <span class="text-2xl">🧠</span>
+          <h4 class="font-bold text-white dark:text-gray-900 mt-2">
+            Brain Training
+          </h4>
+        </div>
+
+        <div
+          class="rounded-2xl bg-white/5 dark:bg-black/5 border border-white/10 p-4 backdrop-blur-lg"
+        >
+          <span class="text-2xl">⚡</span>
+          <h4 class="font-bold text-white dark:text-gray-900 mt-2">
+            Fast Gameplay
+          </h4>
+        </div>
+
+        <div
+          class="rounded-2xl bg-white/5 dark:bg-black/5 border border-white/10 p-4 backdrop-blur-lg"
+        >
+          <span class="text-2xl">🎯</span>
+          <h4 class="font-bold text-white dark:text-gray-900 mt-2">
+            Focus Challenge
+          </h4>
+        </div>
+
+        <div
+          class="rounded-2xl bg-white/5 dark:bg-black/5 border border-white/10 p-4 backdrop-blur-lg"
+        >
+          <span class="text-2xl">📱</span>
+          <h4 class="font-bold text-white dark:text-gray-900 mt-2">
+            Android Game
+          </h4>
+        </div>
+      </div>
+
+      <!-- Download Button -->
+      <a href="./download/thinkyou.apk" download="thinkyou.apk">
+        <button
+          class="group mt-4 inline-flex items-center gap-4 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-white hover:to-white hover:text-gray-900 text-white px-8 py-5 text-lg font-bold shadow-2xl transition duration-300 hover:scale-105 dark:hover:bg-gray-900 dark:hover:text-white"
+        >
+          <i class="fa-brands fa-android text-2xl"></i>
+
+          <span>Download for Android</span>
+
+          <i
+            class="fa-solid fa-download text-lg group-hover:translate-y-1 transition duration-300"
+          ></i>
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+      <!-- Modern Services Section -->
+      <section
         id="about-two-main"
+        class="relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-950 dark:via-black dark:to-gray-900 py-20 px-6 lg:px-20"
       >
-        <h1
-          class="font-bold text-4xl text-gray-900 dark:text-white text-center opacity-0 translate-x-[10px] duration-700 ease-in-out lg:text-left"
-          id="about-two-h1"
-        >
-          What I do
-        </h1>
-        <p
-          class="text-gray-900 dark:text-white w-full text-center opacity-0 translate-x-[-10px] duration-700 ease-in-out lg:text-justify xl:w-1/2e"
-          id="about-two-p"
-        >
-          From understanding your requirements, designing a blueprint and
-          delivering the final product, I do everything that falls in between
-          these lines.
-        </p>
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Web Development -->
-          <div
-            class="group bg-white/5 dark:bg-white/5 backdrop-blur-lg border border-gray-800 rounded-2xl p-8 hover:scale-[1.03] transition duration-300"
-          >
-            <div class="flex items-center gap-4 mb-5">
-              <span
-                class="iconify text-4xl text-yellow-400"
-                data-icon="mdi:web"
-              ></span>
-              <h3 class="text-xl font-bold">Web Development</h3>
-            </div>
-
-            <p class="text-gray-400 mb-5">
-              High-performance, responsive and scalable web applications.
-            </p>
-
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Responsive Websites</li>
-              <li>• eCommerce Platforms</li>
-              <li>• Admin Dashboards</li>
-              <li>• API Integration</li>
-            </ul>
-          </div>
-
-          <!-- Mobile Apps -->
-          <div
-            class="group bg-white/5 backdrop-blur-lg border border-gray-800 rounded-2xl p-8 hover:scale-[1.03] transition duration-300"
-          >
-            <div class="flex items-center gap-4 mb-5">
-              <span
-                class="iconify text-4xl text-yellow-400"
-                data-icon="mdi:cellphone"
-              ></span>
-              <h3 class="text-xl font-bold">Mobile Apps</h3>
-            </div>
-
-            <p class="text-gray-400 mb-5">
-              Modern Android & iOS applications with smooth UX.
-            </p>
-
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• Android Applications</li>
-              <li>• iOS Applications</li>
-              <li>• Cross-platform Apps</li>
-              <li>• Performance Optimization</li>
-            </ul>
-          </div>
-
-          <!-- Business Systems -->
-          <div
-            class="group bg-white/5 backdrop-blur-lg border border-gray-800 rounded-2xl p-8 hover:scale-[1.03] transition duration-300"
-          >
-            <div class="flex items-center gap-4 mb-5">
-              <span
-                class="iconify text-4xl text-yellow-400"
-                data-icon="mdi:desktop-classic"
-              ></span>
-              <h3 class="text-xl font-bold">Business Systems</h3>
-            </div>
-
-            <p class="text-gray-400 mb-5">
-              Powerful desktop & business management solutions.
-            </p>
-
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• POS Systems</li>
-              <li>• Desktop Applications</li>
-              <li>• Business Management Apps</li>
-              <li>• Windows Software</li>
-            </ul>
-          </div>
-
-          <!-- AI / ML -->
-          <div
-            class="group bg-white/5 backdrop-blur-lg border border-gray-800 rounded-2xl p-8 hover:scale-[1.03] transition duration-300"
-          >
-            <div class="flex items-center gap-4 mb-5">
-              <span
-                class="iconify text-4xl text-yellow-400"
-                data-icon="mdi:brain"
-              ></span>
-              <h3 class="text-xl font-bold">AI & ML</h3>
-            </div>
-
-            <p class="text-gray-400 mb-5">
-              Intelligent AI systems and machine learning solutions.
-            </p>
-
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• ML Model Training</li>
-              <li>• Data Prediction</li>
-              <li>• AI Automation</li>
-              <li>• Data Analysis</li>
-            </ul>
-          </div>
-
-          <!-- UI/UX Design -->
-          <div
-            class="group bg-white/5 backdrop-blur-lg border border-gray-800 rounded-2xl p-8 hover:scale-[1.03] transition duration-300"
-          >
-            <div class="flex items-center gap-4 mb-5">
-              <span
-                class="iconify text-4xl text-yellow-400"
-                data-icon="mdi:palette"
-              ></span>
-              <h3 class="text-xl font-bold">UI/UX Design</h3>
-            </div>
-
-            <p class="text-gray-400 mb-5">
-              Clean, modern and user-focused interface design.
-            </p>
-
-            <ul class="text-sm text-gray-300 space-y-2">
-              <li>• UI Design</li>
-              <li>• UX Research</li>
-              <li>• Wireframes</li>
-              <li>• Prototyping</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- portfolio -->
-      <div class="p-10 flex flex-col gap-10" id="portfolio-main">
+        <!-- Background Effects -->
         <div
-          class="flex flex-col gap-5 justify-center items-center w-full opacity-0 translate-x-[10px] duration-700 ease-in-out lg:flex-row lg:justify-between"
-          id="portfolio-div"
-        >
-          <h1 class="font-bold text-4xl dark:text-white text-gray-900">
-            Portfolio
-          </h1>
-        </div>
+          class="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"
+        ></div>
         <div
-          id="portfolio-div-1"
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          <div
-            class="bg-white rounded-xl shadow-md overflow-hidden p-3 flex flex-row gap-3 items-center hover:shadow-xl transition duration-300"
-          >
-            <div class="w-1/3 flex justify-center bg-gray-100 rounded-lg p-2">
-              <img
-                src="./images/pro-img1.png"
-                class="h-full object-contain rounded-lg"
-              />
-            </div>
-            <div class="flex flex-col gap-2 w-2/3">
-              <h3 class="font-semibold text-sm truncate">
-                Ready Social Media Mobile App
-              </h3>
+          class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"
+        ></div>
 
-              <div class="flex flex-wrap gap-2 text-xs">
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >React native</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >Express</span
-                ><span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >MySQL</span
-                >
-              </div>
-
-              <a
-                href="https://github.com/Nadeesha699/react-native-ready-social-media-app"
-                target="_blank"
-                class="mt-2 text-sm text-center border border-blue-600 text-blue-600 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition dark:border-yellow-400 dark:text-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-black"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl shadow-md overflow-hidden p-3 flex flex-col gap-3 hover:shadow-xl transition duration-300"
-          >
-            <img
-              src="./images/pro-img2.png"
-              class="w-full h-50 object-cover rounded-lg"
-            />
-
-            <div class="flex flex-col gap-2">
-              <h3 class="font-semibold text-sm truncate">
-                Healing Heart Web Application
-              </h3>
-
-              <div class="flex flex-wrap gap-2 text-xs">
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >React</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >Express</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >MySQL</span
-                >
-              </div>
-
-              <a
-                href="https://github.com/Nadeesha699/vue-healing-heart-web-frontend"
-                target="_blank"
-                class="mt-2 text-sm text-center border border-blue-600 text-blue-600 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition dark:border-yellow-400 dark:text-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-black"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl shadow-md overflow-hidden p-3 flex flex-col gap-3 hover:shadow-xl transition duration-300"
-          >
-            <img
-              src="./images/pro-img16.png"
-              class="w-full h-50 object-cover rounded-lg"
-            />
-
-            <div class="flex flex-col gap-2">
-              <h3 class="font-semibold text-sm truncate">
-                Reelrapter Video Download Web App
-              </h3>
-
-              <div class="flex flex-wrap gap-2 text-xs">
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >React</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >Python</span
-                >
-              </div>
-
-              <a
-                href="https://github.com/Nadeesha699/react-reelrapter-web-app"
-                target="_blank"
-                class="mt-2 text-sm text-center border border-blue-600 text-blue-600 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition dark:border-yellow-400 dark:text-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-black"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl shadow-md overflow-hidden p-3 flex flex-row gap-3 items-center hover:shadow-xl transition duration-300"
-          >
-            <div class="w-1/3 flex justify-center bg-gray-100 rounded-lg p-2">
-              <img
-                src="./images/pro-img9.png"
-                class="h-full object-contain rounded-lg"
-              />
-            </div>
-            <div class="flex flex-col gap-2 w-2/3">
-              <h3 class="font-semibold text-sm truncate">
-                Think You Mobile Game
-              </h3>
-
-              <div class="flex flex-wrap gap-2 text-xs">
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >Android</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >Java</span
-                >
-              </div>
-
-              <a
-                href="https://github.com/Nadeesha699/android-think-you-mobile-game"
-                target="_blank"
-                class="mt-2 text-sm text-center border border-blue-600 text-blue-600 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition dark:border-yellow-400 dark:text-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-black"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl shadow-md overflow-hidden p-3 flex flex-col gap-3 hover:shadow-xl transition duration-300"
-          >
-            <img
-              src="./images/pro-img8.jpg"
-              class="w-full h-50 object-cover rounded-lg"
-            />
-
-            <div class="flex flex-col gap-2">
-              <h3 class="font-semibold text-sm truncate">
-                PsyPredict Health Prediction Web App
-              </h3>
-
-              <div class="flex flex-wrap gap-2 text-xs">
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >React</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >Python</span
-                ><span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                >
-                  ML</span
-                >
-              </div>
-
-              <a
-                href="https://github.com/Nadeesha699/react-psypredict-frontend"
-                target="_blank"
-                class="mt-2 text-sm text-center border border-blue-600 text-blue-600 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition dark:border-yellow-400 dark:text-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-black"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl shadow-md overflow-hidden p-3 flex flex-col gap-3 hover:shadow-xl transition duration-300"
-          >
-            <img
-              src="./images/pro-img5.png"
-              class="w-full h-50 object-cover rounded-lg"
-            />
-
-            <div class="flex flex-col gap-2">
-              <h3 class="font-semibold text-sm truncate">Chat Box Web App</h3>
-
-              <div class="flex flex-wrap gap-2 text-xs">
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >React</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >Express</span
-                ><span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                >
-                  MySQL</span
-                >
-              </div>
-
-              <a
-                href="https://github.com/Nadeesha699/react-chat-box-web-frontend"
-                target="_blank"
-                class="mt-2 text-sm text-center border border-blue-600 text-blue-600 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition dark:border-yellow-400 dark:text-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-black"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl shadow-md overflow-hidden p-3 flex flex-col gap-3 hover:shadow-xl transition duration-300"
-          >
-            <img
-              src="./images/pro-img19.png"
-              class="w-full h-50 object-cover rounded-lg"
-            />
-
-            <div class="flex flex-col gap-2">
-              <h3 class="font-semibold text-sm truncate">
-                EduSync ICT Web App
-              </h3>
-
-              <div class="flex flex-wrap gap-2 text-xs">
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >React</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >Python</span
-                >
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >MySQL</span
-                >
-              </div>
-
-              <a
-                href="https://github.com/Nadeesha699/react-edusync-web-frontend"
-                target="_blank"
-                class="mt-2 text-sm text-center border border-blue-600 text-blue-600 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition dark:border-yellow-400 dark:text-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-black"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl shadow-md overflow-hidden p-3 flex flex-col gap-3 hover:shadow-xl transition duration-300"
-          >
-            <img
-              src="./images/pro-img22.png"
-              class="w-full h-50 object-cover rounded-lg"
-            />
-
-            <div class="flex flex-col gap-2">
-              <h3 class="font-semibold text-sm truncate">
-                Inferno Creatives Website
-              </h3>
-
-              <div class="flex flex-wrap gap-2 text-xs">
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >React</span
-                >
-              </div>
-
-              <a
-                href="https://infernocreatives.com/"
-                target="_blank"
-                class="mt-2 text-sm text-center border border-blue-600 text-blue-600 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition dark:border-yellow-400 dark:text-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-black"
-              >
-                View
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-white rounded-xl shadow-md overflow-hidden p-3 flex flex-col gap-3 hover:shadow-xl transition duration-300"
-          >
-            <img
-              src="./images/pro-img23.png"
-              class="w-full h-50 object-cover rounded-lg"
-            />
-
-            <div class="flex flex-col gap-2">
-              <h3 class="font-semibold text-sm truncate">Kuppiya Website</h3>
-
-              <div class="flex flex-wrap gap-2 text-xs">
-                <span
-                  class="bg-blue-100 text-blue-600 px-2 py-1 rounded dark:bg-yellow-100 dark:text-yellow-600"
-                  >React</span
-                >
-              </div>
-
-              <a
-                href="https://kuppiya-lk.vercel.app/"
-                target="_blank"
-                class="mt-2 text-sm text-center border border-blue-600 text-blue-600 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition dark:border-yellow-400 dark:text-yellow-400 dark:hover:bg-yellow-400 dark:hover:text-black"
-              >
-                View
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- footer -->
-      <div
-        class="p-10 flex flex-col gap-10 bg-white dark:bg-gray-950"
-        id="footer-main"
-      >
-        <div
-          class="flex flex-col lg:flex-row gap-2 w-full justify-center items-center opacity-0 translate-x-[10px] duration-700 ease-in-out lg:justify-start"
-          id="footer-div-1"
-        >
-          <img src="./images/icons/icon.png" alt="icon" class="w-24 h-24" />
-          <div class="flex flex-col gap-2">
-            <label
-              class="font-bold text-2xl lg:text-4xl text-gray-900 text-center lg:text-left dark:text-white"
-              >A.T.N. Ruwandima</label
+        <div class="relative z-10 flex flex-col gap-16">
+          <!-- Heading -->
+          <div class="max-w-3xl">
+            <span
+              class="uppercase tracking-[4px] text-sm font-semibold text-blue-500"
             >
-            <label
-              class="text-gray-900 text-center lg:text-left dark:text-white"
-              >Turning ideas into clean, modern code.</label
+              Services
+            </span>
+
+            <h1
+              class="mt-4 text-4xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight"
             >
+              What I
+              <span
+                class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
+              >
+                Do
+              </span>
+            </h1>
+
+            <p
+              class="mt-6 text-gray-600 dark:text-gray-400 text-lg leading-relaxed"
+            >
+              From understanding your vision to designing, developing and
+              delivering high-quality digital products, I create modern
+              solutions that help businesses grow and stand out.
+            </p>
           </div>
-        </div>
-        <div class="flex flex-col gap-10 lg:flex-row justify-between">
-          <div
-            class="flex flex-col gap-2 w-full lg:w-1/4 opacity-0 translate-x-[-10px] duration-700 ease-in-out"
-            id="footer-div-2"
-          >
-            <label
-              class="uppercase text-gray-900 text-center lg:text-left font-bold dark:text-white"
-              >Contact us</label
-            >
-            <label
-              class="lg:text-4xl text-2xl text-gray-900 font-bold text-center lg:text-left dark:text-white"
-              >Let's Discuss your vision with <span>me</span></label
-            >
+
+          <!-- Services Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+            <!-- Card -->
             <div
-              class="flex flex-row rounded-full p-5 justify-between items-center bg-gray-900 gap-5 dark:bg-white"
+              class="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
-              <label class="text-white dark:text-gray-900"
-                >Schedule a email now</label
-              >
-              <a
-                href="mailto:nadeesharuwandima@gmail.com?subject=Collaboration%20with%20Nadeesha%20Ruwandima&body=Hello%20Nadeesha%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20I%20am%20interested%20in%20discussing%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D"
-              >
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+              ></div>
+
+              <div class="relative z-10">
+                <div
+                  class="w-16 h-16 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6"
+                >
+                  <span
+                    class="iconify text-4xl text-blue-500"
+                    data-icon="mdi:web"
+                  ></span>
+                </div>
+
+                <h3
+                  class="text-2xl font-bold text-gray-900 dark:text-white mb-4"
+                >
+                  Web Development
+                </h3>
+
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                  High-performance, scalable and responsive web applications
+                  built with modern technologies.
+                </p>
+
+                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                  <li>• Responsive Websites</li>
+                  <li>• eCommerce Platforms</li>
+                  <li>• Admin Dashboards</li>
+                  <li>• API Integration</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Mobile Apps -->
+            <div
+              class="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+              ></div>
+
+              <div class="relative z-10">
+                <div
+                  class="w-16 h-16 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-6"
+                >
+                  <span
+                    class="iconify text-4xl text-purple-500"
+                    data-icon="mdi:cellphone"
+                  ></span>
+                </div>
+
+                <h3
+                  class="text-2xl font-bold text-gray-900 dark:text-white mb-4"
+                >
+                  Mobile Apps
+                </h3>
+
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                  Smooth, modern Android & iOS applications with excellent user
+                  experience.
+                </p>
+
+                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                  <li>• Android Applications</li>
+                  <li>• iOS Applications</li>
+                  <li>• Cross-platform Apps</li>
+                  <li>• Performance Optimization</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Business Systems -->
+            <div
+              class="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+              ></div>
+
+              <div class="relative z-10">
+                <div
+                  class="w-16 h-16 rounded-2xl bg-green-500/10 flex items-center justify-center mb-6"
+                >
+                  <span
+                    class="iconify text-4xl text-green-500"
+                    data-icon="mdi:desktop-classic"
+                  ></span>
+                </div>
+
+                <h3
+                  class="text-2xl font-bold text-gray-900 dark:text-white mb-4"
+                >
+                  Business Systems
+                </h3>
+
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                  Smart desktop and enterprise solutions tailored for business
+                  growth.
+                </p>
+
+                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                  <li>• POS Systems</li>
+                  <li>• Desktop Applications</li>
+                  <li>• Business Management Apps</li>
+                  <li>• Windows Software</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- AI / ML -->
+            <div
+              class="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+              ></div>
+
+              <div class="relative z-10">
+                <div
+                  class="w-16 h-16 rounded-2xl bg-pink-500/10 flex items-center justify-center mb-6"
+                >
+                  <span
+                    class="iconify text-4xl text-pink-500"
+                    data-icon="mdi:brain"
+                  ></span>
+                </div>
+
+                <h3
+                  class="text-2xl font-bold text-gray-900 dark:text-white mb-4"
+                >
+                  AI & ML
+                </h3>
+
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                  AI-powered systems and machine learning solutions for
+                  automation and predictions.
+                </p>
+
+                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                  <li>• ML Model Training</li>
+                  <li>• Data Prediction</li>
+                  <li>• AI Automation</li>
+                  <li>• Data Analysis</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- UI/UX -->
+            <div
+              class="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
+              ></div>
+
+              <div class="relative z-10">
+                <div
+                  class="w-16 h-16 rounded-2xl bg-yellow-500/10 flex items-center justify-center mb-6"
+                >
+                  <span
+                    class="iconify text-4xl text-yellow-500"
+                    data-icon="mdi:palette"
+                  ></span>
+                </div>
+
+                <h3
+                  class="text-2xl font-bold text-gray-900 dark:text-white mb-4"
+                >
+                  UI/UX Design
+                </h3>
+
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                  Beautiful, intuitive and user-focused digital experiences with
+                  modern design systems.
+                </p>
+
+                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+                  <li>• UI Design</li>
+                  <li>• UX Research</li>
+                  <li>• Wireframes</li>
+                  <li>• Prototyping</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Extra Card -->
+            <div
+              class="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-blue-600 to-purple-600 p-8 shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div class="relative z-10">
                 <span
-                  class="iconify w-6 h-6 text-white dark:text-gray-900 hover:text-blue-600 dark:hover:text-yellow-400"
+                  class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 text-sm font-medium mb-6"
+                >
+                  🚀 Available for Projects
+                </span>
+
+                <h3 class="text-3xl font-bold text-white mb-4">
+                  Have an Idea?
+                </h3>
+
+                <p class="text-white/80 mb-8">
+                  Let’s turn your vision into a modern digital experience with
+                  clean design and powerful technology.
+                </p>
+
+                <a
+                  href="#footer-main"
+                  class="inline-flex items-center gap-3 bg-white text-gray-900 px-6 py-3 rounded-2xl font-semibold hover:scale-105 transition duration-300"
+                >
+                  Contact Me
+                  <span
+                    class="iconify text-xl"
+                    data-icon="ph:arrow-right-bold"
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Modern Portfolio Section -->
+      <section
+        id="portfolio-main"
+        class="relative overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-black dark:via-gray-950 dark:to-black py-20 px-6 lg:px-20"
+      >
+        <!-- Background Glow -->
+        <div
+          class="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"
+        ></div>
+
+        <div class="relative z-10 flex flex-col gap-16">
+          <!-- Heading -->
+          <div
+            class="flex flex-col lg:flex-row justify-between items-center gap-6"
+          >
+            <div>
+              <span
+                class="uppercase tracking-[4px] text-sm font-semibold text-blue-500"
+              >
+                Portfolio
+              </span>
+
+              <h1
+                class="mt-3 text-4xl lg:text-6xl font-extrabold text-gray-900 dark:text-white"
+              >
+                Featured
+                <span
+                  class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
+                >
+                  Projects
+                </span>
+              </h1>
+            </div>
+
+            <p
+              class="max-w-2xl text-center lg:text-right text-gray-600 dark:text-gray-400 text-lg"
+            >
+              A collection of web applications, mobile apps, AI solutions and
+              business systems crafted with modern technologies and clean UI.
+            </p>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+            <!-- Project Card -->
+            <div
+              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="./images/pro-img1.png"
+                  class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+
+              <div class="p-6 flex flex-col gap-5">
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                    Ready Social Media App
+                  </h3>
+
+                  <p class="text-gray-600 dark:text-gray-400 mt-2">
+                    Full-featured social media mobile application with real-time
+                    features and responsive design.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400"
+                  >
+                    React Native
+                  </span>
+
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-green-100 text-green-600 dark:bg-green-500/10 dark:text-green-400"
+                  >
+                    Express
+                  </span>
+
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-600 dark:bg-purple-500/10 dark:text-purple-400"
+                  >
+                    MySQL
+                  </span>
+                </div>
+
+                <a
+                  href="https://github.com/Nadeesha699/react-native-ready-social-media-app"
+                  target="_blank"
+                  class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
+                >
+                  View Project
+                  <span
+                    class="iconify text-xl"
+                    data-icon="ph:arrow-up-right-bold"
+                  ></span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project -->
+            <div
+              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="./images/pro-img2.png"
+                  class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+
+              <div class="p-6 flex flex-col gap-5">
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                    Healing Heart Web App
+                  </h3>
+
+                  <p class="text-gray-600 dark:text-gray-400 mt-2">
+                    Mental health support platform with secure user management
+                    and modern interface.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                  >
+                    React
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-green-100 text-green-600"
+                  >
+                    Express
+                  </span>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-600"
+                  >
+                    MySQL
+                  </span>
+                </div>
+
+                <a
+                  href="https://github.com/Nadeesha699/vue-healing-heart-web-frontend"
+                  target="_blank"
+                  class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+
+            <!-- Project -->
+            <div
+              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="./images/pro-img16.png"
+                  class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+
+              <div class="p-6 flex flex-col gap-5">
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                    Reelrapter Video Downloader
+                  </h3>
+
+                  <p class="text-gray-600 dark:text-gray-400 mt-2">
+                    Fast and lightweight video downloading web application with
+                    modern UI experience.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                  >
+                    React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-yellow-100 text-yellow-600"
+                  >
+                    Python
+                  </span>
+                </div>
+
+                <a
+                  href="https://github.com/Nadeesha699/react-reelrapter-web-app"
+                  target="_blank"
+                  class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+
+            <!-- Think You -->
+            <div
+              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="./images/pro-img9.png"
+                  class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+
+              <div class="p-6 flex flex-col gap-5">
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                    Think You Mobile Game
+                  </h3>
+
+                  <p class="text-gray-600 dark:text-gray-400 mt-2">
+                    Interactive Android mobile game developed with engaging
+                    gameplay and optimized performance.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-green-100 text-green-600"
+                  >
+                    Android
+                  </span>
+
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-orange-100 text-orange-600"
+                  >
+                    Java
+                  </span>
+                </div>
+
+                <a
+                  href="https://github.com/Nadeesha699/android-think-you-mobile-game"
+                  target="_blank"
+                  class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+
+            <!-- PsyPredict -->
+            <div
+              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="./images/pro-img8.jpg"
+                  class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+
+              <div class="p-6 flex flex-col gap-5">
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                    PsyPredict AI Health App
+                  </h3>
+
+                  <p class="text-gray-600 dark:text-gray-400 mt-2">
+                    AI-powered prediction platform using machine learning and
+                    advanced data analysis.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                  >
+                    React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-yellow-100 text-yellow-600"
+                  >
+                    Python
+                  </span>
+
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-pink-100 text-pink-600"
+                  >
+                    Machine Learning
+                  </span>
+                </div>
+
+                <a
+                  href="https://github.com/Nadeesha699/react-psypredict-frontend"
+                  target="_blank"
+                  class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+
+
+            <!-- Chat Box Web App -->
+            <div
+              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="./images/pro-img5.png"
+                  class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+
+              <div class="p-6 flex flex-col gap-5">
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                    Chat Box Web App
+                  </h3>
+
+                  <p class="text-gray-600 dark:text-gray-400 mt-2">
+                    Real-time chat platform with responsive UI and secure
+                    messaging system.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                  >
+                    React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-green-100 text-green-600"
+                  >
+                    Express
+                  </span>
+
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-600"
+                  >
+                    MySQL
+                  </span>
+                </div>
+
+                <a
+                  href="https://github.com/Nadeesha699/react-chat-box-web-frontend"
+                  target="_blank"
+                  class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+
+            <!-- EduSync ICT Web App -->
+            <div
+              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="./images/pro-img19.png"
+                  class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+
+              <div class="p-6 flex flex-col gap-5">
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                    EduSync ICT Web App
+                  </h3>
+
+                  <p class="text-gray-600 dark:text-gray-400 mt-2">
+                    Smart education platform for ICT learning, collaboration and
+                    student management.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                  >
+                    React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-yellow-100 text-yellow-600"
+                  >
+                    Python
+                  </span>
+
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-600"
+                  >
+                    MySQL
+                  </span>
+                </div>
+
+                <a
+                  href="https://github.com/Nadeesha699/react-edusync-web-frontend"
+                  target="_blank"
+                  class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
+                >
+                  View Project
+                </a>
+              </div>
+            </div>
+
+            <!-- Inferno Creatives Website -->
+            <div
+              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="./images/pro-img22.png"
+                  class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+
+              <div class="p-6 flex flex-col gap-5">
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                    Inferno Creatives Website
+                  </h3>
+
+                  <p class="text-gray-600 dark:text-gray-400 mt-2">
+                    Creative agency website with modern UI, animations and
+                    responsive experience.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                  >
+                    React
+                  </span>
+                </div>
+
+                <a
+                  href="https://infernocreatives.com/"
+                  target="_blank"
+                  class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
+                >
+                  Live Preview
+                </a>
+              </div>
+            </div>
+
+            <!-- Kuppiya Website -->
+            <div
+              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="./images/pro-img23.png"
+                  class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
+                />
+              </div>
+
+              <div class="p-6 flex flex-col gap-5">
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                    Kuppiya Website
+                  </h3>
+
+                  <p class="text-gray-600 dark:text-gray-400 mt-2">
+                    Modern educational platform with responsive design and
+                    optimized performance.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                  >
+                    React
+                  </span>
+                </div>
+
+                <a
+                  href="https://kuppiya-lk.vercel.app/"
+                  target="_blank"
+                  class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
+                >
+                  Live Preview
+                </a>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div
+              class="rounded-3xl overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-10 flex flex-col justify-center shadow-2xl"
+            >
+              <span
+                class="inline-flex w-fit items-center gap-2 px-4 py-2 rounded-full bg-white/20 text-sm font-medium text-white mb-6"
+              >
+                🚀 More Projects Coming
+              </span>
+
+              <h2 class="text-4xl font-bold text-white leading-tight">
+                Want to build your next project with me?
+              </h2>
+
+              <p class="text-white/80 mt-5 leading-relaxed">
+                I create modern web apps, mobile apps and intelligent systems
+                with clean UI and scalable architecture.
+              </p>
+
+              <a
+                href="#footer-main"
+                class="mt-8 inline-flex items-center justify-center gap-3 bg-white text-gray-900 px-6 py-4 rounded-2xl font-semibold hover:scale-105 transition duration-300"
+              >
+                Let’s Talk
+                <span
+                  class="iconify text-xl"
                   data-icon="ph:arrow-right-bold"
                 ></span>
               </a>
             </div>
-            <label
-              class="uppercase text-gray-900 font-bold text-center lg:text-left dark:text-white"
-              >or call me at</label
-            >
+          </div>
+        </div>
+      </section>
+      <!-- Modern Footer -->
+      <footer
+        class="relative overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white"
+        id="footer-main"
+      >
+        <!-- Background Blur Effects -->
+        <div
+          class="absolute top-0 left-0 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"
+        ></div>
+
+        <div class="relative z-10 px-6 lg:px-20 py-16 flex flex-col gap-16">
+          <!-- Top Branding -->
+          <div
+            class="flex flex-col lg:flex-row items-center lg:items-start gap-6 border-b border-white/10 pb-10"
+          >
             <div
-              class="flex flex-row rounded-full p-5 justify-between items-center border-2 border-dashed border-gray-900 gap-5 dark:border-white"
+              class="w-24 h-24 rounded-3xl bg-white/10 backdrop-blur-lg border border-white/10 flex items-center justify-center shadow-2xl"
             >
-              <label class="text-gray-900 dark:text-white"
-                >+94 72 282 7848</label
-              >
-              <span
-                onclick="showToast()"
-                class="iconify w-6 h-6 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-yellow-400"
-                data-icon="ph:copy"
-              ></span>
+              <img
+                src="./images/icons/icon.png"
+                alt="icon"
+                class="w-16 h-16 object-cover"
+              />
+            </div>
+
+            <div class="text-center lg:text-left">
+              <h2 class="text-3xl lg:text-5xl font-extrabold tracking-tight">
+                A.T.N. Ruwandima
+              </h2>
+              <p class="text-gray-400 mt-3 text-lg">
+                Turning ideas into clean, modern code.
+              </p>
             </div>
           </div>
+
+          <!-- Main Content -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <!-- Contact Section -->
+            <div class="flex flex-col gap-8">
+              <div>
+                <span
+                  class="uppercase tracking-[4px] text-sm text-blue-400 font-semibold"
+                >
+                  Contact Me
+                </span>
+
+                <h2
+                  class="text-3xl lg:text-5xl font-bold mt-4 leading-tight max-w-xl"
+                >
+                  Let’s build something
+                  <span
+                    class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+                  >
+                    amazing together.
+                  </span>
+                </h2>
+              </div>
+
+              <!-- Email Card -->
+              <div
+                class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 flex items-center justify-between hover:border-blue-500/40 transition duration-300"
+              >
+                <div>
+                  <p class="text-gray-400 text-sm">Schedule an email</p>
+                  <p class="font-semibold text-lg">
+                    nadeesharuwandima@gmail.com
+                  </p>
+                </div>
+
+                <a
+                  href="mailto:nadeesharuwandima@gmail.com?subject=Collaboration%20with%20Nadeesha%20Ruwandima&body=Hello%20Nadeesha%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20I%20am%20interested%20in%20discussing%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D"
+                  class="w-14 h-14 rounded-2xl bg-blue-500 flex items-center justify-center hover:scale-110 transition duration-300"
+                >
+                  <span
+                    class="iconify text-2xl"
+                    data-icon="ph:arrow-up-right-bold"
+                  ></span>
+                </a>
+              </div>
+
+              <!-- Phone Card -->
+              <div
+                class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 flex items-center justify-between hover:border-purple-500/40 transition duration-300"
+              >
+                <div>
+                  <p class="text-gray-400 text-sm">Call me anytime</p>
+                  <p class="font-semibold text-lg">+94 72 282 7848</p>
+                </div>
+
+                <button
+                  onclick="showToast()"
+                  class="w-14 h-14 rounded-2xl bg-purple-500 flex items-center justify-center hover:scale-110 transition duration-300"
+                >
+                  <span class="iconify text-2xl" data-icon="ph:copy"></span>
+                </button>
+              </div>
+
+              <!-- Social Links -->
+              <div class="flex gap-5 pt-2">
+                <a
+                  href="https://github.com/Nadeesha699"
+                  target="_blank"
+                  class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-purple-600 transition duration-300"
+                >
+                  <i class="fa-brands fa-github text-2xl"></i>
+                </a>
+
+                <a
+                  href="https://wa.me/+94711764232"
+                  target="_blank"
+                  class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-green-500 transition duration-300"
+                >
+                  <i class="fa-brands fa-whatsapp text-2xl"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/nadeesha-ruwandima-b5a356259"
+                  target="_blank"
+                  class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-500 transition duration-300"
+                >
+                  <i class="fa-brands fa-linkedin text-2xl"></i>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/profile.php?id=100039332113797&mibextid=ZbWKwL"
+                  target="_blank"
+                  class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-700 transition duration-300"
+                >
+                  <i class="fa-brands fa-facebook text-2xl"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Map -->
+            <div class="flex flex-col gap-5">
+              <h2 class="text-3xl lg:text-4xl font-bold">Find Me Here 📍</h2>
+
+              <div
+                class="overflow-hidden rounded-3xl border border-white/10 shadow-2xl h-[400px]"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d...!2d80.6134!3d5.9377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x...!2sGandara!5e0!3m2!1sen!2slk!4v...!5m2!1sen!2slk"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom -->
           <div
-            class="w-full lg:w-1/2 rounded-2xl overflow-hidden flex flex-col gap-5 opacity-0 translate-x-[10px] duration-700 ease-in-out"
-            id="footer-div-3"
+            class="border-t border-white/10 pt-8 flex flex-col lg:flex-row justify-between items-center gap-5"
           >
-            <label
-              class="text-gray-900 font-bold lg:text-4xl text-2xl text-center lg:text-left dark:text-white"
-              >Find Me Here 📍</label
-            >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d...!2d80.6134!3d5.9377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x...!2sGandara!5e0!3m2!1sen!2slk!4v...!5m2!1sen!2slk"
-              width="100%"
-              height="100%"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
+            <p class="text-gray-400 text-center lg:text-left">
+              © 2025 Nadeesha Ruwandima. All rights reserved.
+            </p>
+
+            <nav class="flex flex-wrap justify-center gap-6">
+              <a
+                href="index.html"
+                class="hover:text-blue-400 transition duration-300"
+              >
+                Home
+              </a>
+
+              <a
+                href="#about-main"
+                class="hover:text-blue-400 transition duration-300"
+              >
+                About
+              </a>
+
+              <a
+                href="#about-two-main"
+                class="hover:text-blue-400 transition duration-300"
+              >
+                Services
+              </a>
+
+              <a
+                href="#portfolio-main"
+                class="hover:text-blue-400 transition duration-300"
+              >
+                Portfolio
+              </a>
+
+              <a
+                href="#footer-main"
+                class="hover:text-blue-400 transition duration-300"
+              >
+                Contact
+              </a>
+            </nav>
           </div>
         </div>
-        <hr class="border-1 border-gray-900" />
-        <div
-          class="flex flex-col gap-5 justify-center items-center opacity-0 translate-y-[10px] duration-700 ease-in-out lg:justify-between lg:flex-row"
-          id="footer-div-4"
-        >
-          <label class="text-gray-900 dark:text-white text-center"
-            >© 2025 Nadeesha Ruwandima. All rights reserved.</label
-          >
-          <nav class="flex flex-row gap-0 lg:gap-5">
-            <a
-              href="index.html"
-              class="font-bold text-gray-900 transition border-r-2 border-gray-900 p-1 lg:border-0 dark:border-white duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              Home
-            </a>
-            <a
-              href="#about-main"
-              class="font-bold text-gray-900 transition border-r-2 border-gray-900 p-1 lg:border-0 dark:border-white duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              About
-            </a>
-            <a
-              href="#about-two-main"
-              class="font-bold text-gray-900 transition border-r-2 border-gray-900 p-1 lg:border-0 dark:border-white duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              Services
-            </a>
-            <a
-              href="#portfolio-main"
-              class="font-bold text-gray-900 transition border-r-2 border-gray-900 p-1 lg:border-0 dark:border-white duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              Portfolio
-            </a>
-            <a
-              href="#footer-main"
-              class="font-bold text-gray-900 transition p-1 duration-300 ease-in-out hover:text-blue-600 dark:hover:text-yellow-400 dark:text-white"
-            >
-              Contact
-            </a>
-          </nav>
-          <div class="flex flex-row gap-5">
-            <a
-              href="https://github.com/Nadeesha699"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i
-                class="fa-brands fa-github text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-purple-800 dark:hover:text-purple-800 dark:text-white"
-              ></i>
-            </a>
-            <a
-              href="https://wa.me/+94711764232"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i
-                class="fa-brands fa-whatsapp text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-green-800 dark:hover:text-green-800 dark:text-white"
-              ></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/nadeesha-ruwandima-b5a356259"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i
-                class="fa-brands fa-linkedin text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-600 dark:hover:text-blue-600 dark:text-white"
-              ></i>
-            </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100039332113797&mibextid=ZbWKwL"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i
-                class="fa-brands fa-facebook text-gray-900 text-2xl transition duration-300 ease-in-out hover:text-blue-800 dark:hover:text-blue-800 dark:text-white"
-              ></i>
-            </a>
-          </div>
-        </div>
+
+        <!-- Toast Script -->
         <script>
           Notiflix.Notify.init({
-            borderRadius: "100px",
+            borderRadius: "20px",
+            position: "right-bottom",
+            timeout: 2000,
             success: {
               background: "#111827",
-              textColor: "white",
-              notiflixIconColor: "white",
+              textColor: "#fff",
             },
           });
+
           function showToast() {
             navigator.clipboard.writeText("+94722827848");
             Notiflix.Notify.success("Copied Successfully!");
           }
         </script>
-      </div>
+      </footer>
     </div>
     <!-- up arrow -->
     <div
