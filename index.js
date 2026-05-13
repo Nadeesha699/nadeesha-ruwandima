@@ -1,3 +1,8 @@
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("loader").classList.add("fade-out");
+  }, 5000);
+});
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.documentElement;
 
@@ -99,17 +104,28 @@ document.addEventListener("DOMContentLoaded", () => {
     document.title = "Nadeesha Ruwandima | Contact";
   });
 
-  const observer = new IntersectionObserver((entries) => {
+  // const observer = new IntersectionObserver((entries) => {
+  //   entries.forEach((entry) => {
+  //     if (entry.isIntersecting) {
+  //       entry.target.classList.add("show");
+  //     } else {
+  //       entry.target.classList.remove("show");
+  //     }
+  //   });
+  // });
+
+  const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("show");
-      } else {
-        entry.target.classList.remove("show");
+
+        // stop observing after first time
+        observer.unobserve(entry.target);
       }
     });
   });
 
-  [
+  const ids = [
     "home-div",
     "home-img",
     "about-h1",
@@ -127,7 +143,10 @@ document.addEventListener("DOMContentLoaded", () => {
     "footer-div-4",
     "downlaod-img",
     "downlaod-div",
-  ].forEach((id) => {
-    observer.observe(document.getElementById(id));
+  ];
+
+  ids.forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) observer.observe(el);
   });
 });

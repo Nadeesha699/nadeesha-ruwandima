@@ -39,11 +39,49 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <!-- <script src="index.js"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
   </head>
   <body>
+    <!-- Loader -->
+    <div
+      id="loader"
+      class="fixed inset-0 z-50 flex flex-col items-center justify-center animated-bg"
+    >
+      <!-- Glow -->
+      <div
+        class="absolute w-72 h-72 bg-blue-500/30 blur-3xl rounded-full"
+      ></div>
+
+      <!-- Logo -->
+      <div
+        class="floating relative w-28 h-28 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center shadow-2xl"
+      >
+        <h1 class="text-5xl font-black text-white tracking-widest">NR</h1>
+      </div>
+
+      <!-- Loading Text -->
+      <h2 class="mt-8 text-2xl font-bold text-white tracking-wide">
+        Loading Portfolio
+      </h2>
+
+      <!-- Animated Dots -->
+      <div class="flex gap-2 mt-4">
+        <span class="w-3 h-3 bg-white rounded-full animate-bounce"></span>
+        <span
+          class="w-3 h-3 bg-white rounded-full animate-bounce [animation-delay:0.2s]"
+        ></span>
+        <span
+          class="w-3 h-3 bg-white rounded-full animate-bounce [animation-delay:0.4s]"
+        ></span>
+      </div>
+
+      <!-- Spinner Ring -->
+      <div
+        class="spinner absolute w-96 h-96 border border-white/10 rounded-full"
+      ></div>
+    </div>
+
     <div
       class="fixed top-0 left-0 right-0 bottom-0 overflow-auto bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-950 main"
     >
@@ -72,29 +110,43 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
         <!-- NAV -->
         <header
-          class="flex items-center justify-between backdrop-blur-md bg-white/5 dark:bg-black/10 px-5 py-3 rounded-2xl border border-gray-200/20 dark:border-white/10"
+          class="flex items-center justify-between backdrop-blur-md bg-white/5 dark:bg-black/10 px-5 py-3 gap-2 rounded-2xl border border-gray-200/20 dark:border-white/10"
         >
           <!-- Logo -->
           <a href="index.html" class="flex items-center gap-3">
             <img src="./images/icons/icon.png" class="w-8 h-8" />
-            <span class="font-bold text-gray-900 dark:text-white">
+            <span
+              class="font-bold text-gray-900 dark:text-white overflow-hidden whitespace-nowrap text-ellipsis block w-30"
+            >
               A.T.N. Ruwandima
             </span>
           </a>
 
           <!-- Desktop Nav -->
           <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
-            <a href="#home-main" class="hover:text-blue-500 transition">Home</a>
-            <a href="#about-main" class="hover:text-blue-500 transition"
+            <a
+              href="#home-main"
+              class="text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer"
+              >Home</a
+            >
+            <a
+              href="#about-main"
+              class="text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer"
               >About</a
             >
-            <a href="#about-two-main" class="hover:text-blue-500 transition"
+            <a
+              href="#about-two-main"
+              class="text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer"
               >Services</a
             >
-            <a href="#portfolio-main" class="hover:text-blue-500 transition"
+            <a
+              href="#portfolio-main"
+              class="text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer"
               >Portfolio</a
             >
-            <a href="#footer-main" class="hover:text-blue-500 transition"
+            <a
+              href="#footer-main"
+              class="text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer"
               >Contact</a
             >
           </nav>
@@ -103,14 +155,17 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
           <div class="flex items-center gap-4">
             <a href="#download-section">
               <i
-                class="fa-solid fa-gamepad text-xl hover:text-blue-500 transition"
+                class="fa-solid fa-gamepad text-xl text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer transition"
               ></i>
             </a>
             <i
               id="toggle-btn-1"
-              class="fa-solid fa-circle-half-stroke text-xl cursor-pointer hover:text-blue-500 transition"
+              class="fa-solid fa-circle-half-stroke text-xl text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer transition"
             ></i>
-            <i class="fa-solid fa-bars lg:hidden text-xl cursor-pointer" id="btn-mobile-menu"></i>
+            <i
+              class="fa-solid fa-bars lg:hidden text-xl text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer transition"
+              id="btn-mobile-menu"
+            ></i>
           </div>
         </header>
 
@@ -132,7 +187,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
               Software Developer
             </h2>
 
-            <p class="text-gray-600 dark:text-gray-300 max-w-md">
+            <p
+              class="text-gray-600 text-center lg:text-left dark:text-gray-300"
+            >
               I design and build modern, scalable, and high-performance web
               applications with clean UI and strong backend logic.
             </p>
@@ -151,7 +208,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
               <a
                 href="#portfolio-main"
-                class="px-6 py-3 rounded-xl border border-gray-300 dark:border-white/20 hover:bg-gray-100 dark:hover:bg-white/10 transition font-semibold"
+                class="px-6 py-3 rounded-xl text-gray-900 dark:text-white border border-gray-900/80 dark:border-white/80 hover:bg-gray-100 dark:hover:bg-white/10 transition font-semibold"
               >
                 View Work
               </a>
@@ -162,7 +219,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
               <a
                 href="https://github.com/Nadeesha699"
                 target="_blank"
-                class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:scale-110 hover:bg-purple-600 transition"
+                class="w-11 h-11 flex items-center justify-center rounded-xl hover:scale-110 dark:bg-white/20 bg-black/20 hover:bg-purple-600 dark:hover:bg-purple-600 transition dark:text-white text-gray-900"
               >
                 <i class="fa-brands fa-github"></i>
               </a>
@@ -170,7 +227,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
               <a
                 href="https://wa.me/+94711764232"
                 target="_blank"
-                class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:scale-110 hover:bg-green-500 transition"
+                class="w-11 h-11 flex items-center justify-center rounded-xl hover:scale-110 hover:bg-green-500 dark:bg-white/20 bg-black/20 hover:bg-green-500 dark:hover:bg-green-500 transition dark:text-white text-gray-900"
               >
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
@@ -178,7 +235,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
               <a
                 href="https://www.linkedin.com"
                 target="_blank"
-                class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:scale-110 hover:bg-blue-500 transition"
+                class="w-11 h-11 flex items-center justify-center rounded-xl hover:scale-110 dark:bg-white/20 bg-black/20 hover:bg-blue-500 dark:hover:bg-blue-500 transition dark:text-white text-gray-900"
               >
                 <i class="fa-brands fa-linkedin"></i>
               </a>
@@ -186,7 +243,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
               <a
                 href="https://facebook.com"
                 target="_blank"
-                class="w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:scale-110 hover:bg-blue-700 transition"
+                class="w-11 h-11 flex items-center justify-center rounded-xl hover:scale-110 dark:bg-white/20 bg-black/20 hover:bg-blue-700 dark:hover:bg-blue-700 transition dark:text-white text-gray-900"
               >
                 <i class="fa-brands fa-facebook"></i>
               </a>
@@ -238,9 +295,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
             <div
               class="p-8 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg"
             >
-              <p
-                class="text-xl font-bold text-blue-600 dark:text-yellow-400 leading-relaxed"
-              >
+              <p class="text-xl font-bold text-blue-600 leading-relaxed">
                 I design professional and beautiful web, mobile & desktop
                 applications
               </p>
@@ -890,30 +945,25 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
       >
         <div class="relative z-10 flex flex-col gap-16">
           <!-- Heading -->
-          <div
-            class="flex flex-col lg:flex-row justify-between items-center gap-6"
-          >
-            <div>
+          <div class="max-w-3xl">
+            <span
+              class="uppercase tracking-[4px] text-sm font-semibold text-blue-500"
+            >
+              Portfolio
+            </span>
+
+            <h1
+              class="mt-3 text-4xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight"
+            >
+              Featured
               <span
-                class="uppercase tracking-[4px] text-sm font-semibold text-blue-500"
+                class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
               >
-                Portfolio
+                Projects
               </span>
-
-              <h1
-                class="mt-3 text-4xl lg:text-6xl font-extrabold text-gray-900 dark:text-white"
-              >
-                Featured
-                <span
-                  class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
-                >
-                  Projects
-                </span>
-              </h1>
-            </div>
-
+            </h1>
             <p
-              class="max-w-2xl text-center lg:text-right text-gray-600 dark:text-gray-400 text-lg"
+              class="mt-6 leading-relaxed text-gray-600 dark:text-gray-400 text-lg"
             >
               A collection of web applications, mobile apps, AI solutions and
               business systems crafted with modern technologies and clean UI.
@@ -1004,17 +1054,17 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
                 <div class="flex flex-wrap gap-2">
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400"
                   >
                     React
                   </span>
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-green-100 text-green-600"
+                    class="px-3 py-1 rounded-full text-xs bg-green-100 text-green-600 dark:bg-green-500/10 dark:text-green-400"
                   >
                     Express
                   </span>
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-600"
+                    class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-600 dark:bg-purple-500/10 dark:text-purple-400"
                   >
                     MySQL
                   </span>
@@ -1026,6 +1076,10 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                   class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
                 >
                   View Project
+                  <span
+                    class="iconify text-xl"
+                    data-icon="ph:arrow-up-right-bold"
+                  ></span>
                 </a>
               </div>
             </div>
@@ -1055,13 +1109,13 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
                 <div class="flex flex-wrap gap-2">
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400"
                   >
                     React
                   </span>
 
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-yellow-100 text-yellow-600"
+                    class="px-3 py-1 rounded-full text-xs bg-yellow-100 text-yellow-600 dark:bg-yellow-500/10 dark:text-yellow-400"
                   >
                     Python
                   </span>
@@ -1073,6 +1127,10 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                   class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
                 >
                   View Project
+                  <span
+                    class="iconify text-xl"
+                    data-icon="ph:arrow-up-right-bold"
+                  ></span>
                 </a>
               </div>
             </div>
@@ -1102,13 +1160,13 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
                 <div class="flex flex-wrap gap-2">
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-green-100 text-green-600"
+                    class="px-3 py-1 rounded-full text-xs bg-green-100 text-green-600 dark:bg-green-500/10 dark:text-green-400"
                   >
                     Android
                   </span>
 
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-orange-100 text-orange-600"
+                    class="px-3 py-1 rounded-full text-xs bg-orange-100 text-orange-600 dark:bg-orange-500/10 dark:text-orange-400"
                   >
                     Java
                   </span>
@@ -1120,6 +1178,10 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                   class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
                 >
                   View Project
+                  <span
+                    class="iconify text-xl"
+                    data-icon="ph:arrow-up-right-bold"
+                  ></span>
                 </a>
               </div>
             </div>
@@ -1149,19 +1211,19 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
                 <div class="flex flex-wrap gap-2">
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400"
                   >
                     React
                   </span>
 
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-yellow-100 text-yellow-600"
+                    class="px-3 py-1 rounded-full text-xs bg-yellow-100 text-yellow-600 dark:bg-yellow-500/10 dark:text-yellow-400"
                   >
                     Python
                   </span>
 
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-pink-100 text-pink-600"
+                    class="px-3 py-1 rounded-full text-xs bg-pink-100 text-pink-600 dark:bg-pink-500/10 dark:text-pink-400"
                   >
                     Machine Learning
                   </span>
@@ -1173,6 +1235,10 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                   class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
                 >
                   View Project
+                  <span
+                    class="iconify text-xl"
+                    data-icon="ph:arrow-up-right-bold"
+                  ></span>
                 </a>
               </div>
             </div>
@@ -1202,19 +1268,19 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
                 <div class="flex flex-wrap gap-2">
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400"
                   >
-                    React
+                    React Native
                   </span>
 
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-green-100 text-green-600"
+                    class="px-3 py-1 rounded-full text-xs bg-green-100 text-green-600 dark:bg-green-500/10 dark:text-green-400"
                   >
                     Express
                   </span>
 
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-600"
+                    class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-600 dark:bg-purple-500/10 dark:text-purple-400"
                   >
                     MySQL
                   </span>
@@ -1226,6 +1292,10 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                   class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
                 >
                   View Project
+                  <span
+                    class="iconify text-xl"
+                    data-icon="ph:arrow-up-right-bold"
+                  ></span>
                 </a>
               </div>
             </div>
@@ -1255,19 +1325,19 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
                 <div class="flex flex-wrap gap-2">
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400"
                   >
                     React
                   </span>
 
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-yellow-100 text-yellow-600"
+                    class="px-3 py-1 rounded-full text-xs bg-yellow-100 text-yellow-600 dark:bg-yellow-500/10 dark:text-yellow-400"
                   >
                     Python
                   </span>
 
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-600"
+                    class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-600 dark:bg-purple-500/10 dark:text-purple-400"
                   >
                     MySQL
                   </span>
@@ -1279,6 +1349,10 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                   class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
                 >
                   View Project
+                  <span
+                    class="iconify text-xl"
+                    data-icon="ph:arrow-up-right-bold"
+                  ></span>
                 </a>
               </div>
             </div>
@@ -1308,7 +1382,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
                 <div class="flex flex-wrap gap-2">
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400"
                   >
                     React
                   </span>
@@ -1320,6 +1394,10 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                   class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
                 >
                   Live Preview
+                  <span
+                    class="iconify text-xl"
+                    data-icon="ph:arrow-square-out-bold"
+                  ></span>
                 </a>
               </div>
             </div>
@@ -1349,7 +1427,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
                 <div class="flex flex-wrap gap-2">
                   <span
-                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600"
+                    class="px-3 py-1 rounded-full text-xs bg-blue-100 text-blue-600 dark:bg-blue-500/10 dark:text-blue-400"
                   >
                     React
                   </span>
@@ -1361,6 +1439,10 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                   class="mt-2 inline-flex items-center justify-center gap-3 rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-black py-3 font-semibold hover:scale-[1.02] transition duration-300"
                 >
                   Live Preview
+                  <span
+                    class="iconify text-xl"
+                    data-icon="ph:arrow-square-out-bold"
+                  ></span>
                 </a>
               </div>
             </div>
@@ -1419,7 +1501,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
             </div>
 
             <div class="text-center lg:text-left">
-              <h2 class="text-3xl lg:text-5xl font-extrabold tracking-tight">
+              <h2
+                class="text-3xl text-gray-900 dark:text-white lg:text-5xl font-extrabold tracking-tight"
+              >
                 A.T.N. Ruwandima
               </h2>
               <p class="text-gray-400 mt-3 text-lg">
@@ -1440,7 +1524,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 </span>
 
                 <h2
-                  class="text-3xl lg:text-5xl font-bold mt-4 leading-tight max-w-xl"
+                  class="text-3xl text-gray-900 dark:text-white lg:text-5xl font-bold mt-4 leading-tight max-w-xl"
                 >
                   Let’s build something
                   <span
@@ -1457,16 +1541,25 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
               >
                 <div>
                   <p class="text-gray-400 text-sm">Schedule an email</p>
-                  <p
-                    class="font-semibold text-lg text-gray-900 dark:text-white"
-                  >
-                    nadeesharuwandima@gmail.com
-                  </p>
+                  <div class="relative group w-fit">
+                    <p
+                      class="font-semibold text-lg text-gray-900 dark:text-white overflow-hidden whitespace-nowrap text-ellipsis max-w-[150px] sm:max-w-[300px] lg:max-w-[350px] cursor-pointer"
+                    >
+                      nadeesharuwandima@gmail.com
+                    </p>
+
+                    <!-- Tooltip -->
+                    <div
+                      class="absolute left-0 top-full mt-2 hidden group-hover:block dark:bg-gray-900 bg-white dark:text-white text-gray-900 text-sm px-3 py-2 rounded-lg shadow-lg whitespace-nowrap z-50"
+                    >
+                      nadeesharuwandima@gmail.com
+                    </div>
+                  </div>
                 </div>
 
                 <a
                   href="mailto:nadeesharuwandima@gmail.com?subject=Collaboration%20with%20Nadeesha%20Ruwandima&body=Hello%20Nadeesha%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20I%20am%20interested%20in%20discussing%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Name%5D"
-                  class="w-14 h-14 rounded-2xl bg-blue-500 flex items-center justify-center hover:scale-110 transition duration-300"
+                  class="w-10 h-10 lg:w-14 lg:h-14 rounded-2xl bg-blue-500 flex items-center justify-center hover:scale-110 transition duration-300"
                 >
                   <span
                     class="iconify text-2xl"
@@ -1481,16 +1574,25 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
               >
                 <div>
                   <p class="text-gray-400 text-sm">Call me anytime</p>
-                  <p
-                    class="font-semibold text-lg text-gray-900 dark:text-white"
-                  >
-                    +94 72 282 7848
-                  </p>
+                  <div class="relative group w-fit">
+                    <p
+                      class="font-semibold text-lg text-gray-900 dark:text-white overflow-hidden whitespace-nowrap text-ellipsis max-w-[100px] sm:max-w-[300px] lg:max-w-[350px] cursor-pointer"
+                    >
+                      +94 72 282 7848
+                    </p>
+
+                    <!-- Tooltip -->
+                    <div
+                      class="absolute left-0 top-full mt-2 hidden group-hover:block dark:bg-gray-900 bg-white dark:text-white text-gray-900 text-sm px-3 py-2 rounded-lg shadow-lg whitespace-nowrap z-50"
+                    >
+                      +94 72 282 7848
+                    </div>
+                  </div>
                 </div>
 
                 <button
                   onclick="showToast()"
-                  class="w-14 h-14 rounded-2xl bg-purple-500 flex items-center justify-center hover:scale-110 transition duration-300"
+                  class="w-10 h-10 lg:w-14 lg:h-14 rounded-2xl bg-purple-500 flex items-center justify-center hover:scale-110 transition duration-300"
                 >
                   <span class="iconify text-2xl" data-icon="ph:copy"></span>
                 </button>
@@ -1501,7 +1603,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 <a
                   href="https://github.com/Nadeesha699"
                   target="_blank"
-                  class="w-14 h-14 rounded-2xl bg-black/10 border-black/10 dark:bg-white/5 border dark:border-white/10 flex items-center justify-center hover:bg-purple-600 transition duration-300"
+                  class="w-14 h-14 rounded-2xl bg-black/10 border-black/10 dark:bg-white/5 border dark:border-white/10 flex items-center justify-center hover:bg-purple-600 dark:hover:bg-purple-600 transition duration-300"
                 >
                   <i
                     class="fa-brands fa-github text-2xl text-gray-900 dark:text-white"
@@ -1511,7 +1613,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 <a
                   href="https://wa.me/+94711764232"
                   target="_blank"
-                  class="w-14 h-14 rounded-2xl bg-black/10 border-black/10 dark:bg-white/5 border dark:border-white/10 flex items-center justify-center hover:bg-green-500 transition duration-300"
+                  class="w-14 h-14 rounded-2xl bg-black/10 border-black/10 dark:bg-white/5 border dark:border-white/10 flex items-center justify-center hover:bg-green-500 dark:hover:bg-green-500 transition duration-300"
                 >
                   <i
                     class="fa-brands fa-whatsapp text-2xl text-gray-900 dark:text-white"
@@ -1521,7 +1623,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 <a
                   href="https://www.linkedin.com/in/nadeesha-ruwandima-b5a356259"
                   target="_blank"
-                  class="w-14 h-14 rounded-2xl bg-black/10 border-black/10 dark:bg-white/5 border dark:border-white/10 flex items-center justify-center hover:bg-blue-500 transition duration-300"
+                  class="w-14 h-14 rounded-2xl bg-black/10 border-black/10 dark:bg-white/5 border dark:border-white/10 flex items-center justify-center hover:bg-blue-500 dark:hover:bg-blue-500 transition duration-300"
                 >
                   <i
                     class="fa-brands fa-linkedin text-2xl text-gray-900 dark:text-white"
@@ -1531,7 +1633,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
                 <a
                   href="https://www.facebook.com/profile.php?id=100039332113797&mibextid=ZbWKwL"
                   target="_blank"
-                  class="w-14 h-14 rounded-2xl bg-black/10 border-black/10 dark:bg-white/5 border dark:border-white/10 flex items-center justify-center hover:bg-blue-700 transition duration-300"
+                  class="w-14 h-14 rounded-2xl bg-black/10 border-black/10 dark:bg-white/5 border dark:border-white/10 flex items-center justify-center hover:bg-blue-700 dark:hover:bg-blue-700 transition duration-300"
                 >
                   <i
                     class="fa-brands fa-facebook text-2xl text-gray-900 dark:text-white"
@@ -1542,7 +1644,11 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- Map -->
             <div class="flex flex-col gap-5">
-              <h2 class="text-3xl lg:text-4xl font-bold">Find Me Here 📍</h2>
+              <h2
+                class="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white"
+              >
+                Find Me Here 📍
+              </h2>
 
               <div
                 class="overflow-hidden rounded-3xl border border-white/10 shadow-2xl h-[400px]"
@@ -1572,35 +1678,35 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
             <nav class="flex flex-wrap justify-center gap-6">
               <a
                 href="index.html"
-                class="hover:text-blue-400 transition duration-300"
+                class="text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer"
               >
                 Home
               </a>
 
               <a
                 href="#about-main"
-                class="hover:text-blue-400 transition duration-300"
+                class="text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer"
               >
                 About
               </a>
 
               <a
                 href="#about-two-main"
-                class="hover:text-blue-400 transition duration-300"
+                class="text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer"
               >
                 Services
               </a>
 
               <a
                 href="#portfolio-main"
-                class="hover:text-blue-400 transition duration-300"
+                class="text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer"
               >
                 Portfolio
               </a>
 
               <a
                 href="#footer-main"
-                class="hover:text-blue-400 transition duration-300"
+                class="text-gray-900 dark:text-white dark:hover:text-blue-500 hover:text-blue-500 transition cursor-pointer"
               >
                 Contact
               </a>
@@ -1611,31 +1717,33 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
         <!-- Toast Script -->
         <script>
           Notiflix.Notify.init({
-            borderRadius: "20px",
             position: "right-bottom",
+            borderRadius: "10px",
             timeout: 2000,
-            success: {
-              background: "#111827",
-              textColor: "#fff",
-            },
+
+            fontSize: "15px",
+            cssAnimationStyle: "from-right",
+
+            successBackground: "#000000",
+            successColor: "#FFFFFF",
+
+            failureBackground: "#ef4444",
+            failureColor: "#FFFFFF",
           });
 
           function showToast() {
             navigator.clipboard.writeText("+94722827848");
-            Notiflix.Notify.success("Copied Successfully!");
+            Notiflix.Notify.success("Copied to clipboard");
           }
         </script>
       </footer>
     </div>
     <!-- up arrow -->
     <div
-      class="flex justify-center items-center p-2 rounded-md bg-black/50 fixed bottom-10 right-10 dark:bg-white/50 opacity-0"
+      class="flex justify-center text-gray-900 dark:text-white items-center p-2 rounded-lg bg-black/20 fixed bottom-10 right-10 dark:bg-white/20 opacity-0"
       id="btn-up-arrow"
     >
-      <span
-        class="iconify dark:text-gray-900 text-white text-2xl text-bold"
-        data-icon="ph:arrow-up-bold"
-      ></span>
+      <span class="iconify text-2xl" data-icon="ph:arrow-up"></span>
     </div>
     <!-- MOBILE MENU (MODERN SLIDE DRAWER) -->
     <div id="mobile-menu-panel" class="fixed inset-0 z-50 hidden">
@@ -1650,22 +1758,41 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
         <!-- CLOSE BUTTON -->
         <div class="flex justify-end">
           <i
-            class="fa-solid fa-xmark text-2xl cursor-pointer hover:text-red-500"
+            class="fa-solid fa-xmark text-2xl cursor-pointer dark:text-white text-gray-900 hover:text-red-500 dark:hover:text-red-500"
             id="btn-mobile-menu-close"
           ></i>
         </div>
 
         <!-- LINKS -->
         <nav class="flex flex-col gap-6 text-lg font-semibold">
-          <a href="#home-main" class="hover:text-blue-500 transition" id="btn-mobile-menu-close-1">Home</a>
-          <a href="#about-main" class="hover:text-blue-500 transition" id="btn-mobile-menu-close-2">About</a>
-          <a href="#about-two-main" class="hover:text-blue-500 transition" id="btn-mobile-menu-close-3"
+          <a
+            href="#home-main"
+            class="hover:text-blue-500 transition dark:text-white text-gray-900 p-2 rounded-lg hover:bg-blue-600/50 dark:hover:bg-blue-600/50"
+            id="btn-mobile-menu-close-1"
+            >Home</a
+          >
+          <a
+            href="#about-main"
+            class="hover:text-blue-500 transition dark:text-white text-gray-900 p-2 rounded-lg hover:bg-blue-600/50 dark:hover:bg-blue-600/50"
+            id="btn-mobile-menu-close-2"
+            >About</a
+          >
+          <a
+            href="#about-two-main"
+            class="hover:text-blue-500 transition dark:text-white text-gray-900 p-2 rounded-lg hover:bg-blue-600/50 dark:hover:bg-blue-600/50"
+            id="btn-mobile-menu-close-3"
             >Services</a
           >
-          <a href="#portfolio-main" class="hover:text-blue-500 transition" id="btn-mobile-menu-close-4"
+          <a
+            href="#portfolio-main"
+            class="hover:text-blue-500 transition dark:text-white text-gray-900 p-2 rounded-lg hover:bg-blue-600/50 dark:hover:bg-blue-600/50"
+            id="btn-mobile-menu-close-4"
             >Portfolio</a
           >
-          <a href="#footer-main" class="hover:text-blue-500 transition" id="btn-mobile-menu-close-5"
+          <a
+            href="#footer-main"
+            class="transition p-2 rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 dark:text-white text-gray-900"
+            id="btn-mobile-menu-close-5"
             >Contact</a
           >
         </nav>
