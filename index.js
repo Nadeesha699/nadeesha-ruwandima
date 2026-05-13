@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.getElementById("loader").classList.add("fade-out");
-  }, 5000);
+  }, 1000);
 });
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.documentElement;
