@@ -1,16 +1,12 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  overflow: hidden;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.main {
-  overflow: auto;
-}
 
 @keyframes animatedTextGradient {
   to {
@@ -66,22 +62,4 @@ html {
   opacity: 0;
   visibility: hidden;
   transition: all 0.6s ease;
-}
-
-#about-div,
-#about-two-div,
-#portfolio-div-1,
-#footer-div-4 {
-  opacity: 0;
-  transform: translateY(80px);
-  transition: all 0.8s ease;
-}
-
-/* when visible */
-#about-div.show,
-#about-two-div.show,
-#portfolio-div-1.show,
-#footer-div-4.show {
-  opacity: 1;
-  transform: translateY(0);
 }

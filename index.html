@@ -41,6 +41,8 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
   <body>
     <!-- Loader -->
@@ -83,7 +85,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
     </div>
 
     <div
-      class="fixed top-0 left-0 right-0 bottom-0 overflow-auto bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-950 main"
+      class="min-h-screen bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-950"
     >
       <!-- Blue blur spot 1 -->
       <div
@@ -270,7 +272,8 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
       <!-- Modern About Section -->
       <section
         id="about-main"
-        class="relative py-20 px-6 lg:px-20 overflow-hidden"
+        data-aos="fade-up"
+        class="relative py-20 px-6 lg:px-20"
       >
         <div class="relative z-10 flex flex-col gap-14">
           <!-- Heading -->
@@ -290,7 +293,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
           </div>
 
           <!-- Content Grid -->
-          <div id="about-div" class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
             <!-- Left Card -->
             <div
               class="p-8 rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg"
@@ -406,10 +409,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
         </div>
       </section>
       <!-- Modern Skills Section -->
-      <section
-        id="lng-main"
-        class="relative overflow-hidden py-20 px-6 lg:px-20"
-      >
+      <section id="lng-main" class="relative py-20 px-6 lg:px-20">
         <!-- Background Glow -->
         <div
           class="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 blur-3xl rounded-full"
@@ -584,7 +584,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
       <!-- Modern App Download Section (Alternative Style) -->
       <section
         id="download-section"
-        class="relative py-24 px-6 lg:px-20 bg-white dark:bg-black overflow-hidden"
+        class="relative py-24 px-6 lg:px-20 bg-white dark:bg-black"
       >
         <!-- Decorative Shapes -->
         <div
@@ -678,10 +678,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
         </div>
       </section>
       <!-- Modern Services Section -->
-      <section
-        id="about-two-main"
-        class="relative overflow-hidden py-20 px-6 lg:px-20"
-      >
+      <section id="about-two-main" class="relative py-20 px-6 lg:px-20">
         <div class="relative z-10 flex flex-col gap-16">
           <!-- Heading -->
           <div class="max-w-3xl">
@@ -715,7 +712,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
           <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             <!-- Card -->
             <div
-              class="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group relative rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
               <div
                 class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
@@ -753,7 +750,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- Mobile Apps -->
             <div
-              class="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group relative rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
               <div
                 class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
@@ -791,7 +788,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- Business Systems -->
             <div
-              class="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group relative rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
               <div
                 class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
@@ -829,7 +826,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- AI / ML -->
             <div
-              class="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group relative rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
               <div
                 class="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
@@ -867,7 +864,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- UI/UX -->
             <div
-              class="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group relative rounded-3xl border border-gray-200 dark:border-white/10 bg-white/70 dark:bg-white/5 backdrop-blur-xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
               <div
                 class="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"
@@ -905,7 +902,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- Extra Card -->
             <div
-              class="group relative overflow-hidden rounded-3xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-blue-600 to-purple-600 p-8 shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group relative rounded-3xl border border-gray-200 dark:border-white/10 bg-gradient-to-br from-blue-600 to-purple-600 p-8 shadow-2xl hover:-translate-y-2 transition duration-500"
             >
               <div class="relative z-10">
                 <span
@@ -939,10 +936,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
         </div>
       </section>
       <!-- Modern Portfolio Section -->
-      <section
-        id="portfolio-main"
-        class="relative overflow-hidden py-20 px-6 lg:px-20"
-      >
+      <section id="portfolio-main" class="relative py-20 px-6 lg:px-20">
         <div class="relative z-10 flex flex-col gap-16">
           <!-- Heading -->
           <div class="max-w-3xl">
@@ -974,9 +968,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
           <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             <!-- Project Card -->
             <div
-              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
-              <div class="overflow-hidden">
+              <div>
                 <img
                   src="./images/pro-img1.png"
                   class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
@@ -1031,9 +1025,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- Project -->
             <div
-              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
-              <div class="overflow-hidden">
+              <div>
                 <img
                   src="./images/pro-img2.png"
                   class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
@@ -1086,9 +1080,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- Project -->
             <div
-              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
-              <div class="overflow-hidden">
+              <div>
                 <img
                   src="./images/pro-img16.png"
                   class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
@@ -1137,9 +1131,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- Think You -->
             <div
-              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
-              <div class="overflow-hidden">
+              <div>
                 <img
                   src="./images/pro-img9.png"
                   class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
@@ -1188,9 +1182,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- PsyPredict -->
             <div
-              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
-              <div class="overflow-hidden">
+              <div>
                 <img
                   src="./images/pro-img8.jpg"
                   class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
@@ -1245,9 +1239,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- Chat Box Web App -->
             <div
-              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
-              <div class="overflow-hidden">
+              <div>
                 <img
                   src="./images/pro-img5.png"
                   class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
@@ -1302,9 +1296,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- EduSync ICT Web App -->
             <div
-              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
-              <div class="overflow-hidden">
+              <div>
                 <img
                   src="./images/pro-img19.png"
                   class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
@@ -1359,9 +1353,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- Inferno Creatives Website -->
             <div
-              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
-              <div class="overflow-hidden">
+              <div>
                 <img
                   src="./images/pro-img22.png"
                   class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
@@ -1404,9 +1398,9 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- Kuppiya Website -->
             <div
-              class="group rounded-3xl overflow-hidden bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
+              class="group rounded-3xl bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-500"
             >
-              <div class="overflow-hidden">
+              <div>
                 <img
                   src="./images/pro-img23.png"
                   class="w-full h-60 object-cover group-hover:scale-110 transition duration-700"
@@ -1449,7 +1443,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
 
             <!-- CTA -->
             <div
-              class="rounded-3xl overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-10 flex flex-col justify-center shadow-2xl"
+              class="rounded-3xl bg-gradient-to-br from-blue-600 to-purple-600 p-10 flex flex-col justify-center shadow-2xl"
             >
               <span
                 class="inline-flex w-fit items-center gap-2 px-4 py-2 rounded-full bg-white/20 text-sm font-medium text-white mb-6"
@@ -1482,7 +1476,7 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
       </section>
       <!-- Modern Footer -->
       <footer
-        class="relative overflow-hidden bg-white dark:bg-black text-white"
+        class="relative bg-white dark:bg-black text-white"
         id="footer-main"
       >
         <div class="relative z-10 px-6 lg:px-20 py-16 flex flex-col gap-16">
@@ -1798,6 +1792,16 @@ https://mockuphone.com/model/galaxy-s24-ultra/ -->
         </nav>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="index.js" defer></script>
+
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: true,
+        offset: 100,
+      });
+    </script>
   </body>
 </html>
