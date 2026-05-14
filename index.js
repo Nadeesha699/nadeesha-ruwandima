@@ -91,45 +91,45 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // TITLE CHANGES
-  const homeMain = document.getElementById("home-main");
-  const aboutMain = document.getElementById("about-main");
-  const lngMain = document.getElementById("lng-main");
-  const aboutTwoMain = document.getElementById("about-two-main");
-  const portfolioMain = document.getElementById("portfolio-main");
-  const footerMain = document.getElementById("footer-main");
+  const home = document.getElementById("home");
+  const about = document.getElementById("about");
+  const skills = document.getElementById("skills");
+  const services = document.getElementById("services");
+  const portfolio = document.getElementById("portfolio");
+  const contact = document.getElementById("contact");
 
-  if (homeMain) {
-    homeMain.addEventListener("mouseenter", () => {
+  if (home) {
+    home.addEventListener("mouseenter", () => {
       document.title = "Nadeesha Ruwandima | Home";
     });
   }
 
-  if (aboutMain) {
+  if (about) {
     aboutMain.addEventListener("mouseenter", () => {
       document.title = "Nadeesha Ruwandima | About";
     });
   }
 
-  if (lngMain) {
-    lngMain.addEventListener("mouseenter", () => {
+  if (skills) {
+    skills.addEventListener("mouseenter", () => {
       document.title = "Nadeesha Ruwandima | Skills";
     });
   }
 
-  if (aboutTwoMain) {
-    aboutTwoMain.addEventListener("mouseenter", () => {
-      document.title = "Nadeesha Ruwandima | What I Do";
+  if (services) {
+    services.addEventListener("mouseenter", () => {
+      document.title = "Nadeesha Ruwandima | Services";
     });
   }
 
-  if (portfolioMain) {
-    portfolioMain.addEventListener("mouseenter", () => {
+  if (portfolio) {
+    portfolio.addEventListener("mouseenter", () => {
       document.title = "Nadeesha Ruwandima | Portfolio";
     });
   }
 
-  if (footerMain) {
-    footerMain.addEventListener("mouseenter", () => {
+  if (contact) {
+    contact.addEventListener("mouseenter", () => {
       document.title = "Nadeesha Ruwandima | Contact";
     });
   }
