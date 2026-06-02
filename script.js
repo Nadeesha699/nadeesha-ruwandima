@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (about) {
-    aboutMain.addEventListener("mouseenter", () => {
+    about.addEventListener("mouseenter", () => {
       document.title = "Nadeesha Ruwandima | About";
     });
   }
